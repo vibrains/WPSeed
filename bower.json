@@ -1,0 +1,20 @@
+{
+  "name": "wpseed",
+  "version": "1.0.0",
+  "authors": [
+    "Flurin Dürst <flurin@flurinduerst.ch>"
+  ],
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "homepage": "//wpseed.org",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "fastclick": "~1",
+    "normalize-css": "~4",
+	  "css-hamburgers": "~0.5.0"
+  }
+}
