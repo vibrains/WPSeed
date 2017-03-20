@@ -13,7 +13,7 @@
 <!-- content » home -->
 <div id="main-content">
 	<header class="nav-animation-element">
-		<svg viewBox="0 0 1226 340" id="back-rainbow" preserveAspectRatio="none">
+<!-- 		<svg viewBox="0 0 1226 340" id="back-rainbow" preserveAspectRatio="none">
 			<defs>
 				<linearGradient x1="100%" y1="0%" x2="0%" y2="15%" id="back-rainbow-gradient">
 					<stop stop-color="#d7d88d" offset="12%"></stop>
@@ -22,9 +22,20 @@
 				</linearGradient>
 			</defs>
 			<path d="M1074 0C673.94.2 303.56 126 0 340h1226V6c-50.1-3.72-100.95-5.8-152-6z" fill="url(#back-rainbow-gradient)"></path>
+		</svg> -->
+
+		<svg viewBox="120 0 200 350" id="front-blue-rainbow" preserveAspectRatio="none">
+			<defs>
+				<linearGradient x1="100%" y1="0%" x2="0%" y2="25%" id="front-blue-gradient">
+					<stop stop-color="#103e5f" offset="0%"></stop>
+					<stop stop-color="#4889c9" offset="50%"></stop>
+					<stop stop-color="#7aa4cd" offset="100%"></stop>
+				</linearGradient>
+			</defs>
+			<path d="M0 475h1031V0C630.46 33.34 270 208.52 0 475z" fill="url(#front-blue-gradient)" fill-opacity="0.65"></path>
 		</svg>
 
-		<svg viewBox="0 0 1031 475" id="front-rainbow" preserveAspectRatio="none">
+<!-- 		<svg viewBox="0 0 1031 475" id="front-rainbow" preserveAspectRatio="none">
 			<defs>
 				<linearGradient x1="100%" y1="0%" x2="0%" y2="25%" id="front-rainbow-gradient">
 					<stop stop-color="#a7d700" offset="0%"></stop>
@@ -34,17 +45,16 @@
 			</defs>
 			<path d="M0 475h1031V0C630.46 33.34 270 208.52 0 475z" fill="url(#front-rainbow-gradient)" fill-opacity="0.65"></path>
 		</svg>
-
-		<svg viewBox="0 0 1280 110" preserveAspectRatio="none" id="header-curve-shadow">
+	-->
+<!-- 		<svg viewBox="0 0 1280 110" preserveAspectRatio="none" id="header-curve-shadow">
 			<path d="M1280 3.9V110H0C194 71.33 662-19.9 1280 3.9z"></path>
-		</svg>
+		</svg> -->
 
-		<svg viewBox="0 0 1280 110" preserveAspectRatio="none" id="header-curve">
+<!-- 		<svg viewBox="0 0 1280 110" preserveAspectRatio="none" id="header-curve">
 			<path d="M1280 3.9V110H0C194 71.33 662-19.9 1280 3.9z" fill="#fff"></path>
-		</svg>
+		</svg> -->
 	</header>
 </div>
-
 
 <div class="teaser" style="background-image: url(<? the_post_thumbnail_url('large', $post->ID) ?>)">
 	<div class="content home">
@@ -55,12 +65,39 @@
 	</div>
 </div>
 
-
-<div class="content home">
+<div class="teaser callout">
 	<article>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex adipisci ea minus asperiores error esse recusandae ipsa quam vero, tempore quasi vel eveniet optio excepturi quas dolorum saepe cupiditate aspernatur!</p>
+		<div class="col-md-9 col-xs-12">
+			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+		</div>
+		<div class="newsletter-container">
+			<div class="col-md-3 col-xs-12">
+				<input type="text" placeholder="Email">
+			</div>
+		</div>
 	</article>
 </div>
+
+<div class="content home welcome">
+	<article>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex adipisci ea minus asperiores error esse recusandae ipsa quam vero, tempore quasi vel eveniet optio excepturi quas dolorum saepe cupiditate aspernatur! Consectetur adipisicing elit. Ex adipisci ea minus asperiores error esse recusandae ipsa quam vero</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, voluptatem quia hic fuga pariatur non? Labore, officia voluptatem fuga possimus perspiciatis repellendus eveniet illo. Est iusto enim sequi labore aliquam.</p><br>
+		<a href="http://www.google.com" class="button">Button Number One</a> <a href="http://www.google.com" class="button_alt">Button Number Two</a>
+		<div class="divider"></div>
+	</article>
+</div>
+
+<div class="content home upcoming-events">
+	<article>
+
+		<div class="col-md-4 col-xs-12"></div>
+		<div class="col-md-4 col-xs-12"></div>
+		<div class="col-md-4 col-xs-12"></div>
+
+	</article>
+</div>
+
 <div class="content home">
 	<? if (have_posts() ) : while (have_posts()) : the_post(); ?>
 	<article>
@@ -68,12 +105,6 @@
 		<? the_content(); ?>
 	</article>
 <? endwhile; endif; ?>
-</div>
-<div class="teaser callout">
-	<article>
-		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex adipisci ea minus asperiores error esse recusandae ipsa quam vero, tempore quasi vel eveniet optio excepturi quas dolorum saepe cupiditate aspernatur!</p>
-	</article>
 </div>
 
 <div class="flexbox-2-container">

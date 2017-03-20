@@ -16,21 +16,25 @@
 
 nav {
   z-index: 210;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   width: 100%;
   ul {
     margin: 0;
     padding: 0;
+    float: right;
+    margin-right: 30px;
   }
   li {
     display: inline-block;
     list-style-type: none;
     a {
       color: $c_nav;
+      text-transform: uppercase;
     }
     a:hover {
       color: $c_nav_hover;
+      text-decoration: none;
     }
     &.current_page_item,
     &.current_page_parent,
@@ -44,6 +48,7 @@ nav {
       padding: 0 .8rem;
       color: $c_nav_spacer;
       content: ' | ';
+      color: $c_lightblue;
     }
   }
 }

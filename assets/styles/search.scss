@@ -10,9 +10,22 @@
 	outline: none;
 }
 .btn--search {
-	font-size: 25px;
+	font-size: 20px;
 	z-index: 300;
 	position: relative;
+	padding-top: 8px;
+	border: 1px solid $c_dark;
+	border-radius: 50%;
+	padding: 8px;
+	transition: .3s;
+	outline: none;
+	&:hover {
+		background: $c_lightblue;
+		border: 1px solid $c_bright;
+	}
+}
+svg.icon.icon--search:hover {
+	fill: #fff;
 }
 .btn--hidden {
 	pointer-events: none;
@@ -63,7 +76,7 @@ a,
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background: $c_green;
+	background: $c_lightblue;
 	// background-image: url("/wp-content/themes/WPSeed/assets/images/green-fibers.png");
 	background-repeat: repeat;
 }
@@ -321,7 +334,7 @@ ul.latest-posts {
 			font-size: 18px;
 			display: block;
 			&:hover {
-				color: $c_green;
+				color: $c_lightblue;
 			}
 		}
 	}

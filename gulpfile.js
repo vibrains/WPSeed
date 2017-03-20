@@ -8,12 +8,12 @@
  *
  * Version:     1.3.1
  *
-*/
+ */
 
 
 /* SETTINGS
 /===================================================== */
-var browsersync_proxy = "truenorth.dev";
+var browsersync_proxy = "abac.dev";
 
 
 /* DEPENDENCIES
@@ -97,9 +97,9 @@ gulp.task('javascript', function() {
 // to:      dist/images
 gulp.task('images',  function() {
   gulp.src('assets/images/*.*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('dist/images'))
-    .pipe(browserSync.stream());
+  .pipe(imagemin())
+  .pipe(gulp.dest('dist/images'))
+  .pipe(browserSync.stream());
 });
 
 /* CLEAN
@@ -117,6 +117,7 @@ gulp.task('watch',  ['browsersync'], function() {
   gulp.watch('assets/images/*.*', ['images']);
   gulp.watch('*.php', browserSync.reload);
   gulp.watch('templates/*.php', browserSync.reload);
+  gulp.watch('functions/*.php', browserSync.reload);
   gulp.watch('*.html', browserSync.reload);
 });
 

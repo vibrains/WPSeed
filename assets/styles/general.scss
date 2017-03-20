@@ -51,6 +51,7 @@ html {
 
 body  {
   // used as wrapper for sticky footer
+  font-family: $font_name;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,10 +65,14 @@ body  {
 a {
   color: $c_link;
   text-decoration: none;
+  outline: none;
   transition: .3s;
   &:hover {
     color: $c_link_hover;
   }
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none;
 }
 
 /* ADDITIONAL SANITIZING

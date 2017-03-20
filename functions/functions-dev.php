@@ -83,15 +83,15 @@
 
   // Output formatted post-date in german
   function wpseed_get_the_date_german() {
-    $months_de = ['Januar','Februar','März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
-    return get_the_date('d.').' '.$months_de[intval(get_the_date('m'))-1].' '.get_the_date('Y');
-  }
+    // $months_de = ['January','February','March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    // return get_the_date('d.').' '.$months_de[intval(get_the_date('m'))-1].' '.get_the_date('Y');
+   return get_the_date('l, F j, Y');
+ }
 
   // Edit «read more» button
-  add_filter( 'the_content_more_link', 'modify_read_more_link' );
-  function modify_read_more_link() {
-    return ' <span class="readmore"><a href="' . get_permalink() . '">[mehr...]</a>';
+ add_filter( 'the_content_more_link', 'modify_read_more_link' );
+ function modify_read_more_link() {
+  return ' <span class="readmore"><a href="' . get_permalink() . '">[read more...]</a>';
     // to hide the button use `return;`
-  }
-
+}
 ?>
