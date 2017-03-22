@@ -13,28 +13,42 @@
 
 /* ACCESS CONTROL
 /===================================================== */
-  require('functions/functions-access.php');
+require('functions/functions-access.php');
 
 
 /* DEVELOPER TOOLKIT
 /===================================================== */
-  require('functions/functions-dev.php');
+require('functions/functions-dev.php');
 
 
 /* WP SETUP & SETTINGS
 /===================================================== */
-  require('functions/functions-wpsetup.php');
+require('functions/functions-wpsetup.php');
 
 
 /* BACKEND
 /===================================================== */
-  require('functions/functions-backend.php');
+require('functions/functions-backend.php');
 
 
 /* ELEMENTS
 /===================================================== */
   // Elements for ACF Flexible Content
   // » https://www.advancedcustomfields.com/resources/flexible-content/
-  require('functions/functions-elements.php');
+require('functions/functions-elements.php');
 
+?>
+
+<?php
+/* MENUS
+/===================================================== */
+add_action( 'after_setup_theme', 'wpt_setup' );
+if ( ! function_exists( 'wpt_setup' ) ):
+	function wpt_setup() {  
+		register_nav_menu( 'primary', __( 'Primary navigation', 'wptuts' ) );
+	} endif;
+	?>
+
+<?php // Register custom navigation walker
+require_once('wp-bootstrap-navwalker.php');
 ?>

@@ -18,10 +18,11 @@
   <meta property="og:image" content="<? bloginfo('template_url') ?>/dist/images/ogimg.jpg">
   <meta property="og:image:width" content="">
   <meta property="og:image:height" content="">
-
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -82,6 +83,23 @@
             <span class="hamburger-inner"></span>
           </span>
         </button>
+
+        <nav class="menu main">
+          <?php /* Primary navigation */
+          wp_nav_menu( array(
+            'menu' => 'top_menu',
+            'depth' => 2,
+            'container' => false,
+            'menu_class' => 'nav navbar',
+  //Process nav menu using our custom nav walker
+            'walker' => new wp_bootstrap_navwalker())
+          );
+          ?>
+        </nav><!-- .main -->
+
+
+<?php /*
+
         <nav id="nav_main" class="hiddenmobile">
           <ul>
             <? $frontPageID = get_option('page_on_front') ?>
@@ -94,7 +112,10 @@
               ?>
             </ul>
           </nav>
-          <div class="search-wrap">
-            <button id="btn-search" class="btn btn--search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
-          </div>
-        </div>
+
+*/?>
+
+<div class="search-wrap">
+  <button id="btn-search" class="btn btn--search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
+</div>
+</div>

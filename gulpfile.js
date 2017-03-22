@@ -13,7 +13,7 @@
 
 /* SETTINGS
 /===================================================== */
-var browsersync_proxy = "abac.dev";
+var browsersync_proxy = "truenorth.dev";
 
 
 /* DEPENDENCIES

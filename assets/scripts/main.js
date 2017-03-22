@@ -14,14 +14,14 @@
 /* Hamburger switch
 /------------------------*/
 $(function(){
-  $(document).on('click', '#hamburger', function (event) {
+	$(document).on('click', '#hamburger', function (event) {
     // show overlay
     $('#nav_main').toggleClass('hiddenmobile');
     // switch icon
     $('#hamburger').toggleClass('is-active');
     // prevent content scrolling
     $('html').toggleClass('noscroll');
-  });
+});
 });
 
 
