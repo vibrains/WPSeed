@@ -13,7 +13,7 @@
 
 /* SETTINGS
 /===================================================== */
-var browsersync_proxy = "truenorth.dev";
+var browsersync_proxy = "abac.dev";
 
 
 /* DEPENDENCIES
@@ -118,6 +118,7 @@ gulp.task('watch',  ['browsersync'], function() {
   gulp.watch('*.php', browserSync.reload);
   gulp.watch('templates/*.php', browserSync.reload);
   gulp.watch('functions/*.php', browserSync.reload);
+  gulp.watch('tribe-events/**/*.*', browserSync.reload);
   gulp.watch('*.html', browserSync.reload);
 });
 

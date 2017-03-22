@@ -87,6 +87,4 @@
     }
   }
   add_action( 'admin_head', 'onlyadmin_update', 1 );
-
-
 ?>

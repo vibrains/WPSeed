@@ -31,12 +31,14 @@ nav {
     list-style-type: none;
     display: inline-block!important;
     a {
-      color: $c_nav;
+      color: $c_bright;
       text-transform: uppercase;
       display: inline-block!important;
+      padding: 10px 8px !important;
+      font-size: 16px;
     }
     a:hover {
-      color: $c_nav_hover;
+      color: $c_lightblue;
       text-decoration: none;
       background-color: transparent!important;
     }
@@ -77,8 +79,9 @@ nav {
 }
 .dropdown-menu > li > a {
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 10px 20px!important;
   white-space: normal;
+  font-size: 14px;
 }
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
   background: transparent;

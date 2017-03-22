@@ -24,7 +24,7 @@
 			<path d="M1074 0C673.94.2 303.56 126 0 340h1226V6c-50.1-3.72-100.95-5.8-152-6z" fill="url(#back-rainbow-gradient)"></path>
 		</svg> -->
 
-		<svg viewBox="120 0 200 350" id="front-blue-rainbow" preserveAspectRatio="none">
+<!-- 		<svg viewBox="120 0 200 350" id="front-blue-rainbow" preserveAspectRatio="none">
 			<defs>
 				<linearGradient x1="100%" y1="0%" x2="0%" y2="25%" id="front-blue-gradient">
 					<stop stop-color="#103e5f" offset="0%"></stop>
@@ -33,7 +33,7 @@
 				</linearGradient>
 			</defs>
 			<path d="M0 475h1031V0C630.46 33.34 270 208.52 0 475z" fill="url(#front-blue-gradient)" fill-opacity="0.65"></path>
-		</svg>
+		</svg> -->
 
 <!-- 		<svg viewBox="0 0 1031 475" id="front-rainbow" preserveAspectRatio="none">
 			<defs>
@@ -68,7 +68,7 @@
 <div class="teaser callout">
 	<article>
 		<div class="col-md-9 col-xs-12">
-			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+			<h2>ABAC Membership is free. Sign-Up &amp; and stay in the know!</h2>
 		</div>
 		<div class="newsletter-container">
 			<div class="col-md-3 col-xs-12">
@@ -80,31 +80,48 @@
 
 <div class="content home welcome">
 	<article>
-		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex adipisci ea minus asperiores error esse recusandae ipsa quam vero, tempore quasi vel eveniet optio excepturi quas dolorum saepe cupiditate aspernatur! Consectetur adipisicing elit. Ex adipisci ea minus asperiores error esse recusandae ipsa quam vero</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, voluptatem quia hic fuga pariatur non? Labore, officia voluptatem fuga possimus perspiciatis repellendus eveniet illo. Est iusto enim sequi labore aliquam.</p><br>
+		<h3>Atlanta Broadcast and Advertising Club</h3>
+		<p><strong>The Atlanta Broadcast and Advertising Club sets out to provide superior networking opportunities in all facets of the media business in Atlanta, provide educational opportunities that offer our members insight from industry experts and give back to the local community through fundraising efforts.</strong></p>
+		<p>ABAC was established in the late sixties/early seventies by a local group of broadcast professionals. The founding members sought to provide a professional forum devoted specifically to broadcast concerns, as the Atlanta Ad Club was largely focused on print media in those days. Originally Atlanta Broadcast Executives Club (ABEC), our organization was re-named Atlanta Broadcast Advertising Club in the seventies.</p><br>
 		<a href="http://www.google.com" class="button">Button Number One</a> <a href="http://www.google.com" class="button_alt">Button Number Two</a>
 		<div class="divider"></div>
 	</article>
 </div>
 
 <div class="content home upcoming-events">
-	<article>
+	<article class="homepage-events">
+		<div class="row">
 
-		<div class="col-md-4 col-xs-12"></div>
-		<div class="col-md-4 col-xs-12"></div>
-		<div class="col-md-4 col-xs-12"></div>
+			<?php
+			$events = tribe_get_events( array(
+				'eventDisplay' => 'upcoming',
+				'posts_per_page' => 3,
+				) );
 
-	</article>
-</div>
+			foreach ( $events as $post ) {
+				setup_postdata( $post ); ?>
+				<div id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes() ?> col-md-4 col-xs-12">
+					<div class="inner-event-content">
+						<div class="event-thumbnail">
+							<a class="tribe-event-url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title_attribute() ?>" rel="bookmark">
+								<?php the_post_thumbnail( 'medium' ); ?></a>
+							</div>
+							<?php tribe_get_template_part( 'list/single', 'event' ) ?>
+						</div>
+						<?php echo "</div>";
+					} ?>
+				</div>
+			</div>
+		</article>
+	</div>
 
-<div class="content home">
-	<? if (have_posts() ) : while (have_posts()) : the_post(); ?>
-	<article>
-		<h1><? the_title(); ?></h1>
-		<? the_content(); ?>
-	</article>
-<? endwhile; endif; ?>
+	<div class="content home">
+		<? if (have_posts() ) : while (have_posts()) : the_post(); ?>
+		<article>
+			<h1><? the_title(); ?></h1>
+			<? the_content(); ?>
+		</article>
+	<? endwhile; endif; ?>
 </div>
 
 <div class="flexbox-2-container">

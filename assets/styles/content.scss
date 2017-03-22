@@ -14,7 +14,7 @@
 /===================================================== */
 .content {
   position: relative;
-  width: 80%;
+  width: 90%;
   padding-top: 2rem;
   @include mobile {
     width: 100%;
@@ -61,16 +61,17 @@
   width: 100%;
   height: 4rem;
   padding: 0 10%;
-  background-color: $c_bright;
+  background-color: $c_darkblue;
   box-shadow: $shadow_material_soft_s1;
+  border-bottom: 4px solid $c_bright;
   @include mobile {
     padding: 0 1rem;
   }
   .logo {
-    width: 3rem;
+    width: 14rem;
     height: 3rem;
-    margin-right: 2rem;
-    background-image: url('/wp-content/themes/WPSeed/assets/images/logo.svg');
+    margin-right: 1rem;
+    background-image: url('/wp-content/themes/WPSeed/assets/images/header-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -140,7 +141,15 @@ p {
   background-position: center;
   background-size: cover;
   padding: 10%;
-  padding-top: 200px;
+  padding-top: 100px;
+  .content {
+    width: 60%;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+  }
   p, h2 {
     color: $c_bright;
     text-shadow: 0 1px 2px rgba(0,30,50,.15);
@@ -172,6 +181,7 @@ p {
  background-image: -webkit-radial-gradient(circle farthest-corner at right bottom,$c_darkblue 0,$c_darkblue 28%,$c_lightblue 57%,$c_lightblue 100%);
  background-image: radial-gradient(circle farthest-corner at right bottom,$c_darkblue 0,$c_darkblue 28%,$c_lightblue 57%,$c_lightblue 100%);
  h2 {
+  font-size: 1.2rem;
   padding: 0;
   margin: 0;
 }
@@ -222,7 +232,7 @@ p {
   margin-top: -150px;
 }
 .divider {
-  background: $c_dark;
+  background: $c_darkblue;
   height: 3px;
   margin-right: auto;
   margin-left: auto;
@@ -293,6 +303,57 @@ p {
       height: 15rem;
       background-size: cover;
     }
+  }
+}
+
+
+/* HOMEPAGE UPCOMING EVENTS
+/------------------------*/
+article.homepage-events {
+  padding: 20px;
+
+  .type-tribe_events {
+
+    .inner-event-content {
+      border: 1px solid #ccc;
+      padding: 20px;
+
+      .event-thumbnail {
+        width: 100%;
+        display: block;
+        float: left;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 250px;
+          padding: 0;
+        }
+      }
+
+      .tribe-events-list-event-description {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+h2.homepage-event-title a {
+  color: $c_darkblue;
+  font-size: .8rem;
+  display: block;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 900;
+
+  &:hover {
+    color: $c_lightblue;
   }
 }
 
