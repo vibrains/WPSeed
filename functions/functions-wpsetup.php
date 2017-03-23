@@ -3,7 +3,7 @@
  * WordPress Setup including
  * menus, theme-support settings, general settings and a wp_head cleaner
  *
- * @author      Flurin Dürst
+ * @author      Local Marketing Inc.
  * @version     1.6.2
  * @since       WPSeed 0.1.6
  *

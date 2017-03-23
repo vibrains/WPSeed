@@ -1,11 +1,11 @@
-<?
+<?php
 /**
- * @author      Flurin Dürst
+ * @author      Local Marketing Inc.
  * @version     1.7
  * @since       WPSeed 0.1
  */
 ?>
-<? include 'templates/str-footer.php' ?>
+<?php include 'templates/str-footer.php' ?>
 <script>
 	jQuery(function($) {
 		$('.navbar .dropdown').hover(function() {
@@ -18,7 +18,7 @@
 		});
 	});
 </script>
-<? wp_footer() ?>
+<?php wp_footer() ?>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/scripts/search.js"></script>
 </body>
 </html>

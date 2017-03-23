@@ -2,7 +2,7 @@
 /**
  * Backend related functions
  *
- * @author      Flurin Dürst
+ * @author      Local Marketing Inc.
  * @version     1.1.1
  * @since       WPSeed 0.11.3
  *

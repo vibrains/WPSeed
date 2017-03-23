@@ -5,7 +5,7 @@
  * • WP-Support & WP-Setup
  * • general functions like replacements, translations
  *
- * @author      Flurin Dürst
+ * @author      Local Marketing Inc.
  * @version     1.3
  * @since       WPSeed 0.1
  *

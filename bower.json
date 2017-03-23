@@ -2,7 +2,7 @@
   "name": "wpseed",
   "version": "1.0.0",
   "authors": [
-    "Flurin Dürst <flurin@flurinduerst.ch>"
+    "Local Marketing Inc. <flurin@flurinduerst.ch>"
   ],
   "main": "gulpfile.js",
   "license": "MIT",

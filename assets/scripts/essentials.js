@@ -1,7 +1,7 @@
 /**
  * Essential javascript functions/variables
  *
- * @author      Flurin Dürst
+ * @author      Local Marketing Inc.
  * @version     1.0
  * @since       WPSeed 0.11.0
  *

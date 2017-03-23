@@ -1,21 +1,21 @@
-<?
+<?php
 /**
- * @author      Flurin Dürst
+ * @author      Local Marketing Inc.
  * @version     1.3
  * @since       WPSeed 0.1
  */
 ?>
 <!DOCTYPE html>
-<html <? language_attributes(); ?>>
+<html <?php language_attributes(); ?>>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <!--===== OPEN-GRAPH TAGS =====-->
-  <meta property="og:title" content="<? bloginfo('name'); ?>">
-  <meta property="og:description" content="<? bloginfo('description'); ?>">
-  <meta property="og:url" content="<? bloginfo('url'); ?>">
-  <meta property="og:image" content="<? bloginfo('template_url') ?>/dist/images/ogimg.jpg">
+  <meta property="og:title" content="<?php bloginfo('name'); ?>">
+  <meta property="og:description" content="<?php bloginfo('description'); ?>">
+  <meta property="og:url" content="<?php bloginfo('url'); ?>">
+  <meta property="og:image" content="<?php bloginfo('template_url') ?>/dist/images/ogimg.jpg">
   <meta property="og:image:width" content="">
   <meta property="og:image:height" content="">
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
@@ -29,7 +29,7 @@
         <!--[if IE]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]--><script>document.documentElement.className = 'js';</script>
-      <? wp_head(); ?>
+      <?php wp_head(); ?>
     </head>
     <body>
       <svg class="hidden">
@@ -75,7 +75,7 @@
         </div>
       </div><!-- /search -->
       <div class="top">
-        <a href="<?= get_bloginfo('url'); ?>">
+        <a href="<?php home_url(); ?>">
           <div class="logo"></div>
         </a>
         <button class="hamburger--squeeze" id="hamburger" type="button">
@@ -102,8 +102,8 @@
 
         <nav id="nav_main" class="hiddenmobile">
           <ul>
-            <? $frontPageID = get_option('page_on_front') ?>
-            <? wp_list_pages([
+            <?php $frontPageID = get_option('page_on_front') ?>
+            <?php wp_list_pages([
               'depth' => 1,
               'sort_column' => 'menu_order',
               'title_li' => '',

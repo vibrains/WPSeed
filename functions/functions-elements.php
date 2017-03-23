@@ -3,7 +3,7 @@
  * Functions to output ACF flexible elements.
  * WPSeed_Text and WPSeed_Gallery are placeholder presets.
  *
- * @author     Flurin Dürst
+ * @author     Local Marketing Inc.
  * @version    1.1
  * @since      WPSeed 0.10.0
  *

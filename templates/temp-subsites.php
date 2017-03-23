@@ -1,51 +1,51 @@
-<?
+<?php
 /**
  * Template for Sites with Sub-Sites.
  *
- * @author      Flurin Dürst
+ * @author      Local Marketing Inc.
  * @version     1.4.1
  * @since       WPSeed 0.2
  *
  */
 ?>
-<? /* Template Name: Subsites */ ?>
+<?php /* Template Name: Subsites */ ?>
 
-<? get_header(); ?>
+<?php get_header(); ?>
 
 <!-- content » subsites -->
 
-  <div class="content subsites">
+<div class="content subsites">
 
-    <? if (have_posts() ) : while (have_posts()) : the_post(); ?>
-      <div class="summary">
-        <h1><? the_title(); ?></h1>
-        <p><? the_content(); ?><p>
+  <?php if (have_posts() ) : while (have_posts()) : the_post(); ?>
+    <div class="summary">
+      <h1><?php the_title(); ?></h1>
+      <p><?php the_content(); ?><p>
       </div>
-    <? endwhile; endif; ?>
+    <?php endwhile; endif; ?>
 
-    <? // Child Pages
+    <?php // Child Pages
     $args = [
-      'post_type'      => 'page',
-      'posts_per_page' => -1,
-      'post_parent'    => $post->ID,
-      'order'          => 'ASC',
-      'orderby'        => 'menu_order'
-     ];
+    'post_type'      => 'page',
+    'posts_per_page' => -1,
+    'post_parent'    => $post->ID,
+    'order'          => 'ASC',
+    'orderby'        => 'menu_order'
+    ];
     $query = new WP_Query( $args );
     if ( $query->have_posts() ) : ?>
-      <? while ( $query->have_posts() ) : $query->the_post(); ?>
+    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-        <article>
-          <h2><? the_title(); ?></h2>
-          <? if (has_post_thumbnail()) : ?>
-            <div class="thumbnail" style="background-image: url(<? the_post_thumbnail_url() ?>)"></div>
-          <? endif ?>
-          <p><? the_content(); ?></p>
-        </article>
+      <article>
+        <h2><?php the_title(); ?></h2>
+        <?php if (has_post_thumbnail()) : ?>
+          <div class="thumbnail" style="background-image: url(<?php the_post_thumbnail_url() ?>)"></div>
+        <?php endif ?>
+        <p><?php the_content(); ?></p>
+      </article>
 
-      <? endwhile; ?>
-    <? endif; wp_reset_query(); ?>
+    <?php endwhile; ?>
+  <?php endif; wp_reset_query(); ?>
 
-  </div>
+</div>
 
-<? get_footer(); ?>
+<?php get_footer(); ?>

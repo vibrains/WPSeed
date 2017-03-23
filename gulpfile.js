@@ -4,7 +4,7 @@
  * Desciption:  Clean gulpfile for web development workflow with browsersync, compiling/optimization of sass, javascript and images from assets to dist
  * Usage:       gulp (to run the whole process), gulp watch (to watch for changes and compile if anything was modified)
  *
- * Author:      Flurin Dürst (https://flurinduerst.ch)
+ * Author:      Local Marketing Inc. (https://flurinduerst.ch)
  *
  * Version:     1.3.1
  *

@@ -1,15 +1,15 @@
-<?
+<?php
 /**
  * Template for the Home-Site containing a teaser-image.
  *
- * @author      Flurin Dürst
+ * @author      Local Marketing Inc.
  * @version     1.1.1
  * @since       WPSeed 0.2
  *
  */
 ?>
-<? /* Template Name: Home */ ?>
-<? get_header(); ?>
+<?php /* Template Name: Home */ ?>
+<?php get_header(); ?>
 <!-- content » home -->
 <div id="main-content">
 	<header class="nav-animation-element">
@@ -56,7 +56,7 @@
 	</header>
 </div>
 
-<div class="teaser" style="background-image: url(<? the_post_thumbnail_url('large', $post->ID) ?>)">
+<div class="teaser" style="background-image: url(<?php the_post_thumbnail_url('large', $post->ID) ?>)">
 	<div class="content home">
 		<article>
 			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
@@ -116,45 +116,45 @@
 	</div>
 
 	<div class="content home">
-		<? if (have_posts() ) : while (have_posts()) : the_post(); ?>
-		<article>
-			<h1><? the_title(); ?></h1>
-			<? the_content(); ?>
-		</article>
-	<? endwhile; endif; ?>
-</div>
+		<?php if (have_posts() ) : while (have_posts()) : the_post(); ?>
+			<article>
+				<h1><?php the_title(); ?></h1>
+				<?php the_content(); ?>
+			</article>
+		<?php endwhile; endif; ?>
+	</div>
 
-<div class="flexbox-2-container">
+	<div class="flexbox-2-container">
+		<div class='flexbox-container'>
+			<div class='flexbox'>
+				<div class='flexbox-item flexbox-2 first-item'>
+					<img src='/wp-content/themes/WPSeed/assets/images/cta-icon.png'/>
+					<h2>Lorem ipsum dolor sit amet</h2>
+					<p class="flexbox-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quos vitae, aliquid consectetur asperiores nihil tempore excepturi optio, pariatur atque iusto, corporis esse placeat. Nemo praesentium maxime laboriosam labore natus!</p>
+				</div>
+				<div class='flexbox-item flexbox-2 last-item'>
+					<img src='/wp-content/themes/WPSeed/assets/images/integrations-icon.png'/>
+					<h2>Lorem ipsum dolor sit amet</h2>
+					<p class="flexbox-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nisi, rem id amet! Dolor eligendi neque, iure quia maiores aspernatur iste quod eius molestias! Eum obcaecati asperiores nisi velit. Aut.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class='flexbox-container'>
 		<div class='flexbox'>
-			<div class='flexbox-item flexbox-2 first-item'>
+			<div class='flexbox-item first-item'>
 				<img src='/wp-content/themes/WPSeed/assets/images/cta-icon.png'/>
-				<h2>Lorem ipsum dolor sit amet</h2>
-				<p class="flexbox-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quos vitae, aliquid consectetur asperiores nihil tempore excepturi optio, pariatur atque iusto, corporis esse placeat. Nemo praesentium maxime laboriosam labore natus!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 			</div>
-			<div class='flexbox-item flexbox-2 last-item'>
+			<div class='flexbox-item'>
 				<img src='/wp-content/themes/WPSeed/assets/images/integrations-icon.png'/>
-				<h2>Lorem ipsum dolor sit amet</h2>
-				<p class="flexbox-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nisi, rem id amet! Dolor eligendi neque, iure quia maiores aspernatur iste quod eius molestias! Eum obcaecati asperiores nisi velit. Aut.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+			</div>
+			<div class='flexbox-item'>
+				<img src='/wp-content/themes/WPSeed/assets/images/pricing.png'/>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 			</div>
 		</div>
 	</div>
-</div>
-
-<div class='flexbox-container'>
-	<div class='flexbox'>
-		<div class='flexbox-item first-item'>
-			<img src='/wp-content/themes/WPSeed/assets/images/cta-icon.png'/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-		</div>
-		<div class='flexbox-item'>
-			<img src='/wp-content/themes/WPSeed/assets/images/integrations-icon.png'/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-		</div>
-		<div class='flexbox-item'>
-			<img src='/wp-content/themes/WPSeed/assets/images/pricing.png'/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-		</div>
-	</div>
-</div>
-<? get_footer(); ?>
+	<?php get_footer(); ?>

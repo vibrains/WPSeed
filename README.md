@@ -105,7 +105,7 @@ the two available classes `mobile` and `desktop` perform as followed (with defau
 
 
 ## About
-Author: Flurin Dürst
+Author: Local Marketing Inc.
 
 Contact: [flurin@flurinduerst.ch](mailto:flurin@flurinduerst.ch)
 

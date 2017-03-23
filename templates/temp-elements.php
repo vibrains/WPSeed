@@ -1,36 +1,36 @@
-<?
+<?php
 /**
  * Template for ACF flexible elements
  *
- * @author      Flurin Dürst
+ * @author      Local Marketing Inc.
  * @version     1.0.1
  * @since       WPSeed 0.10.0
  *
  */
 ?>
-<? /* Template Name: Elements */ ?>
+<?php /* Template Name: Elements */ ?>
 
-<? get_header(); ?>
+<?php get_header(); ?>
 
 <!-- content » elements -->
 
-	<div class="content elements">
+<div class="content elements">
 
-		<? if (have_posts()): while (have_posts()): the_post() ?>
+	<?php if (have_posts()): while (have_posts()): the_post() ?>
 
-			<? elements_teaser() ?>
+		<?php elements_teaser() ?>
 
-			<? if (get_the_content() != ''): ?>
-				<section class="text intro">
-					<h1><? the_title(); ?></h1>
-					<? the_content(); ?>
-				</section>
-			<? endif; ?>
+		<?php if (get_the_content() != ''): ?>
+			<section class="text intro">
+				<h1><?php the_title(); ?></h1>
+				<?php the_content(); ?>
+			</section>
+		<?php endif; ?>
 
-			<? elements() ?>
+		<?php elements() ?>
 
-		<? endwhile; endif ?>
+	<?php endwhile; endif ?>
 
-	</div>
+</div>
 
-<? get_footer() ?>
+<?php get_footer() ?>

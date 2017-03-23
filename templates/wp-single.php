@@ -1,33 +1,33 @@
-<?
+<?php
 /**
  * The template for displaying all single posts and attachments
  *
- * @author      Flurin Dürst
+ * @author      Local Marketing Inc.
  * @version     1.2.3
  * @since       WPegg 0.18
  */
 ?>
 
-<? get_header(); ?>
+<?php get_header(); ?>
 
 <!-- content » single post -->
 
 <div class="content post">
-  <? if (have_posts() ) : while (have_posts()) : the_post(); ?>
+  <?php if (have_posts() ) : while (have_posts()) : the_post(); ?>
   <article>
     <div class="col-xs-8">
-      <h2><? the_title(); ?></h2>
-      <div class="postinfo"><?= wpseed_get_the_date_german(); ?></div>
-      <? if (has_post_thumbnail()) : ?>
-      <div class="thumbnail" style="background-image: url(<? the_post_thumbnail_url() ?>)"></div>
-    <? endif ?>
-    <? the_content(); ?>
+      <h2><?php the_title(); ?></h2>
+      <div class="postinfo"><?php= wpseed_get_the_date_german(); ?></div>
+      <?php if (has_post_thumbnail()) : ?>
+      <div class="thumbnail" style="background-image: url(<?php the_post_thumbnail_url() ?>)"></div>
+    <?php endif ?>
+    <?php the_content(); ?>
   </div>
 </article>
-<? endwhile; endif; ?>
+<?php endwhile; endif; ?>
 
 <div class="col-xs-3 col-xs-offset-1">
   <?php get_sidebar(); ?>
 </div>
 </div>
-<? get_footer(); ?>
+<?php get_footer(); ?>
