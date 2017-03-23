@@ -75,7 +75,7 @@
         </div>
       </div><!-- /search -->
       <div class="top">
-        <a href="<?php home_url(); ?>">
+        <a href="<?php echo get_home_url(); ?>">
           <div class="logo"></div>
         </a>
         <button class="hamburger--squeeze" id="hamburger" type="button">
