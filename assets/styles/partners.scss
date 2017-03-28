@@ -1,0 +1,15 @@
+/* HOMEPAGE PARTNERS SECTION
+/------------------------*/
+.our-partners ul {
+	text-align: center;
+	list-style-type: none;
+	li {
+		img {
+			height: 70px;
+			width: auto;
+			opacity: 1;
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+	}
+}

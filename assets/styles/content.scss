@@ -14,8 +14,12 @@
 /===================================================== */
 .content {
   position: relative;
-  max-width: 1300px;
+  max-width: 67.141em;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 2rem;
+  padding-bottom: 2rem;
+  overflow: auto;
   @include mobile {
     width: 100%;
     padding: 1rem;
@@ -306,75 +310,14 @@ p {
   }
 }
 
-
-/* HOMEPAGE UPCOMING EVENTS
+/* HOMEPAGE INSTAGRAM FEED
 /------------------------*/
-article.homepage-events {
-  padding: 20px;
+.instagram-feed-bg {
+  width: 100%;
 
-  .type-tribe_events {
-
-    .inner-event-content {
-      border: 1px solid #ccc;
-      padding: 20px;
-
-      .event-thumbnail {
-        width: 100%;
-        display: block;
-        float: left;
-        img {
-          object-fit: cover;
-          width: 100%;
-          height: 250px;
-          padding: 0;
-        }
-      }
-
-      .tribe-events-list-event-description {
-        p {
-          font-size: 14px;
-        }
-      }
-    }
+  .content {
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 2em;
   }
-}
-
-h2.homepage-event-title a {
-  color: $c_darkblue;
-  font-size: .8rem;
-  display: block;
-  float: left;
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  font-weight: 900;
-
-  &:hover {
-    color: $c_lightblue;
-  }
-}
-
-/* FOOTER
-/===================================================== */
-.skyline {
-  width: 100%;
-  height: 115px;
-  top: -115px;
-  left: 0;
-  background-image: url(/wp-content/themes/WPSeed/assets/images/skyline-landmarks.png),url(/wp-content/themes/WPSeed/assets/images/skyline-generic.png);
-  background-repeat: no-repeat,repeat-x;
-  background-position: top,bottom;
-  background-size: 1280px 115px,1280px 26px;
-}
-.footer {
-  width: 100%;
-  margin-top: auto;
-  padding: 1.5rem;
-  font-size: .8rem;
-  color: $c_grey;
-  background:#f3f5f8;;
-  // box-shadow: $shadow_material_s1;
 }

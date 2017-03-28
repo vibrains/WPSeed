@@ -88,73 +88,157 @@
 	</article>
 </div>
 
+<!--UPCCOMING EVENTS LOOP-->
 <div class="content home upcoming-events">
 	<article class="homepage-events">
-		<div class="row">
-
+		<div class="row is-flex">
+			<div class="col-xs-12">
+				<span class="section-title text-center">Browse Upcoming Events</span>
+			</div>
 			<?php
 			$events = tribe_get_events( array(
 				'eventDisplay' => 'upcoming',
-				'posts_per_page' => 3,
+				'posts_per_page' => 4,
 				) );
 
 			foreach ( $events as $post ) {
 				setup_postdata( $post ); ?>
-				<div id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes() ?> col-md-4 col-xs-12">
+				<div id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes() ?> col-md-3 col-xs-12">
 					<div class="inner-event-content">
 						<div class="event-thumbnail">
 							<a class="tribe-event-url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title_attribute() ?>" rel="bookmark">
 								<?php the_post_thumbnail( 'medium' ); ?></a>
 							</div>
-							<?php tribe_get_template_part( 'list/single', 'event' ) ?>
-						</div>
-						<?php echo "</div>";
-					} ?>
-				</div>
-			</div>
-		</article>
-	</div>
 
-	<div class="content home">
-		<?php if (have_posts() ) : while (have_posts()) : the_post(); ?>
-			<article>
-				<h1><?php the_title(); ?></h1>
-				<?php the_content(); ?>
+							<!-- Event Title -->
+							<?php do_action( 'tribe_events_before_the_event_title' ) ?>
+
+							<h2 class="tribe-events-list-event-title homepage-event-title">
+								<a class="tribe-event-url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title_attribute() ?>" rel="bookmark"><?php echo tribe_get_start_date ( $event_id, $display_time = false); ?><span>&nbsp;|&nbsp;</span>
+									<?php the_title() ?>
+								</a>
+							</h2>
+							<?php do_action( 'tribe_events_after_the_event_title' ) ?>
+
+							<?php //tribe_get_template_part( 'list/single', 'event' ) ?>
+
+							<div class="tribe-events-list-event-description tribe-events-content">
+								<p>
+									<?php
+									echo wp_trim_words( get_the_content(), 24, '...' );
+									?></p>
+
+									<?php //echo tribe_events_get_the_excerpt( null, wp_kses_allowed_html( 'post' ) ); ?>
+									<a class="button" href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more" rel="bookmark"><?php esc_html_e( 'View Event', 'the-events-calendar' ) ?> &raquo;</a>
+								</div><!-- .tribe-events-list-event-description -->
+							</div>
+							<?php echo "</div>";
+						} ?>
+					</div>
+				</div>
 			</article>
-		<?php endwhile; endif; ?>
-	</div>
-
-	<div class="flexbox-2-container">
-		<div class='flexbox-container'>
-			<div class='flexbox'>
-				<div class='flexbox-item flexbox-2 first-item'>
-					<img src='/wp-content/themes/WPSeed/assets/images/cta-icon.png'/>
-					<h2>Lorem ipsum dolor sit amet</h2>
-					<p class="flexbox-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quos vitae, aliquid consectetur asperiores nihil tempore excepturi optio, pariatur atque iusto, corporis esse placeat. Nemo praesentium maxime laboriosam labore natus!</p>
-				</div>
-				<div class='flexbox-item flexbox-2 last-item'>
-					<img src='/wp-content/themes/WPSeed/assets/images/integrations-icon.png'/>
-					<h2>Lorem ipsum dolor sit amet</h2>
-					<p class="flexbox-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nisi, rem id amet! Dolor eligendi neque, iure quia maiores aspernatur iste quod eius molestias! Eum obcaecati asperiores nisi velit. Aut.</p>
-				</div>
-			</div>
 		</div>
-	</div>
 
-	<div class='flexbox-container'>
-		<div class='flexbox'>
-			<div class='flexbox-item first-item'>
-				<img src='/wp-content/themes/WPSeed/assets/images/cta-icon.png'/>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-			</div>
-			<div class='flexbox-item'>
-				<img src='/wp-content/themes/WPSeed/assets/images/integrations-icon.png'/>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-			</div>
-			<div class='flexbox-item'>
-				<img src='/wp-content/themes/WPSeed/assets/images/pricing.png'/>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-			</div>
-		</div>
-	</div>
-	<?php get_footer(); ?>
+		<!--RECENT POSTS LOOP-->
+		<div class="recent-posts-bg">
+			<article class="content home recent-posts">
+				<div class="col-xs-12">
+					<span class="section-title text-center">Browse Our Latest Blog Posts</span>
+				</div>
+				<?php
+				query_posts(array(
+					'post_type' => array('post', 'event'),
+					'showposts' => 4
+					) );
+					?>
+					<?php while (have_posts()) : the_post(); ?>
+						<div class="col-md-6 col-xs-12">
+							<div class="inner-post-content">
+								<div class="post-thumbnail">
+									<a href="<?php echo get_permalink(); ?>"><?php
+										if ( has_post_thumbnail() ) {  
+											the_post_thumbnail();
+										}
+										?></a>
+									</div>
+									<div class="post-title">
+										<a style="float: none; display: inline; border-bottom: none;" href="<?php echo get_permalink(); ?>"><?php the_title();?></a>
+									</div>
+									<p class="post-excerpt">
+										<?php echo wp_trim_words( get_the_content(), 15 ); ?>
+									</p>
+									<li>
+										<a class="read-more-link" href="<?php echo get_permalink(); ?>">read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+									</li>
+								</div>
+							</div>
+						<?php endwhile;?>
+					</article>
+				</div>
+
+				<div class="instagram-feed-bg">
+					<article class="content home instagram-feed">
+						<?php 
+						echo do_shortcode ('[instagram-feed]');
+						?>
+					</article>
+				</div>
+
+				<div class="our-partners-bg">
+					<article class="content home our-partners">
+						<div class="col-xs-12">
+							<span class="section-title text-center">Our Partners</span>
+							<ul>
+								<li>
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/hot-107-9-atlanta-logo.png" alt="Hot 107.9 Atlanta">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/kantar-media-logo.png" alt="Kantar Media">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/radio-one-logo.png" alt="Radio One">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/gen-media-partners-logo.jpg" alt="Gen Media Partners">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/kicks-fm-logo.png" alt="Kick FM">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/ninety-nine-x-logo.png" alt="Ninety Nine X">
+								</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+
+<!-- 				<div class="flexbox-2-container">
+					<div class="flexbox-container">
+						<div class="flexbox">
+							<div class="flexbox-item flexbox-2 first-item">
+								<img src='/wp-content/themes/WPSeed/assets/images/cta-icon.png'/>
+								<h2>Lorem ipsum dolor sit amet</h2>
+								<p class="flexbox-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quos vitae, aliquid consectetur asperiores nihil tempore excepturi optio, pariatur atque iusto, corporis esse placeat. Nemo praesentium maxime laboriosam labore natus!</p>
+							</div>
+							<div class="flexbox-item flexbox-2 last-item">
+								<img src='/wp-content/themes/WPSeed/assets/images/integrations-icon.png'/>
+								<h2>Lorem ipsum dolor sit amet</h2>
+								<p class="flexbox-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nisi, rem id amet! Dolor eligendi neque, iure quia maiores aspernatur iste quod eius molestias! Eum obcaecati asperiores nisi velit. Aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam impedit enim praesentium, minus harum vitae sint modi maiores. Veniam unde amet perspiciatis excepturi praesentium quaerat deserunt dicta, officiis necessitatibus sequi.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="flexbox-container">
+					<div class="flexbox">
+						<div class="flexbox-item first-item">
+							<img src='/wp-content/themes/WPSeed/assets/images/cta-icon.png'/>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
+						<div class="flexbox-item">
+							<img src='/wp-content/themes/WPSeed/assets/images/integrations-icon.png'/>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
+						<div class="flexbox-item">
+							<img src='/wp-content/themes/WPSeed/assets/images/pricing.png'/>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
+					</div>
+				</div> -->
+				<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+				<script>
+					$(function() {
+						$('.inner-event-content').matchHeight();
+					}); 
+				</script>
+				<?php get_footer(); ?>

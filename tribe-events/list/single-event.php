@@ -35,7 +35,7 @@ $organizer = tribe_get_organizer();
 <?php do_action( 'tribe_events_before_the_event_title' ) ?>
 
 <h2 class="tribe-events-list-event-title homepage-event-title">
-	<a class="tribe-event-url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title_attribute() ?>" rel="bookmark"><?php echo tribe_get_start_time ( $event_id, 'F d'); ?><span>&nbsp;|&nbsp;</span>
+	<a class="tribe-event-url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title_attribute() ?>" rel="bookmark"><?php echo tribe_get_start_date ( $event_id, $display_time = false); ?><span>&nbsp;|&nbsp;</span>
 		<?php the_title() ?>
 	</a>
 </h2>
@@ -45,12 +45,10 @@ $organizer = tribe_get_organizer();
 <?php do_action( 'tribe_events_before_the_meta' ) ?>
 <div class="tribe-events-event-meta">
 	<div class="author <?php echo esc_attr( $has_venue_address ); ?>">
-
 		<!-- Schedule & Recurrence Details -->
 		<div class="tribe-event-schedule-details">
 			<?php //echo tribe_events_event_schedule_details() ?>
 		</div>
-
 		<?php if ( $venue_details ) : ?>
 			<!-- Venue Display Info -->
 			<div class="tribe-events-venue-details">
@@ -62,7 +60,6 @@ $organizer = tribe_get_organizer();
 				?>
 			</div> <!-- .tribe-events-venue-details -->
 		<?php endif; ?>
-
 	</div>
 </div><!-- .tribe-events-event-meta -->
 <?php do_action( 'tribe_events_after_the_meta' ) ?>
@@ -72,9 +69,6 @@ $organizer = tribe_get_organizer();
 
 <!-- Event Content -->
 <?php do_action( 'tribe_events_before_the_content' ) ?>
-<div class="tribe-events-list-event-description tribe-events-content">
-	<?php echo tribe_events_get_the_excerpt( null, wp_kses_allowed_html( 'post' ) ); ?>
-	<a class="button" href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more" rel="bookmark"><?php esc_html_e( 'Read more', 'the-events-calendar' ) ?> &raquo;</a>
-</div><!-- .tribe-events-list-event-description -->
+
 <?php
 do_action( 'tribe_events_after_the_content' );

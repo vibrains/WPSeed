@@ -51,4 +51,3 @@ if ( ! function_exists( 'wpt_setup' ) ):
 
 <?php // Register custom navigation walker
 require_once('wp-bootstrap-navwalker.php');
-?>

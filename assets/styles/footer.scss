@@ -1,0 +1,41 @@
+/* FOOTER
+/===================================================== */
+.skyline {
+  width: 100%;
+  height: 142px;
+  top: -115px;
+  left: 0;
+  background-image: url(/wp-content/themes/WPSeed/assets/images/skyline-landmarks.png),url(/wp-content/themes/WPSeed/assets/images/skyline-generic.png);
+  background-repeat: no-repeat,repeat-x;
+  background-position: top,bottom;
+  background-size: 1280px 138px,1280px 26px;
+}
+.ferris-wheel {
+  height: 0;
+  bottom: 0;
+  margin-left: -270px;
+  img {
+    bottom: 0;
+    left: 50%;
+    width: 90px;
+    height: 90px;
+    margin: -80px 0 0 -40px;
+    -webkit-animation:spin 18s linear infinite;
+    -moz-animation:spin 18s linear infinite;
+    animation:spin 18s linear infinite;
+  }
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.footer {
+  width: 100%;
+  margin-top: auto;
+  padding: 1.5rem;
+  font-size: .8rem;
+  color: $c_grey;
+  background:#f3f5f8;;
+  // box-shadow: $shadow_material_s1;
+}

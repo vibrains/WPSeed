@@ -17,7 +17,7 @@
   <article>
     <div class="col-xs-8">
       <h2><?php the_title(); ?></h2>
-      <div class="postinfo"><?php= wpseed_get_the_date_german(); ?></div>
+
       <?php if (has_post_thumbnail()) : ?>
       <div class="thumbnail" style="background-image: url(<?php the_post_thumbnail_url() ?>)"></div>
     <?php endif ?>

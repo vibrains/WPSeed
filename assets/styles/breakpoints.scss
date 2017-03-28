@@ -1,0 +1,22 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and down) */
+@media (max-width: 768px) {}
+
+/* Medium devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+	.type-tribe_events .inner-event-content {
+		margin-bottom: 20px;
+	}
+	article.homepage-events .type-tribe_events .inner-event-content a.button {
+		position: relative;
+		margin: 0;
+	}
+	article.homepage-events .type-tribe_events p {
+		margin-bottom: 20px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and down) */
+@media (max-width: 1200px) {}

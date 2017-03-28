@@ -29,7 +29,6 @@
     wp_enqueue_style('wpseed/styles', get_template_directory_uri() . '/dist/style.min.css', false, null);
     # fonts
     wp_enqueue_style('google/fonts', 'https://fonts.googleapis.com/css?family=Ubuntu:400,500,700', false, null);
-    wp_enqueue_style('google/fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,700', false, null);
   }
   add_action('wp_enqueue_scripts', 'wpseed_enqueue_scripts_and_styles');
 

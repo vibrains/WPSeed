@@ -24,7 +24,6 @@
   padding: 0;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: contain;
   transition-timing-function: cubic-bezier(.5, .5, .5, 1.1) !important;
   -webkit-tap-highlight-color: transparent;
 }
@@ -35,7 +34,7 @@ html {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  font-family: $font_name, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: $size;
   @include vpw_min($scaling_breakpoint) {
     font-size: $scaling_breakpoint / 100 * stripunit($size);
@@ -51,7 +50,7 @@ html {
 
 body  {
   // used as wrapper for sticky footer
-  font-family: $font_name;
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,8 +59,16 @@ body  {
   font-weight: $font_weight;
   line-height: $line_height;
   background: #fff;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "pnum";
+  font-variant-numeric: proportional-nums;
 }
-
+p {
+  color: #6f7c82;
+  font-size: 15px;
+  line-height: 25px;
+  padding-right: 15px;
+}
 a {
   color: $c_link;
   text-decoration: none;
@@ -70,6 +77,10 @@ a {
   &:hover {
     color: $c_link_hover;
   }
+}
+.page a {
+  color: $c_lightblue;
+  font-weight: 600;
 }
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
   outline: none;
