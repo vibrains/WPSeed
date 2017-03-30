@@ -23,6 +23,8 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var rename = require("gulp-rename");
+//sourcemaps
+var sourcemaps = require('gulp-sourcemaps');
 // css
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
@@ -66,10 +68,12 @@ gulp.task('browsersync', function() {
 // to:      dist/style.min.css
 gulp.task('css', function() {
   gulp.src('assets/styles/main.scss')
+  .pipe(sourcemaps.init())
   .pipe(plumber({errorHandler: notify.onError("<%= error.message %>")}))
   .pipe(sass())
   .pipe(autoprefixer('last 2 version', { cascade: false }))
   .pipe(cleanCSS())
+  .pipe(sourcemaps.write())
   .pipe(rename('dist/style.min.css'))
   .pipe(gulp.dest('./'))
   .pipe(browserSync.stream());
