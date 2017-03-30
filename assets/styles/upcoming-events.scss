@@ -2,22 +2,28 @@
 /------------------------*/
 article.homepage-events {
   padding: 20px;
+  padding-bottom: 2rem;
   .type-tribe_events {
     p {
       float: left;
       display: block;
       width: 100%;
-      margin-bottom: 60px;
+      position: relative;
+      margin-bottom: 20px;
     }
     .inner-event-content {
+      .event-text {
+        padding: 20px;
+        float: left;
+        display: block;
+      }
       border: 1px solid #ccc;
-      padding: 20px;
       a.button {
         bottom: 0;
-        position: absolute;
+        // position: absolute;
         left: 0;
-        margin: 20px;
-        margin-left: 35px;
+        // margin: 20px;
+        // margin-left: 35px;
       }
       .event-thumbnail {
         display: block;
@@ -29,7 +35,7 @@ article.homepage-events {
           left: 0;
           top: 0;
           width: 100%;
-          height: 250px;
+          height: 200px;
           object-fit: cover;
           transition: all .2s cubic-bezier(0.165,.84,.44,1);
           overflow: hidden;
@@ -46,7 +52,7 @@ article.homepage-events {
 h2.homepage-event-title a, .post-title a {
   font-family: 'Montserrat', sans-serif;
   color: $c_darkblue;
-  font-size: .8rem;
+  font-size: 16px;
   display: block;
   float: left;
   width: 100%;

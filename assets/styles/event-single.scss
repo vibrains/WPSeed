@@ -1,0 +1,14 @@
+.tribe-events-single {
+	.tribe-events-event-meta .tribe-events-meta-group {
+		border: 1px solid #ccc;
+	}
+}
+
+//iCal Export Buttons
+.tribe-events-cal-links {
+	float: right;
+	width: 100%;
+	.tribe-events-gcal.tribe-events-button {
+		margin: 0;
+	}
+}

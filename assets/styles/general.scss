@@ -51,10 +51,11 @@ html {
 body  {
   // used as wrapper for sticky footer
   font-family: 'Open Sans', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
+   margin: 0;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // min-height: 100vh;
   font-size: $font_size;
   font-weight: $font_weight;
   line-height: $line_height;
@@ -65,9 +66,8 @@ body  {
 }
 p {
   color: #6f7c82;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 25px;
-  padding-right: 15px;
 }
 a {
   color: $c_link;

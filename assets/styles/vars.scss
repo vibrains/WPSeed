@@ -17,7 +17,7 @@
 
 /* SIZE/SCALING
 /------------------------*/
-$size:                2vw;          // scales all `rem` based elements
+$size:               2vw;          // scales all `rem` based elements
 $size_mobile:         $size * 2.2;  // scaling filter for mobile viewport
 $scaling_breakpoint:  1200px;       // scaling of all `rem` based elements stops here
 $desktop_min:         800px;        // Desktop/Mobile Breakpoint
@@ -71,8 +71,8 @@ $desktop_min:         800px;        // Desktop/Mobile Breakpoint
   span.section-title {
     color: $c_darkblue;
     display: block;
-    margin: 0 0 1.5rem 0;
-    font-size: 1.4rem;
+    margin: 0 0 45px 0;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: -.5px;
@@ -80,9 +80,9 @@ $desktop_min:         800px;        // Desktop/Mobile Breakpoint
       display: inline-block;
       content: ' ';
       background-image: url("/wp-content/themes/WPSeed/assets/images/calendar-icon.svg");
-      height: 100px;
-      width: 100px;
-      margin-bottom: -40px;
+      height: 80px;
+      width: 80px;
+      margin-bottom: -30px;
       background-size: 50%;
     }
   }
@@ -93,17 +93,16 @@ a.button {
   font-family: $font_name;
   white-space: nowrap;
   display: inline-block;
-  height: 40px;
   border-radius: 3px;
   cursor: pointer;
-  line-height: 40px;
-  padding: 0 14px;
+  line-height: 22px;
+  padding: 10px 14px;
   // box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 2px rgba(0,0,0,.08);
   background: #3d77ea;
   border-radius: 3px;
-  font-size: 0.7rem;
-  font-weight: 700;
-  // text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
   color: $c_bright;
   text-decoration: none;
   transition: all .15s ease;
@@ -117,15 +116,14 @@ a.button_alt {
   font-family: $font_name;
   white-space: nowrap;
   display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 14px;
+  line-height: 22px;
+  padding: 10px 14px;
   // box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 2px rgba(0,0,0,.08);
   background: $c_dark;
   border-radius: 3px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  // text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
   color: $c_bright;
   text-decoration: none;
   transition: all .15s ease;

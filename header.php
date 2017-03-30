@@ -9,7 +9,7 @@
 <html <?php language_attributes(); ?>>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, shrink-to-fit=no" />
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <!--===== OPEN-GRAPH TAGS =====-->
   <meta property="og:title" content="<?php bloginfo('name'); ?>">
@@ -96,7 +96,6 @@
           );
           ?>
         </nav><!-- .main -->
-
 
 <?php /*
 

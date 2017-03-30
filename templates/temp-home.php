@@ -67,12 +67,14 @@
 
 <div class="teaser callout">
 	<article>
-		<div class="col-md-9 col-xs-12">
-			<h2>ABAC Membership is free. Sign-Up &amp; and stay in the know!</h2>
-		</div>
-		<div class="newsletter-container">
-			<div class="col-md-3 col-xs-12">
-				<input type="text" placeholder="Email">
+		<div class="row">
+			<div class="col-md-9 col-xs-12">
+				<h2>ABAC Membership is free. Sign-Up &amp; and stay in the know!</h2>
+			</div>
+			<div class="newsletter-container">
+				<div class="col-md-3 col-xs-12">
+					<input type="text" placeholder="Email">
+				</div>
 			</div>
 		</div>
 	</article>
@@ -98,12 +100,12 @@
 			<?php
 			$events = tribe_get_events( array(
 				'eventDisplay' => 'upcoming',
-				'posts_per_page' => 4,
+				'posts_per_page' => 3,
 				) );
 
 			foreach ( $events as $post ) {
 				setup_postdata( $post ); ?>
-				<div id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes() ?> col-md-3 col-xs-12">
+				<div id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes() ?> col-md-4 col-xs-12">
 					<div class="inner-event-content">
 						<div class="event-thumbnail">
 							<a class="tribe-event-url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title_attribute() ?>" rel="bookmark">
@@ -111,26 +113,26 @@
 							</div>
 
 							<!-- Event Title -->
-							<?php do_action( 'tribe_events_before_the_event_title' ) ?>
+							<div class="event-text">	
+								<h2 class="tribe-events-list-event-title homepage-event-title">
+									<a class="tribe-event-url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title_attribute() ?>" rel="bookmark"><?php echo tribe_get_start_date ( $event_id, $display_time = false); ?><span>&nbsp;|&nbsp;</span>
+										<?php the_title() ?>
+									</a>
+								</h2>
+								<?php do_action( 'tribe_events_after_the_event_title' ) ?>
 
-							<h2 class="tribe-events-list-event-title homepage-event-title">
-								<a class="tribe-event-url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title_attribute() ?>" rel="bookmark"><?php echo tribe_get_start_date ( $event_id, $display_time = false); ?><span>&nbsp;|&nbsp;</span>
-									<?php the_title() ?>
-								</a>
-							</h2>
-							<?php do_action( 'tribe_events_after_the_event_title' ) ?>
+								<?php //tribe_get_template_part( 'list/single', 'event' ) ?>
 
-							<?php //tribe_get_template_part( 'list/single', 'event' ) ?>
+								<div class="tribe-events-list-event-description tribe-events-content">
+									<p>
+										<?php
+										echo wp_trim_words( get_the_content(), 24, '...' );
+										?></p>
 
-							<div class="tribe-events-list-event-description tribe-events-content">
-								<p>
-									<?php
-									echo wp_trim_words( get_the_content(), 24, '...' );
-									?></p>
-
-									<?php //echo tribe_events_get_the_excerpt( null, wp_kses_allowed_html( 'post' ) ); ?>
-									<a class="button" href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more" rel="bookmark"><?php esc_html_e( 'View Event', 'the-events-calendar' ) ?> &raquo;</a>
-								</div><!-- .tribe-events-list-event-description -->
+										<?php //echo tribe_events_get_the_excerpt( null, wp_kses_allowed_html( 'post' ) ); ?>
+										<a class="button" href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more" rel="bookmark"><?php esc_html_e( 'View Event', 'the-events-calendar' ) ?> &raquo;</a>
+									</div><!-- .tribe-events-list-event-description -->
+								</div>
 							</div>
 							<?php echo "</div>";
 						} ?>
@@ -142,8 +144,10 @@
 		<!--RECENT POSTS LOOP-->
 		<div class="recent-posts-bg">
 			<article class="content home recent-posts">
-				<div class="col-xs-12">
-					<span class="section-title text-center">Browse Our Latest Blog Posts</span>
+				<div class="row">
+					<div class="col-xs-12">
+						<span class="section-title text-center">Browse Our Latest Blog Posts</span>
+					</div>
 				</div>
 				<?php
 				query_posts(array(
@@ -181,24 +185,6 @@
 						<?php 
 						echo do_shortcode ('[instagram-feed]');
 						?>
-					</article>
-				</div>
-
-				<div class="our-partners-bg">
-					<article class="content home our-partners">
-						<div class="col-xs-12">
-							<span class="section-title text-center">Our Partners</span>
-							<ul>
-								<li>
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/hot-107-9-atlanta-logo.png" alt="Hot 107.9 Atlanta">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/kantar-media-logo.png" alt="Kantar Media">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/radio-one-logo.png" alt="Radio One">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/gen-media-partners-logo.jpg" alt="Gen Media Partners">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/kicks-fm-logo.png" alt="Kick FM">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/partners/ninety-nine-x-logo.png" alt="Ninety Nine X">
-								</li>
-							</ul>
-						</div>
 					</article>
 				</div>
 
