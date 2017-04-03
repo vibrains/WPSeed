@@ -2,7 +2,7 @@
 /**
  * @author      Local Marketing Inc.
  * @version     1.3
- * @since       WPSeed 0.1
+ * @since       wpseed 0.1
  */
 ?>
 <!DOCTYPE html>
@@ -31,7 +31,7 @@
       <![endif]--><script>document.documentElement.className = 'js';</script>
       <?php wp_head(); ?>
     </head>
-    <body>
+    <body <?php body_class(); ?>>
       <svg class="hidden">
         <defs>
           <symbol id="icon-search" viewBox="0 0 24 24">
@@ -47,7 +47,7 @@
       <div class="search">
         <button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
         <form class="search__form" action="">
-          <input class="search__input" name="search" type="search" placeholder="menu" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+        <input class="search__input" name="search" type="search" placeholder="Search..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
           <span class="search__info">Hit enter to search or ESC to close</span>
         </form>
         <div class="search__related">
@@ -74,47 +74,50 @@
           </div>
         </div>
       </div><!-- /search -->
-      <div class="top">
-        <a href="<?php echo get_home_url(); ?>">
-          <div class="logo"></div>
-        </a>
-        <button class="hamburger--squeeze" id="hamburger" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
 
-        <nav class="menu main">
-          <?php /* Primary navigation */
-          wp_nav_menu( array(
-            'menu' => 'top_menu',
-            'depth' => 2,
-            'container' => false,
-            'menu_class' => 'nav navbar',
+<!--       <button class="hamburger--squeeze" id="hamburger" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button> -->
+
+
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container" id="main">
+          <div class="row">
+
+            <!-- Brand and toggle get grouped for better mobile display --> 
+            <div class="navbar-header"> 
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
+                <span class="sr-only">Toggle navigation</span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+              </button> 
+
+              <a class="logo-link" href="<?php echo get_home_url(); ?>">
+                <div class="logo"></div>
+              </a>
+
+            </div> 
+            <!-- Collect the nav links, forms, and other content for toggling --> 
+            <div class="collapse navbar-collapse navbar-ex1-collapse"> 
+
+              <?php /* Primary navigation */
+              wp_nav_menu( array(
+                'menu' => 'top_menu',
+                'depth' => 2,
+                'container' => false,
+                'menu_class' => 'nav navbar',
   //Process nav menu using our custom nav walker
-            'walker' => new wp_bootstrap_navwalker())
-          );
-          ?>
-        </nav><!-- .main -->
-
-<?php /*
-
-        <nav id="nav_main" class="hiddenmobile">
-          <ul>
-            <?php $frontPageID = get_option('page_on_front') ?>
-            <?php wp_list_pages([
-              'depth' => 1,
-              'sort_column' => 'menu_order',
-              'title_li' => '',
-              'exclude' => $frontPageID
-              ]);
+                'walker' => new wp_bootstrap_navwalker())
+              );
               ?>
-            </ul>
-          </nav>
 
-*/?>
-
-<div class="search-wrap">
-  <button id="btn-search" class="btn btn--search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
-</div>
-</div>
+              <div class="search-wrap">
+                <button id="btn-search" class="btn btn--search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </nav><!-- .main -->

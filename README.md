@@ -2,9 +2,9 @@
 
 **Version:** 0.14.2
 
-## What is WPSeed?
-WPSeed is a WordPress starter theme following the intention of being able to skip the time-consuming first steps when creating a new theme.
-WPSeed uses a variety of pre-built objects that allow kickstarting any kind of theme. These objects consist of:
+## What is wpseed?
+wpseed is a WordPress starter theme following the intention of being able to skip the time-consuming first steps when creating a new theme.
+wpseed uses a variety of pre-built objects that allow kickstarting any kind of theme. These objects consist of:
 * basic templates
 * basic html/scss structure
 * html/scss/javascript presets and essential functions
@@ -17,11 +17,11 @@ WPSeed uses a variety of pre-built objects that allow kickstarting any kind of t
   * php >= 5.4.0 or [short_open_tag](http://php.net/manual/de/ini.core.php#ini.short-open-tag) set `true` on your VM/Webserver
 
 ## Installation
-#### WPSeed Theme:
-* Clone WPSeed `$ git clone git@github.com:flurinduerst/WPSeed.git` into your `themes` directory.
+#### wpseed Theme:
+* Clone wpseed `$ git clone git@github.com:flurinduerst/wpseed.git` into your `themes` directory.
 
 #### Workflow
-WPSeed uses bower to manage vendors and [gulp](https://gulpjs.com) to compile assets from `assets` to `dist`. For details see `gulpfile.js`.
+wpseed uses bower to manage vendors and [gulp](https://gulpjs.com) to compile assets from `assets` to `dist`. For details see `gulpfile.js`.
   * Install gulp and Bower globally with `npm install -g gulp bower` if you haven't already
   * in the theme directory run `npm install && bower install && gulp`
   * add your domain/ip to `browsersync_proxy` in `gulpfile.js`
@@ -115,4 +115,4 @@ Twitter: [@flurinduerst](https://twitter.com/flurinduerst)
 Feel free to contact me or add pull-requests/issues.
 
 ## License
-WPSeed is released under the terms of the GNU General Public License
+wpseed is released under the terms of the GNU General Public License

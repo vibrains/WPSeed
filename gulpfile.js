@@ -100,7 +100,7 @@ gulp.task('javascript', function() {
 // actions: minify
 // to:      dist/images
 gulp.task('images',  function() {
-  gulp.src('assets/images/*.*')
+  gulp.src('assets/images/**/*.*')
   .pipe(imagemin())
   .pipe(gulp.dest('dist/images'))
   .pipe(browserSync.stream());

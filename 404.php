@@ -4,7 +4,7 @@
  *
  * @author      Local Marketing Inc.
  * @version     1.2
- * @since       WPSeed 0.1
+ * @since       wpseed 0.1
  */
 ?>
 

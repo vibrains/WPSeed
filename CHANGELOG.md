@@ -59,11 +59,11 @@
 * coding guideline update: csscomb, convert tabs to spaces (based on codeguide.co)
 * add the most important attributes to hamburger at nav.scss
 * added marker.click preset to googlemaps template
-* renaming versioning to WPSeed
+* renaming versioning to wpseed
 * cleanup
 
-## 0.7.0 | 18.05.2016 | WPSeed
-* **renamed to WPSeed**
+## 0.7.0 | 18.05.2016 | wpseed
+* **renamed to wpseed**
 * admin bar is now only shown on hover
 * added font-size variable for default font-size on all elements
 * added basic table styling and sanitizing

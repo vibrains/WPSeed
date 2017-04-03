@@ -7,7 +7,7 @@
  *
  * @author      Local Marketing Inc.
  * @version     1.3
- * @since       WPSeed 0.1
+ * @since       wpseed 0.1
  *
  */
 
@@ -50,4 +50,35 @@ if ( ! function_exists( 'wpt_setup' ) ):
 	?>
 
 <?php // Register custom navigation walker
-require_once('wp-bootstrap-navwalker.php');
+require_once('wp-bootstrap-navwalker.php'); ?>
+
+
+<?php // Register Sidebars
+if ( function_exists('register_sidebar') ) {
+	register_sidebar(array(
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h2 class="widgettitle">',
+		'after_title' => '</h2>',
+		));
+}
+
+if ( function_exists('register_sidebar') ) {
+	register_sidebar(array(
+		'name' => 'Homepage Sidebar',
+		'id' => 'homepage-sidebar',
+		'description' => 'Appears as the sidebar on the custom homepage',
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h2 class="widgettitle">',
+		'after_title' => '</h2>',
+		));
+}
+
+
+/* BOOTSTRAP MENU Theme setup */
+add_action( 'after_setup_theme', 'wpt_setup' );
+if ( ! function_exists( 'wpt_setup' ) ):
+	function wpt_setup() {  
+		register_nav_menu( 'primary', __( 'Primary navigation', 'wptuts' ) );
+	} endif;

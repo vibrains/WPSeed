@@ -1,0 +1,38 @@
+.job_filters .search_jobs {
+	padding: 1em;
+	zoom: 1;
+}
+
+.job_types {
+	label {
+		display: inline-block;
+		max-width: 100%;
+		margin-bottom: 5px;
+		font-weight: 900;
+		text-transform: uppercase;
+		color: #696969;
+	}
+}
+
+.job_filters .search_jobs input, .job_filters .search_jobs select {
+	text-transform: uppercase;
+	font-weight: 900;
+	padding: 10px;
+}
+
+.position {
+	h3 {
+		text-transform: uppercase!important;
+		font-weight: 900;
+		font-size: 24px!important;
+		color: $c_darkblue;
+		margin-bottom: 10px!important;
+	}
+}
+
+.job_filters .search_jobs div.filter_last, .job_filters .search_jobs div.search_location {
+	padding: 15px;
+}
+.job_filters .search_jobs div.filter_first, .job_filters .search_jobs div.search_keywords {
+	padding: 15px; 
+}

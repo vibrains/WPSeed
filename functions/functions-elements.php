@@ -1,11 +1,11 @@
 <?php
 /**
  * Functions to output ACF flexible elements.
- * WPSeed_Text and WPSeed_Gallery are placeholder presets.
+ * wpseed_Text and wpseed_Gallery are placeholder presets.
  *
  * @author     Local Marketing Inc.
  * @version    1.1
- * @since      WPSeed 0.10.0
+ * @since      wpseed 0.10.0
  *
  */
 
@@ -16,8 +16,8 @@ function elements() {
   ob_start('sanitize_output');
   if (have_rows('elements')):
     while (have_rows('elements')): the_row();
-      if (get_row_layout() == 'text'): WPSeed_Text(); endif;
-      if (get_row_layout() == 'gallery'): WPSeed_Gallery(); endif;
+      if (get_row_layout() == 'text'): wpseed_Text(); endif;
+      if (get_row_layout() == 'gallery'): wpseed_Gallery(); endif;
       if (get_row_layout() == 'seperator'): echo '<hr>'; endif;
     endwhile;
   endif;
@@ -26,7 +26,7 @@ function elements() {
 
 /* TEXT
 /------------------------*/
-function WPSeed_Text() {
+function wpseed_Text() {
   ob_start('sanitize_output') ?>
   <section class="text">
     <h2><?php the_sub_field('title') ?></h2>
@@ -37,7 +37,7 @@ function WPSeed_Text() {
 
 /* GALLERY
 /------------------------*/
-function WPSeed_Gallery() {
+function wpseed_Gallery() {
   ob_start('sanitize_output') ?>
     <section class="gallery">
       <h2><?php the_sub_field('title') ?></h2>

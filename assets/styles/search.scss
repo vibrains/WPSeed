@@ -14,7 +14,7 @@
 	z-index: 300;
 	position: relative;
 	padding-top: 8px;
-	border: 1px solid $c_dark;
+	border: 1px solid $c_bright;
 	border-radius: 50%;
 	padding: 8px;
 	transition: .3s;
@@ -39,7 +39,7 @@ svg.icon.icon--search:hover {
 	border-radius: 0;
 	-webkit-appearance: none;
 }
-.search__input:focus {
+.search__input:focus, .search__input:active {
 	outline: none;
 }
 /* Links */
@@ -47,7 +47,7 @@ svg.icon.icon--search:hover {
 a,
 .btn {
 	text-decoration: none;
-	color: $c_dark;
+	color: $c_bright;
 	outline: none;
 }
 .hidden {
@@ -67,8 +67,12 @@ a,
 }
 /* Layout for search container */
 .search-wrap {
-	position: relative;
+	position: absolute;
 	z-index: 300;
+	float: right;
+	right: 0;
+	margin-top: 12px;
+	margin-right: 10px;
 }
 .search {
 	display: flex;
@@ -77,7 +81,7 @@ a,
 	align-items: center;
 	text-align: center;
 	background: $c_lightblue;
-	// background-image: url("/wp-content/themes/WPSeed/assets/images/green-fibers.png");
+	// background-image: url("/wp-content/themes/wpseed/assets/images/green-fibers.png");
 	background-repeat: repeat;
 }
 
@@ -159,6 +163,10 @@ a,
 	/* Internet Explorer 10-11 */
 	opacity: 0.3;
 	color: #fff;
+
+	&:focus {
+		opacity: 0;
+	}
 }
 
 .search__input::-webkit-search-cancel-button,

@@ -5,7 +5,7 @@
  *
  * @author      Local Marketing Inc.
  * @version     1.6.2
- * @since       WPSeed 0.1.6
+ * @since       wpseed 0.1.6
  *
  */
 
@@ -81,7 +81,7 @@
 
   // Load theme textdomain (based on locale de_CH)
   // » https://codex.wordpress.org/Function_Reference/load_theme_textdomain
-  load_theme_textdomain('WPSeed', get_template_directory() . '/languages');
+  load_theme_textdomain('wpseed', get_template_directory() . '/languages');
 
   /* Disable Backend Theme-Editor
   /------------------------------*/

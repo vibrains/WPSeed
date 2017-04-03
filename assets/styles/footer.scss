@@ -19,7 +19,7 @@
   height: 142px;
   top: -115px;
   left: 0;
-  background-image: url(/wp-content/themes/WPSeed/assets/images/skyline-landmarks.png),url(/wp-content/themes/WPSeed/assets/images/skyline-generic.png);
+  background-image: url(../dist/images/skyline-landmarks.png),url(../dist/images/skyline-generic.png);
   background-repeat: no-repeat,repeat-x;
   background-position: top,bottom;
   background-size: 1280px 138px,1280px 26px;
@@ -33,7 +33,7 @@
     left: 50%;
     width: 120px;
     height: 120px;
-    margin: -120px 0 0 -56px;
+    margin: -100px 0 0 -56px;
     -webkit-animation:spin 18s linear infinite;
     -moz-animation:spin 18s linear infinite;
     animation:spin 18s linear infinite;

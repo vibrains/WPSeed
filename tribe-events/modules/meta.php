@@ -1,6 +1,7 @@
 <?php
 /**
  * Single Event Meta Template
+ *LMI Comment: THIS GENERATES THE SINGLE EVENT PAGE /event/single-event
  *
  * Override this template in your own theme by creating a file at:
  * [your-theme]/tribe-events/modules/meta.php
@@ -16,26 +17,26 @@ $not_skeleton = ! apply_filters( 'tribe_events_single_event_the_meta_skeleton', 
 // Do we want to group venue meta separately?
 $set_venue_apart = apply_filters( 'tribe_events_single_event_the_meta_group_venue', false, get_the_ID() );
 ?>
-
 <?php if ( $not_skeleton ) : ?>
 	<div class="tribe-events-single-section tribe-events-event-meta primary tribe-clearfix">
 	<?php endif; ?>
-
 	<?php
-	do_action( 'tribe_events_single_event_meta_primary_section_start' );
+	do_action( 'tribe_events_single_event_meta_primary_section_start' ); ?>
 
+		<?php
 // If we have no map to embed and no need to keep the venue separate...
-	if ( ! $set_venue_apart && ! tribe_embed_google_map() ) {
-		tribe_get_template_part( 'modules/meta/venue' );
+		if ( ! $set_venue_apart && ! tribe_embed_google_map() ) {
+			tribe_get_template_part( 'modules/meta/venue' );
 
-
-	} elseif ( ! $set_venue_apart && ! tribe_has_organizer() && tribe_embed_google_map() ) {
+		} elseif ( ! $set_venue_apart && ! tribe_has_organizer() && tribe_embed_google_map() ) {
 	// If we have no organizer, no need to separate the venue but we have a map to embed...
-		tribe_get_template_part( 'modules/meta/venue' );
+			tribe_get_template_part( 'modules/meta/venue' );
 
 // Always include the main event details in this first section
-		tribe_get_template_part( 'modules/meta/details' );
+			tribe_get_template_part( 'modules/meta/details' ); ?>
 
+
+		<?php
 		echo '<div class="tribe-events-meta-group tribe-events-meta-group-gmap">';
 		tribe_get_template_part( 'modules/meta/map' );
 		echo '</div>';
@@ -43,8 +44,6 @@ $set_venue_apart = apply_filters( 'tribe_events_single_event_the_meta_group_venu
 	// If the venue meta has not already been displayed then it will be printed separately by default
 		$set_venue_apart = true;
 	}
-
-
 
 // Include organizer meta if appropriate
 	if ( tribe_has_organizer() ) {
@@ -57,7 +56,6 @@ $set_venue_apart = apply_filters( 'tribe_events_single_event_the_meta_group_venu
 	<?php if ( $not_skeleton ) : ?>
 	</div>
 <?php endif; ?>
-
 
 <?php if ( $set_venue_apart ) : ?>
 	<?php if ( $not_skeleton ) : ?>

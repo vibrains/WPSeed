@@ -6,20 +6,35 @@
 }
 
 //TEASER BLOCK
-.events-page.teaser {
+//Featured image for Events Landing Page
+.events-archive .events-page.teaser {
 	width: 100%;
-	height: 15rem;
-	background-position: 0% 33%;
-	background-size: cover;
-	padding: 10%;
-	padding-top: 100px;
+	padding-top: 5px;
+	background-repeat: repeat;
+	background:  url(/wp-content/themes/wpseed/assets/images/featured-image-pattern.jpg)!important;
 	h1 {
 		color: white;
 		font-weight: 900;
 		text-transform: uppercase;
-		background: $c_darkblue;
+		background: rgba(11,60,93,0.8);
 		display: inline-block;
 		padding: 20px;
+		border: 5px solid #fff;
+	}
+	.tribe-event-schedule-details {
+		background: transparent;
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+}
+.section-title-holder {
+	span {
+		margin-bottom: 10px;
+	}
+	p {
+		text-align: center;
+		margin-bottom: 40px;
 	}
 }
 
@@ -40,7 +55,12 @@
 	}
 }
 .tribe-events-list .tribe-events-photo-event .tribe-events-event-details {
-	border: 1px solid #ccc;
+	// border: 1px solid #ccc;
+
+	border: 0px solid rgba(255,255,255,0.25);
+	border-radius: 2px;
+	box-shadow: 0 1px 5px gainsboro;
+
 }
 .type-tribe_events.tribe-events-photo-event .tribe-events-photo-event-wrap {
 	border: 0;
@@ -65,8 +85,26 @@
 		text-decoration: none;
 	}
 }
+.tribe-event-schedule-details {
+	.latest-upcoming-event {
+		background: $c_lightblue;
+		color: $c_bright;
+		line-height: 12px;
+		margin: 0;
+		padding: 8px;
+	}
+	background: rgba(75,134,173,.2);
+	padding: 3px 8px;
+	border-radius: 5px;
+	// box-shadow: inset 0 0 0 1px hsla(0,0%,100%,.1);
+	display: inline-block;
+	margin-bottom: 5px;
+	span {
+		color: #696969;
+	}
+}
 #tribe-events .tribe-events-content p {
-	margin: 0 0 20px;
+	margin: 0 0 20px!important;
 }
 #tribe-events-photo-events .tribe-events-photo-event {
 	margin-bottom: 50px;
@@ -79,9 +117,42 @@
 //SINGLE EVENT PAGE
 .events-page.teaser {
 	.tribe-event-date-start, .tribe-event-date-end  {
-		background: white;
-		padding: 20px;
-		font-size: 18px;
+		background: #fff;
+		padding: 5px 15px;
+		font-size: 16px;
 		font-weight: 900;
+		line-height: 30px;
 	}
+}
+
+//Targeting the Events Landing Page
+.tribe-events-back {
+	display: none;
+}
+.single-tribe_events {
+	.tribe-events-back {
+		display: block;
+	}
+}
+
+//Targeting event descriptiona and read more button only on single event page
+.events-archive {
+	p.latest-event-header-description, a.read-more-link {
+		max-width: 50%;
+	}
+	a.read-more-link {
+
+	}
+}
+
+
+
+
+
+.tribe-events-list .type-tribe_events {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.tribe-events-list .type-tribe_events:first-of-type {
+	margin-top: 0;
 }

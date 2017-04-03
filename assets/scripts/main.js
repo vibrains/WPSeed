@@ -3,7 +3,7 @@
  *
  * @author      Local Marketing Inc.
  * @version     3.1
- * @since       WPSeed 0.12
+ * @since       wpseed 0.12
  *
  */
 

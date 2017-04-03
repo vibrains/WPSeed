@@ -2,6 +2,7 @@
 /**
  * Photo View Single Event
  * This file contains one event in the photo view
+  *LMI Comment: THIS GENERATES THE EVENTS PAGE WITH ALL UPCOMING EVENTS /events
  *
  * Override this template in your own theme by creating a file at [your-theme]/tribe-events/pro/photo/single_event.php
  *
@@ -60,4 +61,4 @@ global $post;
 				</div><!-- .tribe-events-list-event-description -->
 				<?php do_action( 'tribe_events_after_the_content' ) ?>
 			</div><!-- /.tribe-events-event-details -->
-</div><!-- /.tribe-events-photo-event-wrap -->
+			</div><!-- /.tribe-events-photo-event-wrap -->

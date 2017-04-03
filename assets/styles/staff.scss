@@ -1,0 +1,72 @@
+//STAFF AND MEMBERS STYLES
+.staff-page h2 {
+	text-transform: uppercase;
+	color: $c_darkblue;
+	font-weight: 900;
+	margin-top: 30px;
+}
+.staff {
+	border: none;
+	box-shadow: none;
+	p {
+		margin: 0;
+		margin-top: 5px;
+	}
+
+	.panel-body {
+		text-align: center;
+
+		.staff-content {
+			background: #ddd;
+			padding-bottom: 25px;
+			padding-top: 100px;
+			margin-top: -100px;
+			float: left;
+		}
+
+		img {
+			border-radius: 50%;
+			min-width: 178px;
+			height: auto;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 22px;
+			text-transform: uppercase;
+			color: $c_darkblue;
+			font-weight: 900;
+		}
+		.staff-position {
+			p {
+				text-transform: uppercase;
+				font-size: 18px;
+				font-weight: 100;
+				color: $c_darkblue;
+				font-style: italic;
+				border-bottom: 1px solid #ccc;
+				padding-bottom: 10px;
+			}
+		}
+		.staff-bio {
+			p {
+				text-transform: uppercase;
+				font-size: 18px;
+				font-weight: 600;
+				color: #103e5f;
+				font-style: normal;
+				letter-spacing: -1px;
+			}
+		}
+	}
+	.staff-social-links {
+		margin-top: 10px;
+		margin-bottom: -40px;
+
+		a.button {
+			font-size: 16px;
+			font-weight: 600;
+			background: $c_darkblue;
+			margin-top: 20px;
+		}
+	}
+}

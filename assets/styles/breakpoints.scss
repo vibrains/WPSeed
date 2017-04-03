@@ -2,7 +2,17 @@
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and down) */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+	.staff .panel-body .staff-content {
+		float: none!important;
+	}
+	.staff .staff-social-links {
+		margin-bottom: 0!important;
+	}
+	.events-archive a.read-more-link, .events-archive p.latest-event-header-description {
+		max-width: none!important;
+	}
+}
 
 @media (max-width: 799px) {
 	.recent-posts .post-thumbnail {
@@ -45,5 +55,17 @@
 	}
 }
 
+@media (max-width: 990px) {
+
+}
+
 /* Large devices (large desktops, 1200px and down) */
-@media (max-width: 1200px) {}
+@media (max-width: 1269px) {
+	nav li a {
+		padding: 10px 3px !important;
+		font-size: 14px;
+	}
+	.top .logo {
+		width: 10rem;
+	}
+}

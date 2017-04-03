@@ -2,7 +2,7 @@
 /**
  * @author      Local Marketing Inc.
  * @version     1.7
- * @since       WPSeed 0.1
+ * @since       wpseed 0.1
  */
 ?>
 <?php include 'templates/str-footer.php' ?>
@@ -19,6 +19,6 @@
 	});
 </script>
 <?php wp_footer() ?>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/scripts/search.js"></script>
+<script src="/wp-content/themes/wpseed/assets/scripts/search.js"></script>
 </body>
 </html>
