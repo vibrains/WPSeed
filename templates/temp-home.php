@@ -56,7 +56,56 @@
 	</header> -->
 </div>
 
-<div class="teaser" style="background-image: url(<?php the_post_thumbnail_url('large', $post->ID) ?>)">
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="8000" id="bs-carousel">
+	<!-- Overlay -->
+
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+		<li data-target="#bs-carousel" data-slide-to="1"></li>
+		<li data-target="#bs-carousel" data-slide-to="2"></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner">
+		<div class="item slides active">
+			<div class="overlay"></div>
+			<div class="slide-1"></div>
+			<div class="hero">
+				<hgroup>
+					<h1>Atlanta Broadcast Advertising Club</h1>        
+					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus reprehenderit natus.</h3>
+				</hgroup>
+				<button class="btn btn-hero btn-lg" role="button">See all features</button>
+			</div>
+		</div>
+		<div class="item slides">
+			<div class="overlay"></div>
+			<div class="slide-2"></div>
+			<div class="hero">        
+				<hgroup>
+					<h1>Atlanta Broadcast Advertising Club</h1>        
+					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus reprehenderit natus.</h3>
+				</hgroup>       
+				<button class="btn btn-hero btn-lg" role="button">See all features</button>
+			</div>
+		</div>
+		<div class="item slides">
+			<div class="overlay"></div>
+			<div class="slide-3"></div>
+			<div class="hero">        
+				<hgroup>
+					<h1>Atlanta Broadcast Advertising Club</h1>        
+					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus reprehenderit natus.</h3>
+				</hgroup>
+				<button class="btn btn-hero btn-lg" role="button">See all features</button>
+			</div>
+		</div>
+	</div> 
+</div>
+
+
+<!-- <div class="teaser" style="background-image: url(<?php the_post_thumbnail_url('large', $post->ID) ?>)">
 	<div class="content home">
 		<article>
 			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
@@ -64,7 +113,7 @@
 		</article>
 	</div>
 </div>
-
+-->
 <div class="teaser callout">
 	<article>
 		<div class="row">
