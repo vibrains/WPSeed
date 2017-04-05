@@ -1,0 +1,69 @@
+/* SIDEBAR
+/------------------------*/
+#sidebar {
+	border: 1px solid #ccc;
+	padding: 15px;
+	ul {
+		list-style-type: none;
+	}
+	li {
+		h2.widgettitle {
+			text-transform: uppercase;
+			font-weight: 900;
+			font-size: 22px;
+			color: $c_darkblue;
+			margin-bottom: 25px;
+			margin-top: 5px;
+			text-align: center;
+			&:before {
+				display: inline-block;
+				content: ' ';
+				background-image: url("/wp-content/themes/wpseed/assets/images/calendar-icon.svg");
+				height: 30px;
+				width: 30px;
+				margin-bottom: -7px;
+				background-size: 100%;
+				margin-right: 10px;
+			}
+		}
+	}
+	.tribe-mini-calendar-event .list-info {
+		float: none;
+	}
+	.tribe-events-event-image {
+		display: inline;
+	}
+	.list-date {
+		display: none;
+	}
+	.list-info {
+		.title-holder {
+			float: right;
+			width: 100%;
+			max-width: 198px;
+		}
+		h2 {
+			display: inline-block;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			a {
+				color: $c_darkblue;
+			}
+		}
+		.tribe-events-event-image {
+			a {
+				img {
+					width: 30%;
+					float: left;
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+	p.tribe-events-widget-link {
+		margin-bottom: 0;
+		a {
+			text-transform: uppercase;
+		}
+	}
+}
