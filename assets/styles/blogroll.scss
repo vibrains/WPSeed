@@ -1,0 +1,28 @@
+/* BLOGROLL PAGE
+/------------------------*/
+.blog {
+	article {
+		margin-bottom: 2rem;
+		h2 {
+			text-transform: uppercase;
+			font-weight: 600;
+			color: $c_darkblue;
+			font-size: 24px;
+			letter-spacing: -1px;
+		}
+
+		.post-info {
+			border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 15px;
+			width: 100%;
+			span {
+				font-weight: 600;
+				color: $c_darkblue;
+			}
+			.entry-author {
+				float: right;
+			}
+		}
+	}
+}
