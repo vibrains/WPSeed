@@ -5,6 +5,7 @@
  * optionally, the Google map for the event.
  *
  * Override this template in your own theme by creating a file at [your-theme]/tribe-events/single-event.php
+ *LMI Comment: THIS GENERATES THE EVENTS PAGE WITH ONE SINGLE EVENT /event/single-event
  *
  * @package TribeEventsCalendar
  * @version  4.3
