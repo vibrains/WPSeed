@@ -41,6 +41,10 @@
 //EVENTS PAGE PHOTO GRID SINGLE BLOCK
 //Photo Wrap
 .tribe-events-photo-event-wrap {
+	.tribe-events-event-meta {
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 8px;
+	}
 	.event-thumbnail img {
 		height: 100%;
 		left: 0;
@@ -51,16 +55,13 @@
 		transition: all .2s cubic-bezier(0.165,.84,.44,1);
 		overflow: hidden;
 		padding: 0;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
+		border: 1px solid #ccc;
 	}
 }
 .tribe-events-list .tribe-events-photo-event .tribe-events-event-details {
-	// border: 1px solid #ccc;
-
-	border: 0px solid rgba(255,255,255,0.25);
-	border-radius: 2px;
-	box-shadow: 0 1px 5px gainsboro;
-
+	// box-shadow: 0 1px 5px gainsboro;
+	border: 1px solid #ccc;
 }
 .type-tribe_events.tribe-events-photo-event .tribe-events-photo-event-wrap {
 	border: 0;
@@ -68,6 +69,18 @@
 }
 
 //Content
+
+.tribe-events-list .type-tribe_events h2 {
+	font-size: 1.6em;
+	float: left;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	a {
+		color: $c_darkblue;
+	}
+}
+
 .tribe-events-list #tribe-events-photo-events .tribe-events-event-details h2 a {
 	font-family: 'Montserrat', sans-serif;
 	color: $c_darkblue!important;
@@ -105,6 +118,7 @@
 }
 #tribe-events .tribe-events-content p {
 	margin: 0 0 20px!important;
+	line-height: 25px!important;
 }
 #tribe-events-photo-events .tribe-events-photo-event {
 	margin-bottom: 50px;
@@ -137,6 +151,12 @@
 
 //Targeting event descriptiona and read more button only on single event page
 .events-archive {
+	.col-md-7 {
+		width: 100%;
+	}
+	#sidebar {
+		display: none;
+	}
 	p.latest-event-header-description, a.read-more-link {
 		max-width: 50%;
 	}

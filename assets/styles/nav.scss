@@ -28,6 +28,8 @@
   background: $c_darkblue;
   border: none;
   border-radius: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 nav {
   z-index: 210;
@@ -48,7 +50,7 @@ nav {
       color: $c_bright;
       text-transform: uppercase;
       display: inline-block!important;
-      padding: 10px 8px !important;
+      padding: 10px 5px !important;
       font-size: 16px;
     }
     a:hover {
@@ -67,13 +69,16 @@ nav {
     + li:before{
       padding: 0;
       color: $c_nav_spacer;
-      content: ' | ';
-      color: $c_lightblue;
+      content: '|';
+      color: $c_bright;
     }
   }
 }
 .nav > li > a {
   color: $c_bright;
+  &:focus, &:hover {
+    background-color: transparent;
+  }
 }
 //Dropdown on hover
 .dropdown-menu {

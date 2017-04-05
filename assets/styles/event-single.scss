@@ -1,15 +1,23 @@
 .tribe-events-single {
+	.col-md-5, .col-md-6, .col-md-12 {
+		padding: 0;
+	}
+
 	.tribe-events-event-meta .tribe-events-meta-group {
 		border: 1px dashed #ccc;
 		padding: 20px;
 		min-height: 275px;
 		margin-right: 20px;
-
+		width: 100%;
 	}
 	dt {
 		font-weight: 700;
 		margin-right: 5px;
 	}
+}
+
+.tribe-events-meta-group.tribe-events-meta-group-gmap {
+	padding: 0!important;
 }
 
 .single-tribe_events .tribe-events-event-meta {
@@ -76,6 +84,13 @@ ul.order_details::after, ul.order_details::before {
 
 //Targeting event descriptiona and read more button only on single event page
 .single-tribe_events {
+	.tribe-events-event-image img {
+		width: 100%;
+	}
+	.tribe-events-venue-map {
+		width: 100%;
+		margin: 0;
+	}
 	p.latest-event-header-description, a.read-more-link, .latest-upcoming-event {
 		display: none;
 	}
@@ -88,7 +103,7 @@ ul.order_details::after, ul.order_details::before {
 	padding-top: 40px;
 	background-size: cover!important;
 	background-repeat: no-repeat!important;
-	background-position: center!important;
+	background-position: center 30%!important;
 	// filter: blur(5px);
 	// -webkit-filter: blur(5px);
 	h1 {

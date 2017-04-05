@@ -1,7 +1,6 @@
 /* HOMEPAGE UPCOMING EVENTS
 /------------------------*/
 article.homepage-events {
-  padding: 20px;
   padding-bottom: 2rem;
   .type-tribe_events {
     p {
@@ -63,6 +62,7 @@ h2.homepage-event-title a, .post-title a {
   margin-bottom: 15px;
   text-transform: uppercase;
   font-weight: 900;
+  padding-top: 0;
   &:hover {
     color: $c_lightblue;
     text-decoration: none;

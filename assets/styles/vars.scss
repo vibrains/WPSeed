@@ -89,7 +89,7 @@ $desktop_min:         767px;        // Desktop/Mobile Breakpoint
 
 /* BUTTONS STYLING
 /===================================================== */
-a.button {
+a.button, .btn-hero {
   font-family: $font_name;
   white-space: nowrap;
   display: inline-block;
