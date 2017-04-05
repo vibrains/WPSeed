@@ -56,6 +56,8 @@ require_once('wp-bootstrap-navwalker.php'); ?>
 <?php // Register Sidebars
 if ( function_exists('register_sidebar') ) {
 	register_sidebar(array(
+		'name' => 'General Sidebar',
+		'id' => 'general-sidebar',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h2 class="widgettitle">',
@@ -65,9 +67,9 @@ if ( function_exists('register_sidebar') ) {
 
 if ( function_exists('register_sidebar') ) {
 	register_sidebar(array(
-		'name' => 'Homepage Sidebar',
-		'id' => 'homepage-sidebar',
-		'description' => 'Appears as the sidebar on the custom homepage',
+		'name' => 'Events Sidebar',
+		'id' => 'events-sidebar',
+		'description' => 'Appears as the sidebar on events',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h2 class="widgettitle">',
