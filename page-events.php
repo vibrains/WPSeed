@@ -24,7 +24,7 @@
 					<h1><?php the_title(); ?></h1>
 					<p class="latest-event-header-description">
 						<?php echo wp_trim_words( get_the_content(), 30, '...' ); ?></p>
-						<a class="read-more-link button" href="<?php echo get_permalink(); ?>">read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<a class="read-more-link button" href="<?php echo get_permalink(); ?>">View Event <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 						<p class="tribe-events-back">
 							<a class="button" href="<?php echo esc_url( tribe_get_events_link() ); ?>">&laquo; All Events</a>
 						</p>
@@ -38,12 +38,13 @@
 		<div class="row">
 			<div class="content page">
 				<?php if (have_posts() ) : while (have_posts()) : the_post(); ?>
-					<article>
+					<article class="col-md-7 col-md-12">
 						<h1><?php the_title(); ?></h1>
 						<?php the_post_thumbnail('medium'); ?>
 						<?php the_content(); ?>
 					</article>
 				<?php endwhile; endif; ?>
+				<?php get_sidebar(); ?>
 			</div>
 		</div>
 	</div>
