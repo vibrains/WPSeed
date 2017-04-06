@@ -63,10 +63,10 @@ $desktop_min:         767px;        // Desktop/Mobile Breakpoint
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,700');
 
-  $font_name:      'Cabin', sans-serif;  // Normal 400, Medium 500, Bold 700
-  $font_size:      14px;      // default font-size (applied to body)
-  $line_height:    1.8;       // default line-height (applied to body)
-  $font_weight:    300;       // default font-weight (applied to body)
+  $font_name:      'gibson', sans-serif;  // Light 100, Normal 400, Medium 500, Bold 700
+  $font_size:      18px;      // default font-size (applied to body)
+  $line_height:    28px;       // default line-height (applied to body)
+  $font_weight:    100;       // default font-weight (applied to body)
 
   span.section-title {
     color: $c_darkblue;

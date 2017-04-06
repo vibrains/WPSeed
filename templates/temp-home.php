@@ -239,15 +239,14 @@
 					</div>
 				</div>
 
-				<div class="container" id="main">
-					<div class="row">
-						<div class="instagram-feed-bg">
-							<article class="content home instagram-feed">
-								<?php 
-								echo do_shortcode ('[instagram-feed]');
-								?>
-							</article>
-						</div>
+
+				<div class="row">
+					<div class="instagram-feed-bg">
+						<article class="content home instagram-feed">
+							<?php 
+							echo do_shortcode ('[instagram-feed]');
+							?>
+						</article>
 					</div>
 				</div>
 

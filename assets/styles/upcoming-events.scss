@@ -63,6 +63,7 @@ h2.homepage-event-title a, .post-title a {
   text-transform: uppercase;
   font-weight: 900;
   padding-top: 0;
+  letter-spacing: -0.5px;
   &:hover {
     color: $c_lightblue;
     text-decoration: none;

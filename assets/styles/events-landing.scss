@@ -71,18 +71,15 @@
 //Content
 
 .tribe-events-list .type-tribe_events h2 {
-	font-size: 1.6em;
+	font-size: 18px;
 	float: left;
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	font-size: 16px;
+	text-transform: none;
 	a {
 		color: $c_darkblue;
 	}
 }
 
 .tribe-events-list #tribe-events-photo-events .tribe-events-event-details h2 a {
-	font-family: 'Montserrat', sans-serif;
 	color: $c_darkblue!important;
 	font-size: 16px;
 	display: block;
@@ -132,10 +129,10 @@
 .events-page.teaser {
 	.tribe-event-date-start, .tribe-event-date-end  {
 		background: #fff;
-		padding: 5px 15px;
-		font-size: 16px;
-		font-weight: 900;
-		line-height: 30px;
+		padding: 8px 15px;
+		font-weight: 600;
+		font-style: italic;
+		color: $c_dark;
 	}
 }
 
@@ -164,10 +161,6 @@
 
 	}
 }
-
-
-
-
 
 .tribe-events-list .type-tribe_events {
 	padding-left: 15px;

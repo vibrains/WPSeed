@@ -28,8 +28,8 @@
   background: $c_darkblue;
   border: none;
   border-radius: 0;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
 nav {
   z-index: 210;
@@ -52,6 +52,7 @@ nav {
       display: inline-block!important;
       padding: 10px 5px !important;
       font-size: 16px;
+      font-weight: 600;
     }
     a:hover {
       color: $c_lightblue;
