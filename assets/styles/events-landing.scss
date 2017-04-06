@@ -13,6 +13,7 @@
 	background-repeat: repeat;
 	background:  url(/wp-content/themes/wpseed/assets/images/featured-image-pattern.jpg)!important;
 	h1 {
+		font-family: 'gibson_bold', sans-serif;
 		color: white;
 		font-weight: 900;
 		text-transform: uppercase;
@@ -73,9 +74,14 @@
 .tribe-events-list .type-tribe_events h2 {
 	font-size: 18px;
 	float: left;
-	text-transform: none;
+	text-transform: uppercase;
+	font-family: 'gibson_bold', sans-serif;
 	a {
 		color: $c_darkblue;
+
+		&:hover {
+			color: $c_lightblue;
+		}
 	}
 }
 
@@ -103,7 +109,7 @@
 		margin: 0;
 		padding: 8px;
 	}
-	background: rgba(75,134,173,.2);
+	background: rgba(75,134,173,.1);
 	padding: 3px 8px;
 	border-radius: 5px;
 	// box-shadow: inset 0 0 0 1px hsla(0,0%,100%,.1);
@@ -111,11 +117,12 @@
 	margin-bottom: 5px;
 	span {
 		color: #696969;
+		font-weight: 900;
+		font-family: 'gibson_regular', sans-serif;
 	}
 }
 #tribe-events .tribe-events-content p {
 	margin: 0 0 20px!important;
-	line-height: 25px!important;
 }
 #tribe-events-photo-events .tribe-events-photo-event {
 	margin-bottom: 50px;

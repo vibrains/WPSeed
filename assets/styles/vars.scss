@@ -63,19 +63,20 @@ $desktop_min:         767px;        // Desktop/Mobile Breakpoint
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,500,700');
 
-  $font_name:      'gibson', sans-serif;  // Light 100, Normal 400, Medium 500, Bold 700
+  $font_name:      'gibson_light', 'Open Sans', sans-serif;  // Light 100, Normal 400, Medium 500, Bold 700
   $font_size:      18px;      // default font-size (applied to body)
   $line_height:    28px;       // default line-height (applied to body)
   $font_weight:    100;       // default font-weight (applied to body)
 
   span.section-title {
+    font-family: 'gibson_semibold', sans-serif;
     color: $c_darkblue;
     display: block;
     margin: 0 0 45px 0;
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 900;
-    letter-spacing: -.5px;
+    // letter-spacing: -.5px;
     &:before {
       display: inline-block;
       content: ' ';

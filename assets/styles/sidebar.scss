@@ -15,6 +15,7 @@
 			margin-bottom: 25px;
 			margin-top: 5px;
 			text-align: center;
+			font-family: 'gibson_semibold', sans-serif;
 			&:before {
 				display: inline-block;
 				content: ' ';
@@ -46,6 +47,7 @@
 			display: inline-block;
 			margin-bottom: 0;
 			text-transform: uppercase;
+			font-family: 'gibson_regular', sans-serif;
 			a {
 				color: $c_darkblue;
 			}
