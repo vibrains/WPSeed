@@ -76,7 +76,7 @@
 					<h1>Atlanta Broadcast Advertising Club</h1>        
 					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus reprehenderit natus.</h3>
 				</hgroup>
-				<button class="btn btn-hero btn-lg" role="button">See all features</button>
+				<button class="btn btn-hero btn-lg" role="button">Read More</button>
 			</div>
 		</div>
 		<div class="item slides">
@@ -87,7 +87,7 @@
 					<h1>Atlanta Broadcast Advertising Club</h1>        
 					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus reprehenderit natus.</h3>
 				</hgroup>       
-				<button class="btn btn-hero btn-lg" role="button">See all features</button>
+				<button class="btn btn-hero btn-lg" role="button">Read More</button>
 			</div>
 		</div>
 		<div class="item slides">
@@ -98,7 +98,7 @@
 					<h1>Atlanta Broadcast Advertising Club</h1>        
 					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus reprehenderit natus.</h3>
 				</hgroup>
-				<button class="btn btn-hero btn-lg" role="button">See all features</button>
+				<button class="btn btn-hero btn-lg" role="button">Read More</button>
 			</div>
 		</div>
 	</div> 
@@ -192,7 +192,6 @@
 						</div>
 					</article>
 				</div>
-
 			</div>
 		</div>
 
