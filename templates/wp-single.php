@@ -9,11 +9,8 @@
 ?>
 
 <?php get_header(); ?>
-
-<!-- content » single post -->
-
-<div class="content post">
- <div class="container" id="main">
+<!-- content » Single Post -->
+<div class="container" id="main">
   <div class="row">
     <?php if (have_posts() ) : while (have_posts()) : the_post(); ?>
       <article>
@@ -29,6 +26,5 @@
     <?php endwhile; endif; ?>
     <?php get_sidebar(); ?>
   </div>
-</div>
 </div>
 <?php get_footer(); ?>

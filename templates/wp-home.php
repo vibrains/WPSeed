@@ -8,11 +8,9 @@
  */
 
 ?>
-
 <?php get_header(); ?>
 <!-- content » blog home -->
-<div class="content blog">
- <div class="container" id="main">
+<div class="container" id="main">
   <div class="row">
     <h1 class="col-md-12 page-title">Blog</h1>
     <?php if (have_posts() ) : while (have_posts()) : the_post(); ?>
@@ -44,7 +42,6 @@
   <?php get_sidebar(); ?>
 <?php endwhile; endif; ?>
 <?php wp_reset_query(); ?>
-</div>
 </div>
 </div>
 <?php get_footer(); ?>

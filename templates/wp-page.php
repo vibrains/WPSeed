@@ -5,10 +5,11 @@
  * @since       wpseed 0.1
  */
 ?>
+<?php /* Template Name: Default Page */ ?>
 <?php get_header(); ?>
 
 <!-- content » page -->
-<div class="events-page teaser" style="max-height: 300px; background-repeat:no-repeat!important; background-size:cover!important; background: url(<?php the_post_thumbnail_url('large', $post->ID) ?>)"></div>
+<!-- <div class="events-page teaser" style="max-height: 300px; background-repeat:no-repeat!important; background-size:cover!important; background: url(<?php the_post_thumbnail_url('large', $post->ID) ?>)"></div> -->
  <div class="container" id="main">
  	<div class="row">
  		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
