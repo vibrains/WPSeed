@@ -5,6 +5,7 @@
 	padding: 15px;
 	ul {
 		list-style-type: none;
+		padding-left: 0;
 	}
 	li {
 		h2.widgettitle {
@@ -41,13 +42,14 @@
 		.title-holder {
 			float: right;
 			width: 100%;
-			max-width: 198px;
+			max-width: 180px;
 		}
 		h2 {
 			display: inline-block;
 			margin-bottom: 0;
 			text-transform: uppercase;
 			font-family: 'gibson_regular', sans-serif;
+			margin-top: 5px;
 			a {
 				color: $c_darkblue;
 			}
@@ -60,6 +62,9 @@
 					margin-right: 20px;
 				}
 			}
+		}
+		.tribe-events-duration {
+			margin-left: 140px;
 		}
 	}
 	p.tribe-events-widget-link {

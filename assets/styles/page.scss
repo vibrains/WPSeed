@@ -1,11 +1,38 @@
 /* DEFAULT PAGE
 /------------------------*/
 .col-md-12.page-title {
-	font-family: 'BebasNeue-Bold', sans-serif;
+	font-family: BebasNeue-Bold,sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
 	font-size: 34px;
 	color: $c_darkblue;
 	margin-bottom: 30px;
 	margin-top: 30px;
+	padding-bottom: 15px;
+	&:after {
+		content: "";
+		position: absolute;
+		left: 15px;
+		bottom: 0;
+		height: 1px;
+		border-bottom: 1px solid #ccc;
+		right: 15px;
+		float: left;
+	}
 }
+
+.entry ol, ul {
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+.entry p a {
+	font-family: 'gibson_semibold', sans-serif;
+}
+// body.page > .teaser {
+// 	width: 100%;
+// 	background-position: 100% 30% !important;
+// 	background-size: cover;
+// 	padding-top: 100px;
+// 	min-height: 350px;
+// }
