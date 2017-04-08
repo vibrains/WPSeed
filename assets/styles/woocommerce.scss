@@ -1,0 +1,79 @@
+/* WOOCOMMERCE STYLES
+/------------------------*/
+.woocommerce-billing-fields, .woocommerce-additional-fields {
+	h3 {
+		font-weight: 900;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 20px;
+		letter-spacing: -0.5px;
+	}
+}
+
+.woocommerce form .form-row.woocommerce-validated .select2-container, .woocommerce form .form-row.woocommerce-validated input.input-text, .woocommerce form, .woocommerce form .form-row input.input-text, .form-row textarea {
+	border-color: #69bf29;
+	border: none;
+	border: 1px solid #ccc;
+	padding: 10px;
+	border-radius: 2px;
+	background: #f8f8f8;
+}
+.woocommerce form, .select2-container {
+	background: transparent;
+}
+
+.select2.select2-container.select2-container--default {
+	background: transparent !important;
+	border: none!important;
+	padding: 0!important;
+}
+
+.wc_payment_methods.payment_methods.methods {
+	background: #fff;
+}
+
+.form-row.place-order {
+	background: #fff;
+}
+
+.woocommerce-checkout #payment div.payment_box {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 1em;
+	margin: 1em 0;
+	font-size: .92em;
+	border-radius: 2px;
+	line-height: 1.5;
+	background: #d7eef7;
+	color: #515151;
+}
+
+.woocommerce-checkout #payment div.payment_box::before {
+	border: 1em solid #d7eef7;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	top: -10px;
+}
+
+.woocommerce form .form-row label.checkbox, .woocommerce-page form .form-row label.checkbox {
+	span {
+		margin-left: 20px;
+	}
+}
+
+.woocommerce form .form-row .input-checkbox {
+	display: inline;
+	margin: 10px 8px 0 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+	background-color: $c_darkblue;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	&:hover {
+		background-color: $c_lightblue;
+	}
+}
