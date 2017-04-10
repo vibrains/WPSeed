@@ -109,6 +109,9 @@ nav {
   // box-shadow: 0 6px 12px rgba(0,0,0,.175);
   -webkit-box-shadow: 0!important;
   box-shadow: 0!important;
+  min-width: 200px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 .dropdown-menu > li > a {
   color: $c_bright;

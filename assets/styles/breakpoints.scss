@@ -53,10 +53,61 @@
 	article.homepage-events .type-tribe_events p {
 		margin-bottom: 20px;
 	}
+	aside.widget {
+		margin-bottom: 40px;
+	}
+	span.section-title {
+		font-size: 20px!important;
+		letter-spacing: normal!important;
+		text-align: center;
+		margin-bottom: 12px !important;
+		&:before {
+			display: none!important;
+		}
+	}
+	span.footer-section-title {
+		margin-bottom: 20px!important;
+	}
+	.instagram-feed-bg {
+		display: none;	
+	}
 }
 
 @media (max-width: 990px) {
 
+}
+
+@media (max-width: 1199px) {
+
+	.navbar-header {
+		float: left;
+		width: 100%;
+
+		a.logo-link {
+			float: none;
+			.logo {
+				width: auto;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	#menu-main-menu {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+	}
+
+	#footer-sidebar {
+		.wpcf7 {
+			label.name, label.email, label.subject, label.message {
+				width: 100%;
+				max-width: none;
+				float: none;
+				margin: auto;
+			}
+		}
+	}
 }
 
 /* Large devices (large desktops, 1200px and down) */

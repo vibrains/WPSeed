@@ -88,57 +88,7 @@ $desktop_min:         767px;        // Desktop/Mobile Breakpoint
       background-size: 50%;
     }
   }
-
-/* BUTTONS STYLING
-/===================================================== */
-a.button, .btn-hero, button, input[type="submit"] {
-  font-family: $font_name;
-  border: none;
-  white-space: nowrap;
-  display: inline-block;
-  border-radius: 3px;
-  cursor: pointer;
-  line-height: 22px;
-  padding: 7px 14px;
-  // box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 2px rgba(0,0,0,.08);
-  text-shadow: 0 1px 2px rgba(0,0,0,.5);
-  background: $c_darkblue;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: $c_bright;
-  text-decoration: none;
-  transition: all .15s ease;
-  &:hover {
-    background: $c_lightblue;
-    box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 2px rgba(0,0,0,.08);
-  }
-}
-
-a.button_alt {
-  font-family: $font_name;
-  white-space: nowrap;
-  display: inline-block;
-  line-height: 22px;
-  padding: 7px 14px;
-  // box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 2px rgba(0,0,0,.08);
-  text-shadow: 0 1px 2px rgba(0,0,0,.5);
-  background: $c_dark;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: $c_bright;
-  text-decoration: none;
-  transition: all .15s ease;
-  &:hover {
-    background: $c_lightblue;
-    color: $c_bright;
-    box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 2px rgba(0,0,0,.08);
-  }
-}
-
+  
 /* SHADOWS
 /===================================================== */
 

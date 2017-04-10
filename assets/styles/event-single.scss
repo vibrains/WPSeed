@@ -1,4 +1,10 @@
 .tribe-events-single {
+	a {
+		color: $c_lightblue;
+		&:hover {
+			color: $c_darkblue;
+		}
+	}
 	.col-md-5, .col-md-6, .col-md-12 {
 		padding: 0;
 	}
@@ -9,6 +15,9 @@
 		min-height: 275px;
 		margin-right: 20px;
 		width: 100%;
+		a {
+			font-weight: 900;
+		}
 	}
 	dt {
 		font-weight: 700;

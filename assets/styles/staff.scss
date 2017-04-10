@@ -1,9 +1,14 @@
 //STAFF AND MEMBERS STYLES
 .staff-page h2 {
 	text-transform: uppercase;
-	color: $c_darkblue;
+	color: #103e5f;
 	font-weight: 900;
-	margin-top: 30px;
+	margin-top: 0px;
+	font-size: 22px;
+	display: block;
+	float: left;
+	width: 100%;
+	font-weight: 900;
 }
 .staff {
 	border: none;
@@ -50,11 +55,10 @@
 		.staff-bio {
 			p {
 				text-transform: uppercase;
-				font-size: 18px;
+				font-size: 16px;
 				font-weight: 600;
 				color: #103e5f;
 				font-style: normal;
-				letter-spacing: -1px;
 			}
 		}
 	}
