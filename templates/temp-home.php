@@ -197,7 +197,7 @@
 
 				<div class="row">
 					<div class="instagram-feed-bg">
-						<article class="content home instagram-feed">
+						<article class="home instagram-feed">
 							<?php 
 							echo do_shortcode ('[instagram-feed]');
 							?>
