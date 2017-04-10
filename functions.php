@@ -77,6 +77,35 @@ if ( function_exists('register_sidebar') ) {
 		));
 }
 
+// Register Footer Widgets
+register_sidebar( array(
+	'name' => 'Footer Column 1',
+	'id' => 'footer-sidebar-1',
+	'description' => 'Appears in the footer area',
+	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	'after_widget' => '</aside>',
+	'before_title' => '<span class="footer-section-title">',
+	'after_title' => '</span>',
+	) );
+register_sidebar( array(
+	'name' => 'Footer Column 2',
+	'id' => 'footer-sidebar-2',
+	'description' => 'Appears in the footer area',
+	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	'after_widget' => '</aside>',
+	'before_title' => '<span class="footer-section-title">',
+	'after_title' => '</span>',
+	) );
+register_sidebar( array(
+	'name' => 'Footer Column 3',
+	'id' => 'footer-sidebar-3',
+	'description' => 'Appears in the footer area',
+	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	'after_widget' => '</aside>',
+	'before_title' => '<span class="footer-section-title">',
+	'after_title' => '</span>',
+	) );
+
 
 /* BOOTSTRAP MENU Theme setup */
 add_action( 'after_setup_theme', 'wpt_setup' );
