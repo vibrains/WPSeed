@@ -9,7 +9,7 @@ get_header(); ?>
 <div class="container" id="main">
 	<div class="row">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<h1 class="col-md-12 page-title"><?php the_title(); ?></h1>
+			<h1 class="col-md-12 page-title"><i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp;&nbsp;<?php the_title(); ?></h1>
 			<article class="page col-md-12" id="post-<?php the_ID(); ?>">
 				<div class="entry">
 					<?php the_content(); ?>
