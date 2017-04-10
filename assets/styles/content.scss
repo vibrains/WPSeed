@@ -13,6 +13,7 @@
 /* GENERAL
 /===================================================== */
 .content {
+  max-width: 86.76923em;
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
@@ -95,6 +96,7 @@
 }
 a.logo-link {
   float: left;
+  padding-top: 10px;
 }
 
 /* HEADINGS, PARAGRAPHS

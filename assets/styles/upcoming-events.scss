@@ -8,7 +8,7 @@ article.homepage-events {
       display: block;
       width: 100%;
       position: relative;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     .inner-event-content {
       .event-text {
@@ -48,6 +48,9 @@ article.homepage-events {
       }
     }
   }
+}
+article.cart-events p {
+  margin-bottom: 45px!important;
 }
 h2.homepage-event-title a, .post-title a {
   font-family: 'Montserrat', sans-serif;

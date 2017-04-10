@@ -42,6 +42,7 @@ $desktop_min:         767px;        // Desktop/Mobile Breakpoint
   /------------------------*/
   $c_text:        $c_dark;
   $c_link:        $c_lightblue;
+  $c_navlink:     $c_white;
   $c_link_hover:  $c_dark;
 
   /* Nav
@@ -90,8 +91,9 @@ $desktop_min:         767px;        // Desktop/Mobile Breakpoint
 
 /* BUTTONS STYLING
 /===================================================== */
-a.button, .btn-hero {
+a.button, .btn-hero, button, input[type="submit"] {
   font-family: $font_name;
+  border: none;
   white-space: nowrap;
   display: inline-block;
   border-radius: 3px;
@@ -100,7 +102,7 @@ a.button, .btn-hero {
   padding: 7px 14px;
   // box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 2px rgba(0,0,0,.08);
   text-shadow: 0 1px 2px rgba(0,0,0,.5);
-  background: #3d77ea;
+  background: $c_darkblue;
   border-radius: 3px;
   font-size: 12px;
   font-weight: 900;
@@ -109,7 +111,7 @@ a.button, .btn-hero {
   text-decoration: none;
   transition: all .15s ease;
   &:hover {
-    background: $c_darkblue;
+    background: $c_lightblue;
     box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 2px rgba(0,0,0,.08);
   }
 }
@@ -131,8 +133,8 @@ a.button_alt {
   text-decoration: none;
   transition: all .15s ease;
   &:hover {
-    background: $c_bright;
-    color: $c_dark;
+    background: $c_lightblue;
+    color: $c_bright;
     box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 2px rgba(0,0,0,.08);
   }
 }

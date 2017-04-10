@@ -1,6 +1,38 @@
+/* JOB LISTING PAGE
+/------------------------*/
+.job_filters .job_types {
+	background: #fff;
+	&:after {
+		background: url(../dist/images/form-edge.png);
+		background-color: transparent;
+		background-repeat: repeat;
+		display: block;
+		height: 13px !important;
+		width: 100% !important;
+		margin: 0;
+		margin-bottom: 0;
+	}
+	li {
+		padding: 12px 10px 0px 1em;
+	}
+}
+
 .job_filters .search_jobs {
+	background: #f8f8f8;
 	padding: 1em;
 	zoom: 1;
+}
+.job_filters .showing_jobs {
+	border-top: none;
+}
+
+.job_filters .search_jobs input, .job_filters .search_jobs select {
+	background: #fff;
+}
+
+div.job_listings {
+	margin-bottom: 1em;
+	border: 1px solid #ccc;
 }
 
 .job_types {
@@ -24,9 +56,10 @@
 	h3 {
 		text-transform: uppercase!important;
 		font-weight: 900;
-		font-size: 24px!important;
+		font-size: 18px!important;
+		font-weight: 900;
 		color: $c_darkblue;
-		margin-bottom: 10px!important;
+		margin-bottom: 0!important;
 	}
 }
 
@@ -35,4 +68,63 @@
 }
 .job_filters .search_jobs div.filter_first, .job_filters .search_jobs div.search_keywords {
 	padding: 15px; 
+}
+
+ul.job_listings li::before {
+	content: "";
+}
+
+ul.job_listings li.job_listing a {
+	padding: 1em 1em 1em 0;
+	div.position {
+		float: none;
+	}
+}
+
+ul.job_listings li.job_listing a div.position {
+	width: 55%;
+	padding: 0 0 0 55px;
+	line-height: 20px;
+	display: block;
+}
+
+ul.job_listings li.job_listing a img.company_logo {
+	height: 100px;
+	position: relative;
+	width: auto;
+	float: left;
+	left: 0;
+	margin-right: 1em;
+	vertical-align: middle;
+	box-shadow: none;
+	padding-left: 14px;
+}
+
+ul.job_listings {
+	border-top: none;
+	.location {
+		font-family: 'gibson_regular', sans-serif;
+		font-weight: 100;
+		font-size: 12px;
+		line-height: 13px !important;
+		text-align: center !important;
+		box-sizing: border-box !important;
+		height: 22px;
+		display: inline-block;
+		margin: 0 3px 0;
+		border-radius: 11px;
+		padding: 4px 12px 0 !important;
+		color: #fff !important;
+		background-color: #008cdd;
+		width: auto!important;
+	}
+	.company {
+		margin-bottom: 15px;
+		font-size: 14px;
+	}
+}
+
+ul.job_listings li.job_listing a .meta {
+	margin-bottom: -10px;
+	margin-top: -30px;
 }

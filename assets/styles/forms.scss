@@ -1,0 +1,82 @@
+// Form
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea,
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: 1px solid #ccc;
+	background: #f8f8f8;
+	border-radius: 3px;
+	box-shadow: none;
+	box-sizing: inherit;
+	padding: 10px;
+	width: 100%;
+
+	&::after {
+		background: url();
+		background-repeat: no-repeat;
+		display: block;
+		height: 13px;
+		width: 162px;
+		position: absolute;
+		margin: 0;
+		left: 0;
+		bottom: 13px;
+
+	}
+}
+
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='text']:focus,
+input[type='url']:focus,
+textarea:focus,
+select:focus {
+	border-color: $c_lightblue!important;
+	outline: 0;
+}
+
+label {
+	font-family: 'open sans', sans-serif;
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	text-transform: capitalize;
+	font-size: 12px;
+	letter-spacing: -0.3px;
+}
+select {
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+	padding-right: 3.0rem;
+}
+
+select:focus {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#9b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
+}
+fieldset {
+	border-width: 0;
+	padding: 0;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+	display: inline;
+}
+
+.label-inline {
+	display: inline-block;
+	font-weight: normal;
+	margin-left: .5rem;
+}

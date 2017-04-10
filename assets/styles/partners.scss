@@ -8,8 +8,16 @@
 			height: 55px;
 			width: auto;
 			opacity: 1;
-			border: 1px solid #ccc;
 			padding: 10px;
 		}
 	}
+}
+.logo_showcase .slick-slide img {
+	border: none;
+}
+.logo_showcase {
+	padding: 35px 30px 60px 30px !important
+}
+.logo_showcase .slick-dots li.slick-active button {
+	background: $c_darkblue!important;
 }

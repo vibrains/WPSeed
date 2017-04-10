@@ -4,7 +4,7 @@
 			<article class="content home our-partners">
 				<div class="col-xs-12">
 					<span class="section-title text-center">Our Partners</span>
-					<ul>
+<!-- 					<ul>
 						<li>
 							<img src="/wp-content/themes/wpseed/dist/images/partners/hot-107-9-atlanta-logo.png" alt="Hot 107.9 Atlanta">
 							<img src="/wp-content/themes/wpseed/dist/images/partners/kantar-media-logo.png" alt="Kantar Media">
@@ -13,7 +13,10 @@
 							<img src="/wp-content/themes/wpseed/dist/images/partners/kicks-fm-logo.png" alt="Kick FM">
 							<img src="/wp-content/themes/wpseed/dist/images/partners/ninety-nine-x-logo.png" alt="Ninety Nine X">
 						</li>
-					</ul>
+					</ul> -->
+
+					<?php echo do_shortcode( '[logoshowcase]' ); ?>
+
 				</div>
 			</article>
 		</div>

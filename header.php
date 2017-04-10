@@ -109,23 +109,35 @@
 
             </div> 
             <!-- Collect the nav links, forms, and other content for toggling --> 
-            <div class="collapse navbar-collapse navbar-ex1-collapse"> 
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
 
-              <?php /* Primary navigation */
-              wp_nav_menu( array(
-                'menu' => 'top_menu',
-                'depth' => 2,
-                'container' => false,
-                'menu_class' => 'nav navbar',
+              <div class="cart-header-icon">
+                <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+                  $count = WC()->cart->cart_contents_count;
+                  ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php 
+                  if ( $count > 0 ) {
+                    ?>
+                    <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+                    <?php
+                  }
+                  ?></a>
+                  <?php } ?>
+                </div>
+
+                <?php /* Primary navigation */
+                wp_nav_menu( array(
+                  'menu' => 'top_menu',
+                  'depth' => 2,
+                  'container' => false,
+                  'menu_class' => 'nav navbar',
   //Process nav menu using our custom nav walker
-                'walker' => new wp_bootstrap_navwalker())
-              );
-              ?>
-
-              <div class="search-wrap">
-                <button id="btn-search" class="btn btn--search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
+                  'walker' => new wp_bootstrap_navwalker())
+                );
+                ?>
+                <div class="search-wrap">
+                  <button id="btn-search" class="btn btn--search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </nav><!-- .main -->

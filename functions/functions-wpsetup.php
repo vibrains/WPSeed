@@ -39,7 +39,8 @@
   function register_theme_menus() {
     register_nav_menus([
       'mainmenu' => __('Main Menu'),
-      'submenu' => __('Sub Menu')
+      'submenu' => __('Sub Menu'),
+      'primary' => __('Primary')
       ]);
   }
   add_action( 'init', 'register_theme_menus');
