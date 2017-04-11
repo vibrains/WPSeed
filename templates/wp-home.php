@@ -20,28 +20,18 @@
        <span class="entry-date"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<?php echo get_the_date(); ?></span><span class="entry-author">By:&nbsp;<?php echo get_the_author(); ?></span>
      </div>
 
-     <p>
-       <?php do_action( 'addthis_widget', array(
-    'size' => '16', // size of the icons.  Either 16 or 32
-    'services' => 'facebook,joliprint', // the services you want to always appear
-    'preferred' => '0', // the number of auto personalized services
-    'more' => false // if you want to have a more button at the end
-    ));
-    ?>
-  </p>
-
-  <?php if (has_post_thumbnail()) : ?>
-    <div class="thumbnail" style="background-image: url(<?php the_post_thumbnail_url() ?>)"></div>
-  <?php endif ?>
-  <p>
-    <?php
-    echo wp_trim_words( get_the_content(), 32, '...' );
-    ?></p>
-    <a class="read-more-link button" href="<?php echo get_permalink(); ?>">Read More&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-  </article>
-  <?php get_sidebar(); ?>
-<?php endwhile; endif; ?>
-<?php wp_reset_query(); ?>
+     <?php if (has_post_thumbnail()) : ?>
+      <div class="thumbnail" style="background-image: url(<?php the_post_thumbnail_url() ?>)"></div>
+    <?php endif ?>
+    <p>
+      <?php
+      echo wp_trim_words( get_the_content(), 32, '...' );
+      ?></p>
+      <a class="read-more-link button" href="<?php echo get_permalink(); ?>">Read More&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+    </article>
+    <?php get_sidebar(); ?>
+  <?php endwhile; endif; ?>
+  <?php wp_reset_query(); ?>
 </div>
 </div>
 <?php get_footer(); ?>

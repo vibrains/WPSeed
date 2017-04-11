@@ -1,3 +1,5 @@
+/* SINGLE EVENT VIEW
+/------------------------*/
 .tribe-events-single {
 	a {
 		color: $c_lightblue;
@@ -113,6 +115,7 @@ ul.order_details::after, ul.order_details::before {
 	background-size: cover!important;
 	background-repeat: no-repeat!important;
 	background-position: center 30%!important;
+	margin-bottom: 45px;
 	// filter: blur(5px);
 	// -webkit-filter: blur(5px);
 	h1 {

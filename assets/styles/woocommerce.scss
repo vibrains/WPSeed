@@ -174,35 +174,3 @@ body.woocommerce-cart {
 	float: left;
 	max-width: 86.76923em;
 }
-
-//Cart Item Count in Navigation
-.cart-header-icon {
-	float: right;
-}
-
-.cart-contents {
-	right: 0;
-	z-index: 2;
-	border-radius: 100%;
-	top: 0;
-
-	&:after {
-		content: "\f291";
-		font-family: FontAwesome;
-		font-style: normal;
-		font-weight: normal;
-		text-decoration: inherit;
-		color: #fff;
-		font-size: 15px;
-		padding-right: 0.5em;
-		top: 2px;
-	}
-
-	span {
-		color: $c_bright;
-		padding: 3px 1px;
-		font-size: 12px;
-		font-weight: 900;
-		float: right;
-	}
-}

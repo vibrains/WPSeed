@@ -11,9 +11,6 @@
  *
  */
 
-
- @import 'vars';
-
 /* GENERAL
 /------------------------*/
 *,
@@ -29,9 +26,9 @@
 }
 
 html {
-  max-width: 100vw;
-  height: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+  height: 100%;
   margin: 0;
   padding: 0;
   font-size: $size;
@@ -70,6 +67,7 @@ a {
   color: $c_link;
   text-decoration: none;
   outline: none;
+  display: block;
   transition: .3s;
   &:hover {
     color: $c_link_hover;

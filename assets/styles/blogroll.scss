@@ -4,11 +4,11 @@
 	article {
 		margin-bottom: 2rem;
 		h2 {
+			font-family: 'gibson_regular', sans-serif;
 			text-transform: uppercase;
-			font-weight: 600;
+			font-weight: 900;
 			color: $c_darkblue;
 			font-size: 24px;
-			letter-spacing: -1px;
 		}
 
 		.post-info {
@@ -16,6 +16,7 @@
 			border-bottom: 1px solid #ccc;
 			margin-bottom: 15px;
 			width: 100%;
+			font-size: 14px;
 			span {
 				font-weight: 600;
 				color: $c_darkblue;

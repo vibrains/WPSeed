@@ -8,10 +8,18 @@
  *
  */
 
- @import 'vars';
-
 /* GENERAL
 /===================================================== */
+.row {
+  div.entry a {
+    text-decoration: none;
+    color: $c_lightblue;
+    outline: 0;
+  }
+}
+div.entry button a {
+  color: $c_bright;
+}
 .content {
   max-width: 86.76923em;
   position: relative;
@@ -35,6 +43,17 @@
       float: none;
       width: 100%;
       padding: -1rem;
+    }
+  }
+  h2 {
+    color: $c_darkblue;
+    text-transform: uppercase;
+    font-family: gibson_semibold,sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+
+    a {
+      color: $c_lightblue;
     }
   }
 }
@@ -296,6 +315,11 @@ p {
     margin-bottom: .5rem;
     background-size: cover;
   }
+}
+
+#secondary img, article img, figure, img, img.wp-post-image {
+  max-width: 100%;
+  height: auto;
 }
 
 /* TEMPLATE - SUBSITES

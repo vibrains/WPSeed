@@ -1,18 +1,69 @@
+/* PRE-HEADER / SOCIAL MEDIA AND MINI CART STYLES
+/------------------------*/
 .social-bar {
 	background-color: #2b2b2b;
 	background-image: url(../dist/images/tile-noise.png);
 	background-repeat: repeat;
-	max-height: 35px;
 	border-bottom: 1px solid #1c1c1c;
 	ul {
-		margin-right: 25px;
+		margin-right: 20px;
+		padding-top: 4px;
+		padding-bottom: 4px;
 		li {
+			+ li:before{
+				content: '';
+			}
 			a {
 				font-size: 12px;
 				color: $c_bright;
 				padding: 0 10px;
 				text-transform: none;
+				padding: 3px;
 			}
 		}
+	}
+}
+
+//Cart Item Count / Icon in Navigation
+.cart-header-icon {
+	float: right;
+	padding-top: 7px;
+}
+
+.cart-contents {
+	a {}
+	right: 0;
+	z-index: 2;
+	border-radius: 100%;
+	top: 0;
+
+	&:after {
+		content: "\f291";
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: inherit;
+		color: #fff;
+		vertical-align: top;
+		font-size: 16px;
+		padding-right: 0.5em;
+		top: 2px;
+	}
+
+	&:before{
+		padding: 0;
+		color: $c_nav_spacer;
+		content: '|';
+		color: $c_bright;
+		font-weight: 100;
+		padding-right: 20px;
+	}
+
+	span {
+		color: $c_bright;
+		padding: 3px 1px;
+		font-size: 12px;
+		font-weight: 900;
+		float: right;
 	}
 }

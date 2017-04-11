@@ -8,9 +8,6 @@
  *
  */
 
-
- @import 'vars';
-
 /* NAV
 /===================================================== */
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -24,8 +21,8 @@
 .navbar {
   margin-bottom: 0px;
   border-color: transparent;
-  background-color: $c_darkblue;
-  background-image: url(../dist/images/tile-noise.png);
+  background: $c_darkblue;
+  // background-image: url(../dist/images/tile-noise.png);
   background-repeat: repeat;
   border: none;
   border-radius: 0;

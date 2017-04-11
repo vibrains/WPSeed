@@ -4,7 +4,7 @@
 			<article class="content home our-partners">
 				<div class="col-xs-12">
 					<span class="section-title text-center">Our Partners</span>
-					<?php //echo do_shortcode( '[logoshowcase]' ); ?>
+					<?php echo do_shortcode( '[logoshowcase]' ); ?>
 				</div>
 			</article>
 		</div>
