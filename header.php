@@ -91,25 +91,9 @@
 
 
       <nav class="navbar navbar-default" role="navigation">
-        <div class="container" id="main">
-          <div class="row">
-
-            <!-- Brand and toggle get grouped for better mobile display --> 
-            <div class="navbar-header"> 
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
-                <span class="sr-only">Toggle navigation</span> 
-                <span class="icon-bar"></span> 
-                <span class="icon-bar"></span> 
-                <span class="icon-bar"></span> 
-              </button> 
-
-              <a class="logo-link" href="<?php echo get_home_url(); ?>">
-                <div class="logo"></div>
-              </a>
-
-            </div> 
-            <!-- Collect the nav links, forms, and other content for toggling --> 
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <div class="social-bar">
+          <div class="container" id="main">
+            <div class="row">
 
               <div class="cart-header-icon">
                 <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
@@ -124,6 +108,34 @@
                   <?php } ?>
                 </div>
 
+                <ul>
+                  <li><a href="#">Link One</a></li>
+                  <li><a href="#">Link Two</a></li>
+                  <li><a href="#">Link Three</a></li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          <div class="container" id="main">
+            <div class="row">
+
+              <!-- Brand and toggle get grouped for better mobile display --> 
+              <div class="navbar-header"> 
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
+                  <span class="sr-only">Toggle navigation</span> 
+                  <span class="icon-bar"></span> 
+                  <span class="icon-bar"></span> 
+                  <span class="icon-bar"></span> 
+                </button> 
+
+                <a class="logo-link" href="<?php echo get_home_url(); ?>">
+                  <div class="logo"></div>
+                </a>
+
+              </div> 
+              <!-- Collect the nav links, forms, and other content for toggling --> 
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <?php /* Primary navigation */
                 wp_nav_menu( array(
                   'menu' => 'top_menu',

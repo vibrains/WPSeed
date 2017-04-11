@@ -15,7 +15,6 @@
 /===================================================== */
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: transparent;
-  background: $c_darkblue;
   border: none;
   border-radius: 0;
 }
@@ -25,12 +24,14 @@
 .navbar {
   margin-bottom: 0px;
   border-color: transparent;
-  background: $c_darkblue;
+  background-color: $c_darkblue;
+  background-image: url(../dist/images/tile-noise.png);
+  background-repeat: repeat;
   border: none;
   border-radius: 0;
-  padding-top: 5px;
   padding-bottom: 5px;
 }
+nav .navbar li a {padding: 10px 5px;}
 nav {
   z-index: 210;
   font-size: 0.8rem;
@@ -40,7 +41,7 @@ nav {
     margin: 0;
     padding: 0;
     float: right;
-    margin-right: 60px;
+    margin-right: 35px;
   }
   li {
     list-style-type: none;
@@ -50,7 +51,6 @@ nav {
       color: $c_navlink;
       text-transform: uppercase;
       display: inline-block!important;
-      padding: 10px 5px !important;
       font-size: 16px;
       font-weight: 900;
     }
@@ -73,8 +73,13 @@ nav {
       color: $c_nav_spacer;
       content: '|';
       color: $c_bright;
+      font-weight: 100;
     }
   }
+}
+.caret {
+  margin-left: 2px;
+  margin-top: -3px;
 }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {

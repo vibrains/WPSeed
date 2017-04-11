@@ -1,0 +1,18 @@
+.social-bar {
+	background-color: #2b2b2b;
+	background-image: url(../dist/images/tile-noise.png);
+	background-repeat: repeat;
+	max-height: 35px;
+	border-bottom: 1px solid #1c1c1c;
+	ul {
+		margin-right: 25px;
+		li {
+			a {
+				font-size: 12px;
+				color: $c_bright;
+				padding: 0 10px;
+				text-transform: none;
+			}
+		}
+	}
+}

@@ -176,10 +176,12 @@ body.woocommerce-cart {
 }
 
 //Cart Item Count in Navigation
+.cart-header-icon {
+	float: right;
+}
+
 .cart-contents {
-	position: absolute;
 	right: 0;
-	margin-right: 80px;
 	z-index: 2;
 	border-radius: 100%;
 	top: 0;
@@ -193,16 +195,14 @@ body.woocommerce-cart {
 		color: #fff;
 		font-size: 15px;
 		padding-right: 0.5em;
-		position: absolute;
 		top: 2px;
-		left: 0;
-		margin-left: -25px;
 	}
 
 	span {
 		color: $c_bright;
-		padding: 10px 1px;
+		padding: 3px 1px;
 		font-size: 12px;
 		font-weight: 900;
+		float: right;
 	}
 }
