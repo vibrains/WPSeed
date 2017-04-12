@@ -7,7 +7,7 @@
 ?>
 <?php /* Template Name: Events Landing */ ?>
 <?php get_header(); ?>
-
+<?php wp_reset_query() ?>
 <!-- content » page -->
 <div class="events-page teaser" style="background: url(<?php the_post_thumbnail_url('large', $post->ID) ?>)">
 	<div class="content home">
@@ -48,4 +48,11 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+	<script>
+		$(function() {
+			$('.tribe-events-list-event-description.tribe-events-content').matchHeight();
+		}); 
+	</script>
 	<?php get_footer(); ?>

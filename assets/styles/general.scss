@@ -67,7 +67,7 @@ a {
   color: $c_link;
   text-decoration: none;
   outline: none;
-  display: block;
+  display: inline-block;
   transition: .3s;
   &:hover {
     color: $c_link_hover;
@@ -92,7 +92,7 @@ a.button, .btn-hero, button, input[type="submit"] {
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
-  color: $c_bright;
+  color: $c_bright!important;
   text-decoration: none;
   transition: all .15s ease;
   &:hover {

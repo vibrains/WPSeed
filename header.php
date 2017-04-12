@@ -52,6 +52,8 @@
           </symbol>
         </defs>
       </svg>
+
+<?php /*
       <div class="search">
         <button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
         <form class="search__form" action="">
@@ -89,8 +91,10 @@
         </span>
       </button> -->
 
+       */?>
 
-      <nav class="navbar navbar-default" role="navigation">
+
+       <nav class="navbar navbar-default" role="navigation">
         <div class="social-bar">
           <div class="container" id="main">
             <div class="row">
@@ -119,37 +123,35 @@
           </div>
           <div class="container" id="main">
             <div class="row">
-
               <!-- Brand and toggle get grouped for better mobile display --> 
               <div class="navbar-header"> 
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
+<!--                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
                   <span class="sr-only">Toggle navigation</span> 
                   <span class="icon-bar"></span> 
                   <span class="icon-bar"></span> 
                   <span class="icon-bar"></span> 
-                </button> 
-
+                </button>  -->
                 <a class="logo-link" href="<?php echo get_home_url(); ?>">
                   <div class="logo"></div>
                 </a>
 
               </div> 
               <!-- Collect the nav links, forms, and other content for toggling --> 
-              <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <?php /* Primary navigation */
-                wp_nav_menu( array(
-                  'menu' => 'top_menu',
-                  'depth' => 2,
-                  'container' => false,
-                  'menu_class' => 'nav navbar',
+              <!-- <div class="collapse navbar-collapse navbar-ex1-collapse"> -->
+              <?php /* Primary navigation */
+              wp_nav_menu( array(
+                'menu' => 'top_menu',
+                'depth' => 2,
+                'container' => false,
+                'menu_class' => 'nav navbar',
   //Process nav menu using our custom nav walker
-                  'walker' => new wp_bootstrap_navwalker())
-                );
-                ?>
-                <div class="search-wrap">
+                'walker' => new wp_bootstrap_navwalker())
+              );
+              ?>
+<!--                 <div class="search-wrap">
                   <button id="btn-search" class="btn btn--search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
-                </div>
+                </div> -->
+                <!--               </div> navbar-collapse closing div -->
               </div>
             </div>
-          </div>
         </nav><!-- .main -->
