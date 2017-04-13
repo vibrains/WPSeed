@@ -31,6 +31,12 @@
 	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
 		background-color: $c_darkblue;
 	}
+	#menu-main-menu {
+		display: none;
+	}
+	a.logo-link {
+		float: left!important;
+	}
 }
 
 @media (max-width: 799px) {

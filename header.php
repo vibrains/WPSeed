@@ -124,7 +124,8 @@
           <div class="container" id="main">
             <div class="row">
               <!-- Brand and toggle get grouped for better mobile display --> 
-              <div class="navbar-header"> 
+              <div class="navbar-header">
+                <?php echo do_shortcode('[responsive_menu]'); ?>
 <!--                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
                   <span class="sr-only">Toggle navigation</span> 
                   <span class="icon-bar"></span> 
