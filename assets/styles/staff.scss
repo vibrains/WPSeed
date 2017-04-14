@@ -13,6 +13,7 @@
 .staff {
 	border: none;
 	box-shadow: none;
+	margin-bottom: 40px;
 	p {
 		margin: 0;
 		margin-top: 5px;
@@ -23,14 +24,22 @@
 
 		.staff-content {
 			background: #ddd;
-			padding-bottom: 25px;
 			padding-top: 100px;
 			margin-top: -100px;
 			float: left;
+			min-width: 100%;
+			padding-bottom: 40px;
+		}
+
+		.staff-name {
+			font-weight: 900;
+			font-family: 'gibson_semibold', sans-serif;
+			font-size: 20px;
 		}
 
 		img {
 			border-radius: 50%;
+			max-width: 178px;
 			min-width: 178px;
 			height: auto;
 			margin-bottom: 20px;
@@ -39,7 +48,6 @@
 			font-size: 22px;
 			text-transform: uppercase;
 			color: $c_darkblue;
-			font-weight: 900;
 		}
 		.staff-position {
 			p {
@@ -50,6 +58,10 @@
 				font-style: italic;
 				border-bottom: 1px solid #ccc;
 				padding-bottom: 10px;
+
+				float: left;
+				text-align: center;
+				width: 100%;
 			}
 		}
 		.staff-bio {
@@ -59,18 +71,24 @@
 				font-weight: 600;
 				color: #103e5f;
 				font-style: normal;
+
+				float: left;
+				text-align: center;
+				width: 100%;
 			}
 		}
 	}
 	.staff-social-links {
-		margin-top: 10px;
-		margin-bottom: -40px;
+		margin-top: -15px;
 
 		a.button {
 			font-size: 16px;
 			font-weight: 600;
 			background: $c_darkblue;
-			margin-top: 20px;
+
+			&:hover {
+				background: $c_lightblue;
+			}
 		}
 	}
 }

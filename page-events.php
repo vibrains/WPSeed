@@ -9,7 +9,7 @@
 <?php get_header(); ?>
 <?php wp_reset_query() ?>
 <!-- content » page -->
-<div class="events-page teaser" style="background: url(<?php the_post_thumbnail_url('large', $post->ID) ?>)">
+<div class="events-page page-holder teaser" style="background: url(<?php the_post_thumbnail_url('large', $post->ID) ?>)">
 	<div class="content home">
 		<div class="container" id="main">
 			<div class="row">

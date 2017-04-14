@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="container staff-page" id="main">
 	<div class="row">
 		<h1 class="col-md-12 page-title"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;The ABAC Board Members and Officers</h1>
-		<h2 class="staff-section-title">The Officers</h2>
+		<h2 class="col-md-12 staff-section-title">The Officers</h2>
 		<?php
 		if( have_rows('officers') ):
 			while ( have_rows('officers') ) : the_row();
@@ -20,12 +20,12 @@ get_header(); ?>
 		$linkedin = get_sub_field('officers_linkedin');
 		$twitter = get_sub_field('officers_twitter');
 		?>
-		<div class="col-xs-12 col-sm-3">
+		<div class="col-xs-12 col-sm-6 col-md-3">
 			<div class="panel panel-default staff">
 				<div class="panel-body">
 					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
 					<div class="staff-content">
-						<p><?php the_sub_field('officers_name'); ?></p>
+						<p class="staff-name"><?php the_sub_field('officers_name'); ?></p>
 						<div class="col-md-12 no-padding">
 							<div class="staff-position">
 								<p><?php the_sub_field('officers_position'); ?></p>
@@ -34,9 +34,9 @@ get_header(); ?>
 								<p class="staff-bio"><?php the_sub_field('officers_bio'); ?></p>
 							</div>
 						</div>
-						<div class="col-xs-12 no-padding staff-social-links">
-							<a class="button" href="mailto:<?php the_sub_field('officers_mail'); ?>"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;Send Email</a>
-						</div>
+					</div>
+					<div class="col-xs-12 no-padding staff-social-links">
+						<a class="button" href="mailto:<?php the_sub_field('officers_mail'); ?>"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;Send Email</a>
 					</div>
 
 
@@ -58,7 +58,7 @@ else : ?>
 <br>
 
 <div class="row">
-	<h2 class="staff-section-title">The Board</h2>
+	<h2 class="col-md-12 staff-section-title">The Board</h2>
 	<?php
 	if( have_rows('board') ):
 		while ( have_rows('board') ) : the_row();
@@ -67,12 +67,12 @@ else : ?>
 	$position = get_sub_field('board_position');
 	$biography = get_sub_field('board_bio');
 	?>
-	<div class="col-xs-12 col-sm-3">
+	<div class="col-xs-12 col-sm-6 col-md-3">
 		<div class="panel panel-default staff">
 			<div class="panel-body">
 				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
 				<div class="staff-content">
-					<p><?php the_sub_field('board_name'); ?></p>
+					<p class="staff-name"><?php the_sub_field('board_name'); ?></p>
 					<div class="col-md-12 no-padding">
 						<div class="staff-position">
 							<p><?php the_sub_field('board_position'); ?></p>
@@ -81,9 +81,9 @@ else : ?>
 							<p class="staff-bio"><?php the_sub_field('board_bio'); ?></p>
 						</div>
 					</div>
-					<div class="col-xs-12 no-padding staff-social-links">
-						<a class="button" href="mailto:<?php the_sub_field('board_mail'); ?>"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;Send Email</a>
-					</div>
+				</div>
+				<div class="col-xs-12 no-padding staff-social-links">
+					<a class="button" href="mailto:<?php the_sub_field('board_mail'); ?>"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;Send Email</a>
 				</div>
 
 
@@ -100,4 +100,11 @@ else : ?>
 <?php wp_reset_query(); ?>
 </div>
 </div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script>
+	$(function() {
+		$('.staff-content').matchHeight();
+	}); 
+</script>
 <?php get_footer(); ?>

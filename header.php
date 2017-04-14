@@ -94,48 +94,51 @@
        */?>
 
 
-       <nav class="navbar navbar-default" role="navigation">
-        <div class="social-bar">
-          <div class="container" id="main">
-            <div class="row">
-
-              <div class="cart-header-icon">
-                <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
-                  $count = WC()->cart->cart_contents_count;
-                  ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php 
-                  if ( $count > 0 ) {
-                    ?>
-                    <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
-                    <?php
-                  }
-                  ?></a>
-                  <?php } ?>
+       <div class="nav-wrap">    
+         <nav class="navbar navbar-default" role="navigation">
+          <div class="social-bar">
+            <div class="container" id="main">
+              <div class="row">
+                <div class="col-md-6 col-xs-12">
+                  <a class="logo-link" href="<?php echo get_home_url(); ?>">
+                    <div class="logo"></div>
+                  </a>
                 </div>
+                <div class="col-md-6 col-xs-12 no-horizontal-padding">
+                  <div class="cart-header-icon">
+                    <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+                      $count = WC()->cart->cart_contents_count;
+                      ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php 
+                      if ( $count > 0 ) {
+                        ?>
+                        <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+                        <?php
+                      }
+                      ?></a>
+                      <?php } ?>
+                    </div>
 
-                <ul>
-                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                </ul>
+                    <ul>
+                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
 
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="container" id="main">
-            <div class="row">
-              <!-- Brand and toggle get grouped for better mobile display --> 
-              <div class="navbar-header">
-                <?php echo do_shortcode('[responsive_menu]'); ?>
+            <div class="container" id="main">
+              <div class="row">
+                <!-- Brand and toggle get grouped for better mobile display --> 
+                <div class="navbar-header">
+                  <?php echo do_shortcode('[responsive_menu]'); ?>
 <!--                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
                   <span class="sr-only">Toggle navigation</span> 
                   <span class="icon-bar"></span> 
                   <span class="icon-bar"></span> 
                   <span class="icon-bar"></span> 
                 </button>  -->
-                <a class="logo-link" href="<?php echo get_home_url(); ?>">
-                  <div class="logo"></div>
-                </a>
-
               </div> 
               <!-- Collect the nav links, forms, and other content for toggling --> 
               <!-- <div class="collapse navbar-collapse navbar-ex1-collapse"> -->
@@ -155,4 +158,5 @@
                 <!--               </div> navbar-collapse closing div -->
               </div>
             </div>
-        </nav><!-- .main -->
+          </nav><!-- .main -->
+        </div>

@@ -2,9 +2,20 @@
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and down) */
+@media (max-width: 399px) {
+	#footer-sidebar .tribe-mini-calendar-event .list-info .tribe-events-event-image {
+		float: none;
+	}
+	#footer-sidebar .tribe-mini-calendar-event .list-info {
+		margin: 0;
+		text-align: center;
+		width: 100%;
+	}
+}
+
 @media (max-width: 768px) {
 	.staff .panel-body .staff-content {
-		float: none!important;
+
 	}
 	.staff .staff-social-links {
 		margin-bottom: 0!important;
