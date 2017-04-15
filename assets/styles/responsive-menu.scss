@@ -4,17 +4,16 @@
 			display: none;
 		}
 		a {
-			padding: 5px 3px !important;
+			padding: 3px 3px !important;
 		}
 	}
 }
-
 button#responsive-menu-button {
-	width: 45px!important;
-	height: 45px!important;
+	width: 40px!important;
+	height: 40px!important;
 	background: #000;
-	position: relative!important;
-	top: 10px!important;
+	position: absolute;
+	top: 15px!important;
 	right: 1%;
 	float: right;
 }

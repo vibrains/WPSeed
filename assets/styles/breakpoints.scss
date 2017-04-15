@@ -12,9 +12,24 @@
 		width: 100%;
 	}
 }
-
+@media (max-width: 439px) {
+	.logo {
+		float: left;
+	}
+	button#responsive-menu-button {
+		margin-top: 15px;
+	}
+	.logo {
+		margin-top: 10px;
+		height: 55px !important;
+		width: 220px !important;
+	}
+}
 @media (max-width: 767px) {
 
+	body {
+		padding-top: 130px!important;
+	}
 	.header-social-links-holder {
 		width: 100%;
 		text-align: center;
@@ -30,16 +45,8 @@
 	.fa.fa-facebook {
 		padding-left: 5px!important;
 	}
-	button#responsive-menu-button {
-		margin-top: -70px!important;
-	}
-
 	.carousel {
 		display: none;
-	}
-
-	.staff .panel-body .staff-content {
-
 	}
 	.staff .staff-social-links {
 		margin-bottom: 0!important;
@@ -47,7 +54,6 @@
 	.events-archive a.read-more-link, .events-archive p.latest-event-header-description {
 		max-width: none!important;
 	}
-
 	.navbar-toggle {
 		position: relative;
 		float: right;
@@ -83,7 +89,6 @@
 		display: none;
 	}
 }
-
 @media (max-width: 799px) {
 	.recent-posts .post-thumbnail {
 		width: 100%;
@@ -157,6 +162,20 @@
 
 @media (max-width: 1199px) {
 
+	body {
+		padding-top: 145px;
+	}
+
+	.logo {
+		margin-top: 10px;
+		height: 55px;
+		width: 275px;
+	}
+
+	.navbar {
+		min-height: 60px;
+	}
+
 	.navbar-header {
 		float: left;
 		width: 100%;
@@ -164,9 +183,6 @@
 
 		a.logo-link {
 			float: none;
-			.logo {
-				margin-top: 10px;
-			}
 		}
 	}
 
