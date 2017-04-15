@@ -10,7 +10,7 @@
 
 <?php get_header(); ?>
 <!-- content » Single Post -->
-<div class="content post">
+<div class="page-holder-single content post">
   <div class="container" id="main">
     <div class="row">
       <?php if (have_posts() ) : while (have_posts()) : the_post(); ?>

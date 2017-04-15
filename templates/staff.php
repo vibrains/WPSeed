@@ -5,7 +5,7 @@ Template Name: Staff Template
 get_header(); ?>
 
 <!-- <div class="events-page teaser" style="max-height: 300px; background-repeat:no-repeat!important; background-size:cover!important; background: url(<?php the_post_thumbnail_url('large', $post->ID) ?>)"></div> -->
-<div class="container staff-page" id="main">
+<div class="page-holder container staff-page" id="main">
 	<div class="row">
 		<h1 class="col-md-12 page-title"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;The ABAC Board Members and Officers</h1>
 		<h2 class="col-md-12 staff-section-title">The Officers</h2>

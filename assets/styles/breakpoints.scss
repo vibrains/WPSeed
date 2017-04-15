@@ -13,7 +13,31 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+
+	.header-social-links-holder {
+		width: 100%;
+		text-align: center;
+		.header-social-links {
+			margin-right: auto;
+			margin-left: auto;
+			display: inline-block;
+		}
+	}
+	.fa.fa-instagram {
+		padding-left: 0px!important;
+	}
+	.fa.fa-facebook {
+		padding-left: 5px!important;
+	}
+	button#responsive-menu-button {
+		margin-top: -70px!important;
+	}
+
+	.carousel {
+		display: none;
+	}
+
 	.staff .panel-body .staff-content {
 
 	}
@@ -46,7 +70,17 @@
 		display: none;
 	}
 	a.logo-link {
-		float: left!important;
+		float: none!important;
+	}
+	.logo {
+		margin-right: auto!important;
+		margin-left: auto!important;
+		margin-top: 15px;
+		height: 75px;
+		width: auto;
+	}
+	.events-page.teaser .tribe-event-date-end, .events-page.teaser .tribe-event-date-start {
+		display: none;
 	}
 }
 
@@ -74,6 +108,14 @@
 	.callout h2 {
 		font-size: 25px;
 		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 979px) {
+	.hero {
+		position: absolute;
+		left: 48%;
+		width: 70%;
 	}
 }
 
@@ -155,5 +197,8 @@
 	}
 	.top .logo {
 		width: 10rem;
+	}
+	.cart-header-icon {
+		padding-top: 15px!important;
 	}
 }

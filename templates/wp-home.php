@@ -10,7 +10,7 @@
 ?>
 <?php get_header(); ?>
 <!-- content » blog home -->
-<div class="container" id="main">
+<div class="page-holder container" id="main">
   <div class="row">
     <h1 class="col-md-12 page-title">Blog</h1>
     <?php if (have_posts() ) : while (have_posts()) : the_post(); ?>

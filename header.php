@@ -99,31 +99,33 @@
           <div class="social-bar">
             <div class="container" id="main">
               <div class="row">
-                <div class="col-md-6 col-xs-12">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                   <a class="logo-link" href="<?php echo get_home_url(); ?>">
                     <div class="logo"></div>
                   </a>
                 </div>
-                <div class="col-md-6 col-xs-12 no-horizontal-padding">
-                  <div class="cart-header-icon">
-                    <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
-                      $count = WC()->cart->cart_contents_count;
-                      ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php 
-                      if ( $count > 0 ) {
-                        ?>
-                        <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
-                        <?php
-                      }
-                      ?></a>
-                      <?php } ?>
+                <div class="col-md-6 col-sm-6 col-xs-12 no-horizontal-padding header-social-links-holder">
+                  <div class="header-social-links">
+
+                    <div class="cart-header-icon">
+                      <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+                        $count = WC()->cart->cart_contents_count;
+                        ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php 
+                        if ( $count > 0 ) {
+                          ?>
+                          <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+                          <?php
+                        }
+                        ?></a>
+                        <?php } ?>
+                      </div>
+
+                      <ul>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                      </ul>
                     </div>
-
-                    <ul>
-                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    </ul>
-
                   </div>
                 </div>
               </div>

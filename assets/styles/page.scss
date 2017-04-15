@@ -1,7 +1,10 @@
 /* DEFAULT PAGE
 /------------------------*/
 .page-holder {
-	padding-top: 105px!important;
+	margin-top: 100px;
+}
+.page-holder-single {
+	margin-top: 150px;
 }
 .page {
 	padding-top: 0;
@@ -32,6 +35,9 @@
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 20px;
+}
+.entry h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
 }
 .entry p a {
 	font-family: 'gibson_semibold', sans-serif;

@@ -124,3 +124,16 @@ aside.widget {
     color: $c_lightblue;
   }
 }
+
+.admin-area {
+  background: $c_darkblue;
+  text-align: center;
+  padding: 10px 0;
+  span a {
+    text-transform: uppercase;
+    font-family: 'gibson_semibold', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: $c_bright;
+  }
+}

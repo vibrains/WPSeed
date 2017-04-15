@@ -12,9 +12,8 @@
 <?php get_header(); ?>
 <!-- content » home -->
 
-<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="8000" id="bs-carousel">
+<div class="page-holder carousel fade-carousel slide" data-ride="carousel" data-interval="8000" id="bs-carousel">
 	<!-- Overlay -->
-
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
 		<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
@@ -35,7 +34,7 @@
 				<button class="btn btn-hero btn-lg" role="button">Read More</button>
 			</div>
 		</div>
-		<div class="item slides">
+<!-- 		<div class="item slides">
 			<div class="overlay"></div>
 			<div class="slide-2"></div>
 			<div class="hero">        
@@ -56,7 +55,7 @@
 				</hgroup>
 				<button class="btn btn-hero btn-lg" role="button">Read More</button>
 			</div>
-		</div>
+		</div> -->
 	</div> 
 </div>
 
@@ -93,8 +92,8 @@
 				<h3>Atlanta Broadcast and Advertising Club</h3>
 				<p><strong>The Atlanta Broadcast and Advertising Club sets out to provide superior networking opportunities in all facets of the media business in Atlanta, provide educational opportunities that offer our members insight from industry experts and give back to the local community through fundraising efforts.</strong></p>
 				<p>ABAC was established in the late sixties/early seventies by a local group of broadcast professionals. The founding members sought to provide a professional forum devoted specifically to broadcast concerns, as the Atlanta Ad Club was largely focused on print media in those days. Originally Atlanta Broadcast Executives Club (ABEC), our organization was re-named Atlanta Broadcast Advertising Club in the seventies.</p><br>
-				<a href="http://www.google.com" class="button">Button Number One</a> <a href="http://www.google.com" class="button_alt">Button Number Two</a>
-				<div class="divider"></div>
+				<a href="/membership" class="button" style="margin: 20px; font-size: 18px;">Membership</a> <a href="http://www.google.com" class="button_alt" style="margin: 20px; font-size: 18px;">Sponsor Meltdown</a>
+				<div class="custom-divider"></div>
 			</article>
 		</div>
 
