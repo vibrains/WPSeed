@@ -88,6 +88,12 @@
 	.events-page.teaser .tribe-event-date-end, .events-page.teaser .tribe-event-date-start {
 		display: none;
 	}
+	.content article img, .content section img {
+		float: left;
+	}
+	.tribe-event-schedule-details .latest-upcoming-event {
+		font-size: 14px;
+	}
 }
 @media (max-width: 799px) {
 	.recent-posts .post-thumbnail {
