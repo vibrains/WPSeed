@@ -2,7 +2,7 @@
 			<span class="section-title text-center">Our Partners</span>
 			<?php echo do_shortcode( '[logoshowcase]' ); ?>
 		</div>
-		<div class="container" id="main">
+		<div class="container footer-container" id="main">
 			<div class="row">
 				<div id="footer-sidebar" class="secondary">
 					<div class="col-md-4 col-xs-12">

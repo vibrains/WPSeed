@@ -19,7 +19,7 @@ $more = false;
 
 <div class="col-xs-12 section-title-holder">
 	<span class="section-title text-center">Browse Upcoming Events</span>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum et distinctio quibusdam eos amet, porro dolorum voluptatum debitis sed accusamus pariatur iure, id similique earum veritatis quam quas nostrum vero!</p>
+	<p>Connecting the Atlanta Media Community</p>
 </div>
 
 <div class="tribe-events-loop tribe-clearfix" id="<!-- tribe-events-photo-events -->">

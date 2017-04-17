@@ -101,6 +101,7 @@ gulp.task('javascript', function() {
 // to:      dist/images
 gulp.task('images',  function() {
   gulp.src('assets/images/**/*.*')
+  gulp.src('assets/slides/**/*.*')
   .pipe(imagemin())
   .pipe(gulp.dest('dist/images'))
   .pipe(browserSync.stream());

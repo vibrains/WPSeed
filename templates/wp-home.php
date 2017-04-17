@@ -8,16 +8,18 @@
  */
 
 ?>
+<?php /* Template Name: Blog Roll */ ?>
 <?php get_header(); ?>
+<?php wp_reset_query(); ?>
 <!-- content » blog home -->
-<div class="page-holder container" id="main">
+<div class="container page-holder" id="main">
   <div class="row">
     <h1 class="col-md-12 page-title">Blog</h1>
     <?php if (have_posts() ) : while (have_posts()) : the_post(); ?>
      <article class="page col-md-7" id="post-<?php the_ID(); ?>">
       <a href="<?php echo get_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
       <div class="post-info">
-       <span class="entry-date"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<?php echo get_the_date(); ?></span><span class="entry-author">By:&nbsp;<?php echo get_the_author(); ?></span>
+       <span class="entry-date"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<?php echo get_the_date(); ?></span><span class="entry-author"><?php //echo get_the_author(); ?></span>
      </div>
 
      <?php if (has_post_thumbnail()) : ?>

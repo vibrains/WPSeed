@@ -1,5 +1,9 @@
 /* FOOTER
 /===================================================== */
+.footer-container {
+  border-top: 2px solid $c_darkblue;
+  padding-top: 50px;
+}
 
 //Footer Widgets
 #footer-sidebar {
@@ -129,6 +133,7 @@ aside.widget {
   background: $c_darkblue;
   text-align: center;
   padding: 10px 0;
+  width: 100%;
   span a {
     text-transform: uppercase;
     font-family: 'gibson_semibold', sans-serif;

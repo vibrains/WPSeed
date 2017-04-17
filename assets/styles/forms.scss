@@ -80,3 +80,37 @@ input[type='radio'] {
 	font-weight: normal;
 	margin-left: .5rem;
 }
+
+// MAILCHIMP SIGNUP FORM ON HOMEPAGE
+.callout #mc_embed_signup form {
+	text-align: left;
+}
+.callout #mc_embed_signup input.email {
+	font-family: gibson_regular,sans-serif;
+	width: 300px;
+	float: left;
+	padding: 0px 10px;
+	height: 40px;
+	margin-right: 10px;
+}
+.callout #mc_embed_signup .button {
+	font-size: 12px;
+	border: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	letter-spacing: .03em;
+	color: #fff;
+	background-color: $c_dark;
+	box-sizing: border-box;
+	height: 40px;
+	line-height: 32px;
+	padding: 0 18px;
+	display: inline-block;
+	margin: 0;
+	transition: all 0.23s ease-in-out 0s;
+
+	&:hover {
+		background: $c_lightblue;
+	}
+}

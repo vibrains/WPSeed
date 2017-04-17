@@ -209,9 +209,6 @@ p {
   }
 }
 .callout {
- padding: 10%;
- padding-top: 50px;
- padding-bottom: 50px;
  height: auto;
  // background: #605ea1;
  // background-image: -webkit-radial-gradient(circle farthest-corner at right bottom,#ac9cd5 0,#8e7ec2 28%,#6561af 57%,#1a2565 100%);
@@ -220,8 +217,11 @@ p {
  background-image: -webkit-radial-gradient(circle farthest-corner at right bottom,$c_darkblue 0,$c_darkblue 28%,$c_lightblue 57%,$c_lightblue 100%);
  background-image: radial-gradient(circle farthest-corner at right bottom,$c_darkblue 0,$c_darkblue 28%,$c_lightblue 57%,$c_lightblue 100%);
  h2 {
-  font-size: 1.2rem;
-  padding: 0;
+  font-family: 'gibson_regular', sans-serif;
+  color: $c_bright;
+  text-align: left;
+  font-size: 20px;
+  padding-top: 20px;
   margin: 0;
 }
 }
@@ -317,10 +317,10 @@ p {
   }
 }
 
-#secondary img, article img, figure, img, img.wp-post-image {
-  max-width: 100%;
-  height: auto;
-}
+// #secondary img, article img, figure, img.wp-post-image {
+//   max-width: 100%;
+//   height: auto;
+// }
 
 /* TEMPLATE - SUBSITES
 /------------------------*/

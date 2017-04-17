@@ -32,9 +32,9 @@
   background-repeat: repeat;
   border: none;
   border-radius: 0;
-  padding-bottom: 5px;
+  min-height: 45px;
 }
-nav .navbar li a {padding: 10px 5px;}
+nav .navbar li a {padding: 8px 5px;}
 nav {
   z-index: 210;
   font-size: 0.8rem;

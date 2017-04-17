@@ -19,6 +19,5 @@
 	});
 </script>
 <?php wp_footer() ?>
-<script src="/wp-content/themes/wpseed/assets/scripts/search.js"></script>
 </body>
 </html>

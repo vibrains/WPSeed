@@ -28,7 +28,7 @@
 			<div class="slide-1"></div>
 			<div class="hero">
 				<hgroup>
-					<h1>Atlanta Broadcast Advertising Club</h1>        
+					<h1>Connecting the Atlanta Media Community</h1>        
 					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus reprehenderit natus.</h3>
 				</hgroup>
 				<button class="btn btn-hero btn-lg" role="button">Read More</button>
@@ -58,8 +58,6 @@
 		</div> -->
 	</div> 
 </div>
-
-
 <!-- <div class="teaser" style="background-image: url(<?php the_post_thumbnail_url('large', $post->ID) ?>)">
 	<div class="content home">
 		<article>
@@ -69,30 +67,50 @@
 	</div>
 </div>
 -->
-<div class="teaser callout">
-	<article>
+<div class="callout">
+	<div class="container" id="main">
 		<div class="row">
-			<div class="col-md-9 col-xs-12">
-				<h2>ABAC Membership is free. Sign-Up &amp; and stay in the know!</h2>
-			</div>
-			<div class="newsletter-container">
-				<div class="col-md-3 col-xs-12">
-					<input type="text" placeholder="Email">
-				</div>
-			</div>
+			<div class="content home welcome">
+				<article>
+					<div class="col-md-7 col-sm-12 col-xs-12">
+						<h2>ABAC Membership is free. Sign-Up and stay in the know!</h2>
+					</div>
+					<div class="newsletter-container">
+						<div class="col-md-5 col-sm-12 col-xs-12">
+							<!-- Begin MailChimp Signup Form -->
+							<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+							<style type="text/css">
+								#mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+	<form action="//abac-online.us1.list-manage.com/subscribe/post?u=e19a10c6ad85ab81a9de0153f&amp;id=e09f6753f2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<div id="mc_embed_signup_scroll">
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e19a10c6ad85ab81a9de0153f_e09f6753f2" tabindex="-1" value=""></div>
+			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 		</div>
-	</article>
+	</form>
+</div>
+<!--End mc_embed_signup-->
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
 </div>
 
 <div class="container" id="main">
 	<div class="row">
-
 		<div class="content home welcome">
 			<article>
 				<h3>Atlanta Broadcast and Advertising Club</h3>
 				<p><strong>The Atlanta Broadcast and Advertising Club sets out to provide superior networking opportunities in all facets of the media business in Atlanta, provide educational opportunities that offer our members insight from industry experts and give back to the local community through fundraising efforts.</strong></p>
 				<p>ABAC was established in the late sixties/early seventies by a local group of broadcast professionals. The founding members sought to provide a professional forum devoted specifically to broadcast concerns, as the Atlanta Ad Club was largely focused on print media in those days. Originally Atlanta Broadcast Executives Club (ABEC), our organization was re-named Atlanta Broadcast Advertising Club in the seventies.</p><br>
-				<a href="/membership" class="button" style="margin: 20px; font-size: 18px;">Membership</a> <a href="http://www.google.com" class="button_alt" style="margin: 20px; font-size: 18px;">Sponsor Meltdown</a>
+				<a href="/membership" class="button" style="margin: 20px; font-size: 18px;">Membership</a> <a href="/sponsorship/sponsor-meltdown/" class="button_alt" style="margin: 20px; font-size: 18px;">Sponsor Meltdown</a>
 				<div class="custom-divider"></div>
 			</article>
 		</div>

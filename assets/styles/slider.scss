@@ -11,7 +11,7 @@ Image credits: unsplash.com
     position: relative;
 }
 .fade-carousel .carousel-inner .item {
-    height: 50vh;
+    height: 45vh;
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
@@ -83,7 +83,7 @@ Image credits: unsplash.com
     height: 100%;
     z-index: 2;
     background-color: #080d15;
-    opacity: .5;
+    opacity: 0;
 }
 
 /********************************/
@@ -112,7 +112,7 @@ Image credits: unsplash.com
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(./images/hero-image.jpg); 
+  background-image: url(./images/slides/sponsor-slide.jpg); 
 }
 .fade-carousel .slides .slide-2 {
   background-image: url(./images/event-page-bg.png);
