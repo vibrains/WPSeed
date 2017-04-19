@@ -15,6 +15,7 @@
 						</div>
 					</div>
 
+<?php /*
 					<div class="col-md-4 col-xs-12">
 						<div id="footer-sidebar2">
 							<?php
@@ -24,8 +25,9 @@
 							?>
 						</div>
 					</div>
+*/?>
 
-					<div class="col-md-4 col-xs-12">
+					<div class="col-md-4 col-xs-12 col-md-offset-3">
 						<div id="footer-sidebar3">
 							<?php
 							if(is_active_sidebar('footer-sidebar-3')){

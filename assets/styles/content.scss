@@ -272,11 +272,19 @@ p {
 }
 .custom-divider {
   background: $c_darkblue;
-  height: 3px;
+  height: 5px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 50px;
   width: 20%;
+}
+hr {
+  background: $c_darkblue;
+  height: 3px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  width: 100%;
 }
 
 /* TEMPLATE - BLOG
@@ -351,6 +359,11 @@ p {
 
 /* HOMEPAGE INSTAGRAM FEED
 /------------------------*/
+#sbi_images {
+  padding: 0!important;
+  border-top: 5px solid $c_darkblue;
+  border-bottom: 5px solid $c_darkblue;
+}
 .instagram-feed-bg {
   width: 100%;
   padding: 0 15px;
