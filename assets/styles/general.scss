@@ -46,6 +46,7 @@ html {
 
 body  {
   margin: 0;
+  overflow-x: hidden;
   padding-top: 80px;
   font-size: $font_size;
   font-weight: $font_weight;

@@ -15,7 +15,7 @@
     <div class="row">
       <?php if (have_posts() ) : while (have_posts()) : the_post(); ?>
         <article>
-          <div class="col-md-7">
+          <div class="col-md-7" style="margin-top: 30px;">
             <h2><?php the_title(); ?></h2>
 
             <?php if (has_post_thumbnail()) : ?>
@@ -25,7 +25,9 @@
           </div>
         </article>
       <?php endwhile; endif; ?>
-      <?php get_sidebar(); ?>
+      <div class="single-post-sidebar" style="margin-top: 75px;">
+        <?php get_sidebar(); ?>
+      </div>
     </div>
   </div>
 </div>

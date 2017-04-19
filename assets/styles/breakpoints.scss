@@ -26,21 +26,20 @@
 	}
 }
 @media (max-width: 767px) {
-
 	#responsive-menu-container li.responsive-menu-item a {
 		padding: 0 30px !important;
 	}
-
 	body {
-		padding-top: 125px!important;
+		padding-top: 75px!important;
 	}
 	.header-social-links-holder {
 		width: 100%;
 		text-align: center;
 		.header-social-links {
-			margin-right: auto;
-			margin-left: auto;
-			display: inline-block;
+			display: none;
+			// margin-right: auto;
+			// margin-left: auto;
+			// display: inline-block;
 		}
 	}
 	.fa.fa-instagram {
@@ -105,6 +104,10 @@
 		display: inline-block!important;
 		width: 40%;
 	}
+	.welcome {
+		text-align: center;
+		padding: 10px;
+	}
 
 	//Jobs Lading Page
 	.entry {
@@ -164,8 +167,8 @@
 		line-height: 0px;
 	}
 	.callout h2 {
-		font-size: 25px;
-		margin-bottom: 20px;
+		font-size: 18px;
+		margin-bottom: 0;
 	}
 }
 
@@ -192,7 +195,7 @@
 	aside.widget {
 		margin-bottom: 40px;
 	}
-	span.section-title-events, span.section-title-posts, span.section-title-partners  {
+	span.section-title-events, span.section-title-blog, span.section-title-partners  {
 		font-size: 20px!important;
 		letter-spacing: normal!important;
 		text-align: center;
@@ -219,6 +222,7 @@
 	}
 	.logo {
 		margin-top: 10px;
+		margin-bottom: 10px;
 		height: 55px;
 		width: 275px;
 	}
