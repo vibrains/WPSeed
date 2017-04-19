@@ -4,6 +4,7 @@
 	padding-bottom: 50px;
 	padding-right: 20px;
 	padding-left: 20px;
+	border-bottom: 3px solid $c_darkblue;
 }
 .our-partners-bg .content {
 	padding-bottom: 50px;
@@ -11,4 +12,8 @@
 }
 body.blog .our-partners-bg {
 	display: none!important;
+}
+.logo_showcase .slick-slide img {
+	border: none;
+	max-height: 65px!important;
 }

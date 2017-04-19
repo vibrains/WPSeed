@@ -1,6 +1,6 @@
 		<div class="our-partners-bg">
-			<span class="section-title text-center">Our Partners</span>
-			<?php echo do_shortcode( '[logoshowcase]' ); ?>
+			<span class="section-title-partners text-center">Our Partners</span>
+			<?php echo do_shortcode( '[logoshowcase center_mode="false" slides_column="6"]' ); ?>
 		</div>
 		<div class="container footer-container" id="main">
 			<div class="row">
@@ -45,5 +45,5 @@
 			<div class="footer-credits">Site Designed &amp; Developed by <a href="http://localmarketinginc.com" target="_blank"><small>LMI</small></a></div>
 		</footer>
 		<div class="admin-area">
-			<span><a href="#">Board Member Login</a></span>
+			<span><a href="/member-admin/">Board Member Login</a></span>
 		</div>

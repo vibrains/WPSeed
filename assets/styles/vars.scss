@@ -69,7 +69,7 @@ $desktop_min:         767px;        // Desktop/Mobile Breakpoint
   $line_height:    28px;       // default line-height (applied to body)
   $font_weight:    100;       // default font-weight (applied to body)
 
-  span.section-title {
+  span.section-title-events {
     font-family: 'gibson_semibold', sans-serif;
     color: $c_darkblue;
     display: block;
@@ -88,7 +88,44 @@ $desktop_min:         767px;        // Desktop/Mobile Breakpoint
       background-size: 50%;
     }
   }
-  
+  span.section-title-blog {
+    font-family: 'gibson_semibold', sans-serif;
+    color: $c_darkblue;
+    display: block;
+    margin: 0 0 45px 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    // letter-spacing: -.5px;
+    &:before {
+      display: inline-block;
+      content: ' ';
+      background-image: url("/wp-content/themes/wpseed/assets/images/post-icon.svg");
+      height: 80px;
+      width: 80px;
+      margin-bottom: -30px;
+      background-size: 50%;
+    }
+  }
+  span.section-title-partners {
+    font-family: 'gibson_semibold', sans-serif;
+    color: $c_darkblue;
+    display: block;
+    margin: 0 0 45px 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    // letter-spacing: -.5px;
+    &:before {
+      display: inline-block;
+      content: ' ';
+      background-image: url("/wp-content/themes/wpseed/assets/images/partners-icon.svg");
+      height: 120px;
+      width: 120px;
+      margin-bottom: -50px;
+      background-size: 50%;
+    }
+  }
 /* SHADOWS
 /===================================================== */
 

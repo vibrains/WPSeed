@@ -24,39 +24,30 @@
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner">
 		<div class="item slides active">
-			<div class="overlay"></div>
-			<div class="slide-1"></div>
-			<div class="hero">
-				<hgroup>
-					<h1>Connecting the Atlanta Media Community</h1>        
-					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus reprehenderit natus.</h3>
-				</hgroup>
-				<button class="btn btn-hero btn-lg" role="button">Read More</button>
+			<a href="/sponsorship">
+				<div class="overlay"></div>
+				<div class="slide-1"></div>
+				<div class="hero">
+				</div>
 			</div>
-		</div>
-<!-- 		<div class="item slides">
-			<div class="overlay"></div>
-			<div class="slide-2"></div>
-			<div class="hero">        
-				<hgroup>
-					<h1>Atlanta Broadcast Advertising Club</h1>        
-					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus reprehenderit natus.</h3>
-				</hgroup>       
-				<button class="btn btn-hero btn-lg" role="button">Read More</button>
-			</div>
+		</a>
+		<div class="item slides">
+			<a href="/event/meltdown-2017-carnaval/">
+				<div class="overlay"></div>
+				<div class="slide-2"></div>
+				<div class="hero">        
+				</div>
+			</a>
 		</div>
 		<div class="item slides">
-			<div class="overlay"></div>
-			<div class="slide-3"></div>
-			<div class="hero">        
-				<hgroup>
-					<h1>Atlanta Broadcast Advertising Club</h1>        
-					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus reprehenderit natus.</h3>
-				</hgroup>
-				<button class="btn btn-hero btn-lg" role="button">Read More</button>
-			</div>
-		</div> -->
-	</div> 
+			<a href="/community/mentorship/">
+				<div class="overlay"></div>
+				<div class="slide-3"></div>
+				<div class="hero">
+				</div>
+			</a>
+		</div>
+	</div>
 </div>
 <!-- <div class="teaser" style="background-image: url(<?php the_post_thumbnail_url('large', $post->ID) ?>)">
 	<div class="content home">
@@ -120,7 +111,7 @@
 			<article class="homepage-events">
 				<div class="row is-flex">
 					<div class="col-xs-12">
-						<span class="section-title text-center">Browse Upcoming Events</span>
+						<span class="section-title-events text-center">Browse Upcoming Events</span>
 					</div>
 					<?php
 					$events = tribe_get_events( array(
@@ -175,7 +166,7 @@
 					<article class="content home recent-posts">
 						<div class="row">
 							<div class="col-xs-12">
-								<span class="section-title text-center">Browse Our Latest Blog Posts</span>
+								<span class="section-title-blog text-center">Browse Our Latest Blog Posts</span>
 							</div>
 						</div>
 						<?php
@@ -198,7 +189,7 @@
 												<a style="float: none; display: inline; border-bottom: none;" href="<?php echo get_permalink(); ?>"><?php the_title();?></a>
 											</div>
 											<p class="post-excerpt">
-												<?php echo wp_trim_words( get_the_content(), 15 ); ?>
+												<?php echo wp_trim_words( get_the_content(), 12 ); ?>
 											</p>
 											<li>
 												<a class="read-more-link" href="<?php echo get_permalink(); ?>">read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
@@ -211,7 +202,6 @@
 					</div>
 				</div>
 
-
 				<div class="row">
 					<div class="instagram-feed-bg">
 						<article class="home instagram-feed">
@@ -221,40 +211,6 @@
 						</article>
 					</div>
 				</div>
-
-<!-- 				<div class="flexbox-2-container">
-					<div class="flexbox-container">
-						<div class="flexbox">
-							<div class="flexbox-item flexbox-2 first-item">
-								<img src='/wp-content/themes/wpseed/assets/images/cta-icon.png'/>
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<p class="flexbox-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quos vitae, aliquid consectetur asperiores nihil tempore excepturi optio, pariatur atque iusto, corporis esse placeat. Nemo praesentium maxime laboriosam labore natus!</p>
-							</div>
-							<div class="flexbox-item flexbox-2 last-item">
-								<img src='/wp-content/themes/wpseed/assets/images/integrations-icon.png'/>
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<p class="flexbox-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nisi, rem id amet! Dolor eligendi neque, iure quia maiores aspernatur iste quod eius molestias! Eum obcaecati asperiores nisi velit. Aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam impedit enim praesentium, minus harum vitae sint modi maiores. Veniam unde amet perspiciatis excepturi praesentium quaerat deserunt dicta, officiis necessitatibus sequi.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="flexbox-container">
-					<div class="flexbox">
-						<div class="flexbox-item first-item">
-							<img src='/wp-content/themes/wpseed/assets/images/cta-icon.png'/>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-						</div>
-						<div class="flexbox-item">
-							<img src='/wp-content/themes/wpseed/assets/images/integrations-icon.png'/>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-						</div>
-						<div class="flexbox-item">
-							<img src='/wp-content/themes/wpseed/assets/images/pricing.png'/>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-						</div>
-					</div>
-				</div> -->
 				<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
 				<script>
 					$(function() {

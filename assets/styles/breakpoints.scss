@@ -27,6 +27,10 @@
 }
 @media (max-width: 767px) {
 
+	#responsive-menu-container li.responsive-menu-item a {
+		padding: 0 30px !important;
+	}
+
 	body {
 		padding-top: 125px!important;
 	}

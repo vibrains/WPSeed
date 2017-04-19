@@ -1,7 +1,6 @@
 /* FOOTER
 /===================================================== */
 .footer-container {
-  border-top: 2px solid $c_darkblue;
   padding-top: 50px;
 }
 
@@ -11,14 +10,13 @@
     color: $c_lightblue;
   }
   span.footer-section-title {
-    font-family: 'gibson_semibold', sans-serif;
+    font-family: 'gibson_regular', sans-serif;
     color: $c_darkblue;
     display: block;
     margin: 0 0 45px 0;
-    font-size: 22px;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: 900;
-    letter-spacing: -.5px;
     text-align: center;
   }
 }
@@ -136,9 +134,9 @@ aside.widget {
   width: 100%;
   span a {
     text-transform: uppercase;
-    font-family: 'gibson_semibold', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
+    font-family: 'gibson_regular', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
     color: $c_bright;
   }
 }
