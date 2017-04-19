@@ -135,6 +135,14 @@ body.single-job_listing {
 		color: $c_lightblue;
 	}
 }
+
 .single_job_listing .meta .location::before {
 	display: none;
+}
+.single_job_listing .company img {
+	display: none;
+}
+.single_job_listing .company .tagline, .single_job_listing .company .name {
+	margin: 0;
+	padding: 0;
 }

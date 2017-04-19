@@ -105,6 +105,42 @@
 		display: inline-block!important;
 		width: 40%;
 	}
+
+	//Jobs Lading Page
+	.entry {
+		ul.job_listings li.job_listing a img.company_logo, ul.job_listings li.no_job_listings_found a img.company_logo {
+			visibility: visible;
+			margin-bottom: 20px;
+		}
+		ul.job_listings li.job_listing a div.position {
+			width: 100%;
+		}
+		ul.job_listings li.job_listing a .meta {
+			margin-bottom: -10px;
+			margin-top: 10px;
+		}
+		ul.job_listings li.job_listing a div.location, ul.job_listings li.no_job_listings_found a div.location {
+			float: left;
+		}
+		ul.job_listings li.job_listing a .meta, ul.job_listings li.no_job_listings_found a .meta {
+			width: 100%;
+		}
+		.job_filters .search_jobs div.filter_first, .job_filters .search_jobs div.search_keywords {
+			padding: 5px;
+		}
+		.job_filters .search_jobs div.filter_last, .job_filters .search_jobs div.search_location {
+			padding: 5px;
+		}
+		.job_filters .job_types li {
+			padding: 5px 8px 0 10px;
+			min-width: 120px;
+		}
+	}
+
+	//Jobs Single Page
+	.single_job_listing .company .name a {
+		width: 100%;
+	}
 }
 @media (max-width: 799px) {
 	.recent-posts .post-thumbnail {
@@ -156,7 +192,7 @@
 	aside.widget {
 		margin-bottom: 40px;
 	}
-	span.section-title {
+	span.section-title-events, span.section-title-posts, span.section-title-partners  {
 		font-size: 20px!important;
 		letter-spacing: normal!important;
 		text-align: center;

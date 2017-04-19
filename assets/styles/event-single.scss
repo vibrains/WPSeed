@@ -25,6 +25,23 @@
 		font-weight: 700;
 		margin-right: 5px;
 	}
+	.tribe-events-single-event-title {
+		color: $c_darkblue;
+		font-family: 'gibson_semibold', sans-serif;
+	}
+	h2 {
+		span {
+			font-size: 18px;
+			font-weight: 100;
+			color: #696969;
+			text-transform: none;
+			font-style: italic;
+			margin-top: 0;
+		}
+	}
+	.tribe-events-schedule {
+		margin: 0;
+	}
 }
 
 .tribe-events-meta-group.tribe-events-meta-group-gmap {
@@ -115,7 +132,6 @@ ul.order_details::after, ul.order_details::before {
 	background-size: cover!important;
 	background-repeat: no-repeat!important;
 	background-position: center 30%!important;
-	margin-bottom: 45px;
 	// filter: blur(5px);
 	// -webkit-filter: blur(5px);
 	h1 {
