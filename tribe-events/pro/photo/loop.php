@@ -18,7 +18,7 @@ $more = false;
 ?>
 
 <div class="col-xs-12 section-title-holder">
-	<span class="section-title text-center">Browse Upcoming Events</span>
+	<span class="section-title-events text-center">Browse Upcoming Events</span>
 	<p>Connecting the Atlanta Media Community</p>
 </div>
 
