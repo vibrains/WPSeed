@@ -17,7 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php
 
 global $post;
-
 ?>
 		<div class="tribe-events-photo-event-wrap">
 			<div class="event-thumbnail">

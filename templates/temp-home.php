@@ -12,16 +12,14 @@
 <?php get_header(); ?>
 <!-- content » home -->
 
-<div class="page-holder carousel fade-carousel slide" data-ride="carousel" data-interval="8000" id="bs-carousel">
-	<!-- Overlay -->
-	<!-- Indicators -->
+<!--OLD SLIDER -->
+<!-- <div class="page-holder carousel fade-carousel slide" data-ride="carousel" data-interval="8000" id="bs-carousel">
 	<ol class="carousel-indicators">
 		<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
 		<li data-target="#bs-carousel" data-slide-to="1"></li>
 		<li data-target="#bs-carousel" data-slide-to="2"></li>
 	</ol>
 
-	<!-- Wrapper for slides -->
 	<div class="carousel-inner">
 		<div class="item slides active">
 			<a href="/sponsorship">
@@ -48,7 +46,54 @@
 			</a>
 		</div>
 	</div>
+</div> -->
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>    
+		<li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<a href="/event/meltdown-2017-carnaval/">
+				<img src="/wp-content/themes/wpseed/dist/images/slides/atown-slide.jpg" alt="Atown">
+			</a>
+			<div class="carousel-caption first-slide">
+			</div>
+		</div>
+
+		<div class="item">
+			<a href="/community/mentorship/">
+				<img src="/wp-content/themes/wpseed/dist/images/slides/mentor-slide.jpg" alt="Small dispute">
+			</a>
+			<div class="carousel-caption">
+			</div>
+		</div>
+
+		<div class="item">
+			<a href="/sponsorship">
+				<img src="/wp-content/themes/wpseed/dist/images/slides/sponsor-slide.jpg" alt="general-corporate-counsel">
+			</a>
+			<div class="carousel-caption">
+			</div>
+		</div>
+	</div><!-- /end carousel-inner -->
+
+	<!-- Controls -->
+	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
 </div>
+
 <!-- <div class="teaser" style="background-image: url(<?php the_post_thumbnail_url('large', $post->ID) ?>)">
 	<div class="content home">
 		<article>
@@ -81,7 +126,7 @@
 			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
 			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e19a10c6ad85ab81a9de0153f_e09f6753f2" tabindex="-1" value=""></div>
-			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 		</div>
 	</form>
 </div>

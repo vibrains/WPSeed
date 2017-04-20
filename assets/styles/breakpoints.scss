@@ -91,23 +91,29 @@
 	.events-page.teaser .tribe-event-date-end, .events-page.teaser .tribe-event-date-start {
 		display: none;
 	}
-	.content article img, .content section img {
-		float: left;
-	}
-	.tribe-event-schedule-details .latest-upcoming-event {
-		font-size: 14px;
-	}
-	.callout #mc_embed_signup input.email {
+
+//Single Event Page Body Image
+	.single-tribe_events .tribe-events-event-image img {
 		width: 100%!important;
 	}
-	.callout #mc_embed_signup .clear {
-		display: inline-block!important;
-		width: 40%;
-	}
-	.welcome {
-		text-align: center;
-		padding: 10px;
-	}
+
+.content article img, .content section img {
+	float: left;
+}
+.tribe-event-schedule-details .latest-upcoming-event {
+	font-size: 14px;
+}
+.callout #mc_embed_signup input.email {
+	width: 100%!important;
+}
+.callout #mc_embed_signup .clear {
+	display: inline-block!important;
+	width: 40%;
+}
+.welcome {
+	text-align: center;
+	padding: 10px;
+}
 
 	//Jobs Lading Page
 	.entry {

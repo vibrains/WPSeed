@@ -84,6 +84,7 @@ input[type='radio'] {
 // MAILCHIMP SIGNUP FORM ON HOMEPAGE
 .callout #mc_embed_signup form {
 	text-align: left;
+	padding: 0;
 }
 .callout #mc_embed_signup input.email {
 	font-family: gibson_regular,sans-serif;
@@ -95,6 +96,7 @@ input[type='radio'] {
 }
 .callout #mc_embed_signup .button {
 	font-size: 12px;
+	max-width: 120px;
 	border: none;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
