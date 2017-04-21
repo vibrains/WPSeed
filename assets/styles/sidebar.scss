@@ -8,12 +8,13 @@
 		padding-left: 0;
 	}
 	li {
+		list-style-type: none;
 		h2.widgettitle {
 			text-transform: uppercase;
 			font-weight: 900;
 			font-size: 22px;
 			color: $c_darkblue;
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 			margin-top: 5px;
 			text-align: center;
 			font-family: 'gibson_semibold', sans-serif;
@@ -75,4 +76,31 @@
 .tribe-events-adv-list-widget, .tribe-mini-calendar-event {
 	margin-bottom: 5px;
 	padding-bottom: 10px;
+}
+
+#recent-posts-3 {
+	padding-top: 50px;
+	ul {
+		li {
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 10px;
+			padding-top: 10px;
+
+			&:last-child {
+				border-bottom: none;
+			}
+			a {
+				color: $c_darkblue;
+				font-size: 16px;
+				font-weight: 900;
+			}
+		}
+	}
+}
+#recent-posts-3 {
+	display: none;
+}
+
+body.page-template-wp-home #recent-posts-3, body.single-post #recent-posts-3 {
+	display: block;
 }

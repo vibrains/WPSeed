@@ -27,3 +27,70 @@
 		}
 	}
 }
+
+.post-thumbnail img {
+	float: left;
+	max-width: 100%;
+	height: auto;
+}
+.blogroll-button {
+	list-style-type: none;
+}
+.single-post-container {
+	padding-left: 15px;
+}
+.post-date {
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	margin-top: 0;
+	border-top: 1px solid #ccc;
+}
+.single-post-holder {
+	margin-bottom: 50px;
+}
+body.page-template-wp-home .post-title a {
+	font-family: 'Montserrat', sans-serif;
+	color: $c_darkblue;
+	font-size: 22px;
+	display: block;
+	border-bottom: none;
+	float: left;
+	width: 100%;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	font-weight: 900;
+	padding-top: 0;
+	letter-spacing: -0.5px;
+	&:hover {
+		color: $c_lightblue;
+		text-decoration: none;
+	}
+}
+
+
+//single post page next/previous nav
+.pager {
+	width: 100%;
+}
+
+.pager li > a, .pager li > span {
+	display: inline-block;
+	padding: 5px 14px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	background: $c_darkblue;
+	color: $c_bright;
+
+	&:hover {
+		background: $c_lightblue;
+	}
+}
+.previous {
+	float: left;
+}
+.next {
+	float: right;
+}

@@ -12,66 +12,45 @@
 <?php get_header(); ?>
 <!-- content » blog home -->
 <div class="container page-holder" id="main">
+  <h1 class="col-md-12 page-title">Blog</h1>
   <div class="row">
-    <h1 class="col-md-12 page-title">Blog</h1>
-
-    <?php
-    $args=array(
-     'post_type' => 'post',
-     'post_status' => 'publish',
-     'posts_per_page' => 18
-     );
-
-    $my_query = null;
-    $my_query = new WP_Query($args);
-
-    if( $my_query->have_posts() ) {
-
-      $i = 0;
-      while ($my_query->have_posts()) : $my_query->the_post();
-  // modified to work with 3 columns
-  // output an open <div>
-      if($i % 3 == 0) { ?> 
-
-      <div class="row">
-
-        <?php
-      }
-      ?>
-
-      <div class="col-md-7">
-        <div class="my-inner">
-
-          <a href="<?php echo get_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-          <div class="post-info">
-           <span class="entry-date"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<?php echo get_the_date(); ?></span><span class="entry-author"><?php //echo get_the_author(); ?></span>
-         </div>
-
-         <?php if (has_post_thumbnail()) : ?>
-          <div class="thumbnail" style="background-image: url(<?php the_post_thumbnail_url() ?>)"></div>
-        <?php endif ?>
-        <p>
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <div id="primary blog" class="content-area col-xs-12 col-sm-7">
+        <article class="single-post-container">
           <?php
-          echo wp_trim_words( get_the_content(), 32, '...' );
-          ?></p>
-          <a class="read-more-link button" href="<?php echo get_permalink(); ?>">Read More&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+          query_posts(array(
+            'post_type' => array('post'),
+            'showposts' => 10
+            ) );
+            ?>
+            <?php while (have_posts()) : the_post(); ?>
 
+              <div class="single-post-holder"> 
+                <div class="post-title">
+                  <a href="<?php echo get_permalink(); ?>"><?php the_title();?></a>
+                </div>
+                <p class="post-date">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<?php the_time('F jS, Y') ?></p>
+
+                  <div class="post-thumbnail">
+                    <a href="<?php echo get_permalink(); ?>"><?php
+                      if ( has_post_thumbnail() ) {  
+                        the_post_thumbnail();
+                      }
+                      ?></a>
+                    </div>
+                    <?php
+                    the_excerpt(); ?>
+                    <li class="blogroll-button">
+                      <a class="button" href="<?php echo get_permalink(); ?>">read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </li>
+                  </div>
+                <?php endwhile;?>
+              </article>
+            </div>
+          </article>
+          <?php get_sidebar(); ?>
         </div>
-      </div>  
-      <?php $i++; 
-      if($i != 0 && $i % 3 == 0) { ?>
-    </div><!--/.row-->
-    <div class="clearfix"></div>
-
-    <?php
-  } ?>
-
-  <?php  
-  endwhile;
-}
-wp_reset_query();
-?>
-<?php get_sidebar(); ?>
-</div>
-</div>
-<?php get_footer(); ?>
+      </div>
+      <?php wp_reset_query(); ?>
+      <?php get_footer(); ?>
