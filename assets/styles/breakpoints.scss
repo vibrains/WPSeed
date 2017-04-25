@@ -93,9 +93,9 @@
 	}
 
 //Single Event Page Body Image
-	.single-tribe_events .tribe-events-event-image img {
-		width: 100%!important;
-	}
+.single-tribe_events .tribe-events-event-image img {
+	width: 100%!important;
+}
 
 .content article img, .content section img {
 	float: left;
@@ -109,6 +109,9 @@
 .callout #mc_embed_signup .clear {
 	display: inline-block!important;
 	width: 40%;
+}
+.callout #mc_embed_signup .button {
+	float: left!important;
 }
 .welcome {
 	text-align: center;
@@ -151,6 +154,7 @@
 		width: 100%;
 	}
 }
+
 @media (max-width: 799px) {
 	.recent-posts .post-thumbnail {
 		width: 100%;

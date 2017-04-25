@@ -34,6 +34,16 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-98117281-1', 'auto');
+   ga('send', 'pageview');
+
+ </script>
         <!--[if IE]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]--><script>document.documentElement.className = 'js';</script>
@@ -53,94 +63,47 @@
         </defs>
       </svg>
 
-<?php /*
-      <div class="search">
-        <button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
-        <form class="search__form" action="">
-          <input class="search__input" name="search" type="search" placeholder="Search..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
-          <span class="search__info">Hit enter to search or ESC to close</span>
-        </form>
-        <div class="search__related">
-          <div class="search__suggestion">
-            <h3>Recent News</h3>
-            <ul class="latest-posts">
-              <?php
-              $args = array( 'numberposts' => '3' );
-              $recent_posts = wp_get_recent_posts( $args );
-              foreach( $recent_posts as $recent ){
-                echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
-              }
-              wp_reset_query();
-              ?>
-            </ul>
-          </div>
-          <div class="search__suggestion">
-            <h3>Is It This?</h3>
-            <p>#good #red #hilarious #blue #nono #why #yes #yesyes #aliens #green #drone #funny #catgif #broken #lost</p>
-          </div>
-          <div class="search__suggestion">
-            <h3>Needle, Where Art Thou?</h3>
-            <p>#broken #lost #good #red #funny #hilarious #catgif #blue #nono #why #yes #yesyes #aliens #green #drone</p>
-          </div>
-        </div>
-      </div><!-- /search -->
+      <div class="nav-wrap">    
+       <nav class="navbar navbar-default" role="navigation">
+        <div class="social-bar">
+          <div class="container" id="main">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <a class="logo-link" href="<?php echo get_home_url(); ?>">
+                  <div class="logo"></div>
+                </a>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 no-horizontal-padding header-social-links-holder">
+                <div class="header-social-links">
 
-<!--       <button class="hamburger--squeeze" id="hamburger" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button> -->
-
-       */?>
-
-
-       <div class="nav-wrap">    
-         <nav class="navbar navbar-default" role="navigation">
-          <div class="social-bar">
-            <div class="container" id="main">
-              <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                  <a class="logo-link" href="<?php echo get_home_url(); ?>">
-                    <div class="logo"></div>
-                  </a>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 no-horizontal-padding header-social-links-holder">
-                  <div class="header-social-links">
-
-                    <div class="cart-header-icon">
-                      <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
-                        $count = WC()->cart->cart_contents_count;
-                        ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php 
-                        if ( $count > 0 ) {
-                          ?>
-                          <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
-                          <?php
-                        }
-                        ?></a>
-                        <?php } ?>
-                      </div>
-                      <ul>
-                        <li><a href="https://twitter.com/ABACATL" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.facebook.com/ABACATL" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.instagram.com/abacatl" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/groups/1854373/profile" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                      </ul>
+                  <div class="cart-header-icon">
+                    <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+                      $count = WC()->cart->cart_contents_count;
+                      ?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php 
+                      if ( $count > 0 ) {
+                        ?>
+                        <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+                        <?php
+                      }
+                      ?></a>
+                      <?php } ?>
                     </div>
+                    <ul>
+                      <li><a href="https://twitter.com/ABACATL" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li><a href="https://www.facebook.com/ABACATL" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li><a href="https://www.instagram.com/abacatl" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                      <li><a href="https://www.linkedin.com/groups/1854373/profile" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="container" id="main">
-              <div class="row">
-                <!-- Brand and toggle get grouped for better mobile display --> 
-                <div class="navbar-header">
-                  <?php echo do_shortcode('[responsive_menu]'); ?>
-<!--                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
-                  <span class="sr-only">Toggle navigation</span> 
-                  <span class="icon-bar"></span> 
-                  <span class="icon-bar"></span> 
-                  <span class="icon-bar"></span> 
-                </button>  -->
+          </div>
+          <div class="container" id="main">
+            <div class="row">
+              <!-- Brand and toggle get grouped for better mobile display --> 
+              <div class="navbar-header">
+                <?php echo do_shortcode('[responsive_menu]'); ?>
               </div> 
               <!-- Collect the nav links, forms, and other content for toggling --> 
               <!-- <div class="collapse navbar-collapse navbar-ex1-collapse"> -->
@@ -154,11 +117,7 @@
                 'walker' => new wp_bootstrap_navwalker())
               );
               ?>
-<!--                 <div class="search-wrap">
-                  <button id="btn-search" class="btn btn--search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
-                </div> -->
-                <!--               </div> navbar-collapse closing div -->
-              </div>
             </div>
-          </nav><!-- .main -->
-        </div>
+          </div>
+        </nav>
+      </div>
