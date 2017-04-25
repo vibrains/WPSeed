@@ -11,43 +11,6 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
 <!-- content » home -->
-
-<!--OLD SLIDER -->
-<!-- <div class="page-holder carousel fade-carousel slide" data-ride="carousel" data-interval="8000" id="bs-carousel">
-	<ol class="carousel-indicators">
-		<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-		<li data-target="#bs-carousel" data-slide-to="1"></li>
-		<li data-target="#bs-carousel" data-slide-to="2"></li>
-	</ol>
-
-	<div class="carousel-inner">
-		<div class="item slides active">
-			<a href="/sponsorship">
-				<div class="overlay"></div>
-				<div class="slide-1"></div>
-				<div class="hero">
-				</div>
-			</div>
-		</a>
-		<div class="item slides">
-			<a href="/event/meltdown-2017-carnaval/">
-				<div class="overlay"></div>
-				<div class="slide-2"></div>
-				<div class="hero">        
-				</div>
-			</a>
-		</div>
-		<div class="item slides">
-			<a href="/community/mentorship/">
-				<div class="overlay"></div>
-				<div class="slide-3"></div>
-				<div class="hero">
-				</div>
-			</a>
-		</div>
-	</div>
-</div> -->
-
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
@@ -93,16 +56,6 @@
 		<span class="sr-only">Next</span>
 	</a>
 </div>
-
-<!-- <div class="teaser" style="background-image: url(<?php the_post_thumbnail_url('large', $post->ID) ?>)">
-	<div class="content home">
-		<article>
-			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex adipisci ea minus asperiores error esse recusandae ipsa quam vero, tempore quasi vel eveniet optio excepturi quas dolorum saepe cupiditate aspernatur!</p>
-		</article>
-	</div>
-</div>
--->
 <div class="callout">
 	<div class="container" id="main">
 		<div class="row">
