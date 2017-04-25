@@ -174,3 +174,8 @@ body.woocommerce-cart {
 	float: left;
 	max-width: 86.76923em;
 }
+
+//Cart Buttons
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+	background-color: $c_darkblue;
+}
