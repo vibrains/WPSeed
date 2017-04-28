@@ -25,7 +25,10 @@
 	}
 	.tribe-event-schedule-details {
 		background: transparent;
-		display: block;
+		display: table;
+		background: #fff;
+		padding-top: 5px;
+		line-height: 37px;
 		padding: 0;
 		margin: 0;
 	}
@@ -112,7 +115,6 @@
 	}
 	background: rgba(75,134,173,.1);
 	padding: 3px 8px;
-	border-radius: 5px;
 	// box-shadow: inset 0 0 0 1px hsla(0,0%,100%,.1);
 	display: inline-block;
 	margin-bottom: 5px;
@@ -136,8 +138,7 @@
 //SINGLE EVENT PAGE
 .events-page.teaser {
 	.tribe-event-date-start, .tribe-event-date-end, .tribe-event-time {
-		background: #fff;
-		padding: 8px 15px;
+		padding: 8px 10px;
 		font-weight: 600;
 		font-style: italic;
 		color: $c_dark;

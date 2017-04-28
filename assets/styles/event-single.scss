@@ -149,7 +149,8 @@ ul.order_details::after, ul.order_details::before {
 	}
 	.tribe-event-schedule-details {
 		background: transparent;
-		display: block;
+		display: table;
+		background: #fff;
 		padding: 0;
 		margin: 0;
 	}
