@@ -146,6 +146,12 @@ a.button_alt {
   }
 }
 
+#tribe-events .button {
+  margin: 10px 0;
+  letter-spacing: normal;
+  background: $c_darkblue;
+}
+
 .woocommerce a.button {
   background: $c_darkblue;
   &:hover {
