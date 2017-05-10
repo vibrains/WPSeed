@@ -170,7 +170,8 @@
 						<?php
 						query_posts(array(
 							'post_type' => array('post', 'event'),
-							'showposts' => 4
+							'showposts' => 4,
+							'category_name'  => 'post'
 							) );
 							?>
 							<?php while (have_posts()) : the_post(); ?>
